@@ -99,12 +99,13 @@ def main():
 
         #
         model.learn(total_timesteps=int(5 * 1e7), log_interval=(10, 50))
+        model.save(rsg_root + f"/saved/PPO_{args.trial}/ppo_{args.trial}_model")
     else:
         if args.render:
             proc = subprocess.Popen(os.environ["FLIGHTMARE_PATH"] + "/flightrender/RPG_Flightmare.x86_64")
         #
-        weight = rsg_root + "/saved/PPO_{0}/Policy/iter_{1:05d}.pth".format(args.trial, args.iter)
-        env_rms = rsg_root +"/saved/PPO_{0}/RMS/iter_{1:05d}.npz".format(args.trial, args.iter)
+        weight = rsg_root + "/../ros/rl_policy/PPO_{0}/Policy/iter_{1:05d}.pth".format(args.trial, args.iter)
+        env_rms = rsg_root +"/../ros/rl_policy/PPO_{0}/RMS/iter_{1:05d}.npz".format(args.trial, args.iter)
 
         device = get_device("auto")
         saved_variables = torch.load(weight, map_location=device)

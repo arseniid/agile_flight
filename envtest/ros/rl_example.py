@@ -14,8 +14,10 @@ from scipy.spatial.transform import Rotation as R
 from stable_baselines3.common.utils import get_device
 from stable_baselines3.ppo.policies import MlpPolicy
 
+
 def normalize_obs(obs, obs_mean, obs_var):
     return (obs - obs_mean) / np.sqrt(obs_var + 1e-8)
+
 
 def rl_example(state, obstacles, rl_policy=None):
     policy, obs_mean, obs_var, act_mean, act_std = rl_policy
@@ -29,7 +31,7 @@ def rl_example(state, obstacles, rl_policy=None):
     obs_vec = np.array(obs_vec)
 
     # Convert state to vector observation
-    goal_vel = np.array([3.0, 0.0, 0.0]) 
+    goal_vel = np.array([3.0, 0.0, 0.0])
 
     att_aray = np.array([state.att[1], state.att[2], state.att[3], state.att[0]])
     rotation_matrix = R.from_quat(att_aray).as_matrix().reshape((9,), order="F")
@@ -45,25 +47,26 @@ def rl_example(state, obstacles, rl_policy=None):
     command_mode = 1
     command = AgileCommand(command_mode)
     command.t = state.t
-    command.collective_thrust = action[0] 
-    command.bodyrates = action[1:4] 
+    command.collective_thrust = action[0]
+    command.bodyrates = action[1:4]
     return command
 
+
 def load_rl_policy(policy_path):
-    policy_dir = policy_path  + "/Policy/iter_00500.pth" 
-    rms_dir = policy_path + "/RMS/iter_00500.npz" 
-    cfg_dir =  policy_path + "/config.yaml"
+    policy_dir = policy_path + "/Policy/iter_02000.pth"
+    rms_dir = policy_path + "/RMS/iter_02000.npz"
+    cfg_dir = policy_path + "/config.yaml"
 
     # action 
     env_cfg = YAML().load(open(cfg_dir, "r"))
     quad_mass = env_cfg["quadrotor_dynamics"]["mass"]
     omega_max = env_cfg["quadrotor_dynamics"]["omega_max"]
     thrust_max = 4 * env_cfg["quadrotor_dynamics"]["thrust_map"][0] * \
-        env_cfg["quadrotor_dynamics"]["motor_omega_max"] * \
-        env_cfg["quadrotor_dynamics"]["motor_omega_max"]
-    act_mean = np.array([thrust_max / quad_mass / 2, 0.0, 0.0, 0.0])[np.newaxis, :] 
-    act_std = np.array([thrust_max / quad_mass / 2, \
-       omega_max[0], omega_max[1], omega_max[2]])[np.newaxis, :] 
+                 env_cfg["quadrotor_dynamics"]["motor_omega_max"] * \
+                 env_cfg["quadrotor_dynamics"]["motor_omega_max"]
+    act_mean = np.array([thrust_max / quad_mass / 2, 0.0, 0.0, 0.0])[np.newaxis, :]
+    act_std = np.array([thrust_max / quad_mass / 2,
+                        omega_max[0], omega_max[1], omega_max[2]])[np.newaxis, :]
 
     rms_data = np.load(rms_dir)
     obs_mean = np.mean(rms_data["mean"], axis=0)
