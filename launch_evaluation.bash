@@ -26,7 +26,7 @@ else
 fi
 
 SUMMARY_FILE="evaluation.yaml"
-"" > $SUMMARY_FILE
+> $SUMMARY_FILE
 
 # Perform N evaluation runs
 for i in $(eval echo {1..$N})
