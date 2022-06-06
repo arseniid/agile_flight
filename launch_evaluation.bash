@@ -8,6 +8,14 @@ else
   N=10
 fi
 
+# Pass PPO trial number as argument
+if [ $2 ]
+then
+  PPO_TRIAL="$2"
+else
+  PPO_TRIAL=1
+fi
+
 # Set Flightmare Path if it is not set
 if [ -z $FLIGHTMARE_PATH ]
 then
@@ -44,7 +52,7 @@ do
   python3 evaluation_node.py &
   PY_PID="$!"
 
-  python3 run_competition.py &
+  python3 run_competition.py --ppo_path "rl_policy/PPO_${PPO_TRIAL}/" &
   COMP_PID="$!"
 
   cd -
