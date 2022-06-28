@@ -35,6 +35,7 @@ def parser():
     parser.add_argument("--trial", type=int, default=1, help="PPO trial number")
     parser.add_argument("--iter", type=int, default=100, help="PPO iter number")
     parser.add_argument("--recurrent", type=int, default=0, help="Use recurrent LSTM-based policy or not")
+    parser.add_argument("--pretrained", type=int, default=0, help="Pre-trained PPO trial number for transfer learning")
     return parser
 
 
@@ -83,29 +84,40 @@ def main():
             model_type = PPO
             policy_type = "MlpPolicy"
 
-        model = model_type(
-            tensorboard_log=log_dir,
-            policy=policy_type,
-            policy_kwargs=dict(
-                activation_fn=torch.nn.ReLU,
-                net_arch=[dict(pi=[256, 256], vf=[512, 512])],
-                log_std_init=-0.5,
-            ),
-            env=train_env,
-            eval_env=eval_env,
-            use_tanh_act=True,
-            gae_lambda=0.95,
-            gamma=0.99,
-            n_steps=250,
-            ent_coef=0.0,
-            vf_coef=0.5,
-            max_grad_norm=0.5,
-            batch_size=75000,
-            clip_range=0.2,
-            use_sde=False,  # don't use (gSDE), doesn't work
-            env_cfg=cfg,
-            verbose=1,
-        )
+        if args.pretrained:
+            model = model_type.load(
+                rsg_root + f"/../ros/rl_policy/PPO_{args.pretrained}/ppo_{args.pretrained}_model",
+                tensorboard_log=log_dir,
+                env=train_env,
+                eval_env=eval_env,
+                env_cfg=cfg,
+                verbose=1,
+            )
+            print("loaded pre-trained model")
+        else:
+            model = model_type(
+                tensorboard_log=log_dir,
+                policy=policy_type,
+                policy_kwargs=dict(
+                    activation_fn=torch.nn.ReLU,
+                    net_arch=[dict(pi=[256, 256], vf=[512, 512])],
+                    log_std_init=-0.5,
+                ),
+                env=train_env,
+                eval_env=eval_env,
+                use_tanh_act=True,
+                gae_lambda=0.95,
+                gamma=0.99,
+                n_steps=250,
+                ent_coef=0.0,
+                vf_coef=0.5,
+                max_grad_norm=0.5,
+                batch_size=75000,
+                clip_range=0.2,
+                use_sde=False,  # don't use (gSDE), doesn't work
+                env_cfg=cfg,
+                verbose=1,
+            )
 
         #
         model.learn(total_timesteps=int(15 * 1e7), log_interval=(10, 50))
