@@ -52,7 +52,13 @@ do
   python3 evaluation_node.py &
   PY_PID="$!"
 
-  python3 run_competition.py --ppo_path "rl_policy/PPO_${PPO_TRIAL}/" &
+  DIR="rl_policy/PPO_${PPO_TRIAL}/"
+  if [ -d "$DIR" ]
+  then
+    python3 run_competition.py --ppo_path "rl_policy/PPO_${PPO_TRIAL}/" &
+  else
+    python3 run_competition.py --ppo_path "rl_policy/RecurrentPPO_${PPO_TRIAL}/" &
+  fi
   COMP_PID="$!"
 
   cd -

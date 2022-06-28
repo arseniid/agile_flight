@@ -111,6 +111,7 @@ dependencies:
   - zstd=1.4.9=haebb681_0
   - pip:
     - stable-baselines3
+    - sb3-contrib>=1.5.1a9
     - absl-py==1.0.0
     - astroid==2.9.0
     - astunparse==1.6.3
