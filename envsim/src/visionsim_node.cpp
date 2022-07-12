@@ -189,7 +189,7 @@ void VisionSim::publishObstacles(const QuadState &state) {
   obstacle_msg.num = vision_env_ptr_->getNumDetectedObstacles();
 
   flightlib::Vector<> obstacle_state;
-  const int obstacle_obs_dim = 4;
+  const int obstacle_obs_dim = flightlib::visionenv::kNObstaclesState;
   obstacle_state.resize(obstacle_obs_dim * obstacle_msg.num);
   vision_env_ptr_->getObstacleState(obstacle_state);
 
@@ -198,7 +198,10 @@ void VisionSim::publishObstacles(const QuadState &state) {
     single_obstacle.position.x = obstacle_state[obstacle_obs_dim * i];
     single_obstacle.position.y = obstacle_state[obstacle_obs_dim * i + 1];
     single_obstacle.position.z = obstacle_state[obstacle_obs_dim * i + 2];
-    single_obstacle.scale = obstacle_state[obstacle_obs_dim * i + 3];
+    single_obstacle.linear_velocity.x = obstacle_state[obstacle_obs_dim * i + 3];
+    single_obstacle.linear_velocity.y = obstacle_state[obstacle_obs_dim * i + 4];
+    single_obstacle.linear_velocity.z = obstacle_state[obstacle_obs_dim * i + 5];
+    single_obstacle.scale = obstacle_state[obstacle_obs_dim * i + 6];
 
     obstacle_msg.obstacles.push_back(single_obstacle);
   }

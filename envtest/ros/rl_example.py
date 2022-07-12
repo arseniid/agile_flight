@@ -25,9 +25,15 @@ def rl_example(state, obstacles, rl_policy=None):
     # Convert obstacles to vector observation
     obs_vec = []
     for obstacle in obstacles.obstacles:
+        # Obstacles are advertised as output of the `getObstacleState(..)` function
+        # from flightmare/flightlib/src/envs/vision_env/vision_env.cpp#L163-L274
+        # (see agile_flight/envsim/src/visionsim_node.cpp#L191-L205)
         obs_vec.append(obstacle.position.x)
         obs_vec.append(obstacle.position.y)
         obs_vec.append(obstacle.position.z)
+        obs_vec.append(obstacle.linear_velocity.x)
+        obs_vec.append(obstacle.linear_velocity.y)
+        obs_vec.append(obstacle.linear_velocity.z)
         obs_vec.append(obstacle.scale)
     obs_vec = np.array(obs_vec)
 
