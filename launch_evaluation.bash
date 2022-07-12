@@ -16,6 +16,14 @@ else
   PPO_TRIAL=1
 fi
 
+# Pass difficulty level and currently tested environment as argument
+# (only used during final evaluation)
+if [ $3 ] && [ $4 ]
+then
+  DIFFICULTY_LEVEL="$3"
+  TESTED_ENV="$4"
+fi
+
 # Set Flightmare Path if it is not set
 if [ -z $FLIGHTMARE_PATH ]
 then
@@ -78,6 +86,11 @@ do
   kill -SIGINT "$COMP_PID"
 done
 
+if [ $3 ] && [ $4 ]
+then
+  EVALUATION_SUMMARY_FILE="$HOME/Documents/PPO-baseline/Evaluation/PPO_${PPO_TRIAL}.yaml"
+  (echo -e "\n\n---[${DIFFICULTY_LEVEL}/environment_${TESTED_ENV}]---" ; cat "$SUMMARY_FILE" ) >> "$EVALUATION_SUMMARY_FILE"
+fi
 
 if [ $ROS_PID ]
 then
