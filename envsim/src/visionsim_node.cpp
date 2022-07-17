@@ -187,7 +187,7 @@ void VisionSim::publishObstacles(const QuadState &state) {
   obstacle_msg.header.stamp = ros::Time(state.t);
   obstacle_msg.t = state.t;
   obstacle_msg.num_obstacles = vision_env_ptr_->getNumDetectedObstacles();
-  obstacle_msg.num_free_paths = flightlib::visionenv::kNCuts * flightlib::visionenv::kNCuts;
+  obstacle_msg.num_free_paths = flightlib::visionenv::kNFreePaths;
 
   flightlib::Vector<> obstacle_state;
   flightlib::Vector<> free_paths;
