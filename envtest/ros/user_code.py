@@ -223,7 +223,12 @@ def solve_nmpc(state, obstacles):
     xg_T = np.resize(xg, (T, 3))
 
     opti = casadi.Opti()
+
+    # State consists of:
+    #   x[t, 0:3] - 3-dimensional position
+    #   x[t, 3:6] - 3-dimensional control (i.e., velocity)
     x = opti.variable(T, 6)
+
     opti.minimize(casadi.norm_2((x[:, 0] - xg_T[:, 0]) ** 2))
 
     # initial state
@@ -259,6 +264,14 @@ def solve_nmpc(state, obstacles):
                 )
                 > obstacles_full_state[i][2] + min_distance
             )
+
+    # dummy warm start
+    opti.set_initial(x[:, 0], np.linspace(x0[0, 0], x0[0, 0] + v_max * dt * T, T))
+    opti.set_initial(x[:, 1], x0[0, 1])
+    opti.set_initial(x[:, 2], x0[0, 2])
+    opti.set_initial(x[1:, 3], v_max)
+    opti.set_initial(x[1:, 4], 0.0)
+    opti.set_initial(x[1:, 5], 0.0)
 
     silent_options = {"ipopt.print_level": 0, "print_time": 0, "ipopt.sb": "yes"}  # print_level: 0-12 (5 by default)
     solver_options = {"ipopt.max_iter": 20, "verbose": True}
