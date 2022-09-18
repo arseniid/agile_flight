@@ -28,6 +28,8 @@ class AgilePilotNode:
         self.cv_bridge = CvBridge()
         self.state = None
 
+        rospy.on_shutdown(self.cleanup)
+
         quad_name = 'kingfisher'
 
         # Logic subscribers
@@ -112,6 +114,11 @@ class AgilePilotNode:
         print("Start publishing commands!")
         self.publish_commands = True
 
+    def cleanup(self):
+        rospy.logwarn("Shutdown called!")
+        rospy.sleep(3.0)
+        for sub in [self.start_sub, self.odom_sub, self.img_sub, self.obstacle_sub]:
+            sub.unregister()
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Agile Pilot.')
