@@ -195,7 +195,7 @@ void VisionSim::publishObstacles(const QuadState &state) {
   const int free_path_obs_dim = flightlib::visionenv::kNFreePathsState;
   obstacle_state.resize(obstacle_obs_dim * obstacle_msg.num_obstacles);
   free_paths.resize(free_path_obs_dim * obstacle_msg.num_free_paths);
-  vision_env_ptr_->getObstacleState(obstacle_state, free_paths);
+  vision_env_ptr_->getObstacleState(obstacle_state, free_paths, sim_dt_);
 
   for (int i = 0; i < std::max(obstacle_msg.num_obstacles, obstacle_msg.num_free_paths); i++) {
     if (i < obstacle_msg.num_obstacles) {
