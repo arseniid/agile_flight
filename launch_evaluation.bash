@@ -13,7 +13,7 @@ if [ $2 ]
 then
   PPO_TRIAL="$2"
 else
-  PPO_TRIAL=1
+  PPO_TRIAL=""
 fi
 
 # Pass difficulty level and currently tested environment as argument
@@ -33,7 +33,7 @@ fi
 # Launch the simulator, unless it is already running
 if [ -z $(pgrep visionsim_node) ]
 then
-  roslaunch envsim visionenv_sim.launch render:=True &
+  roslaunch envsim visionenv_sim.launch render:=True rviz:=False &
   ROS_PID="$!"
   echo $ROS_PID
   sleep 10
@@ -60,12 +60,17 @@ do
   python3 evaluation_node.py &
   PY_PID="$!"
 
-  DIR="rl_policy/PPO_${PPO_TRIAL}/"
-  if [ -d "$DIR" ]
+  if [[ -z ${PPO_TRIAL} ]]
   then
-    python3 run_competition.py --ppo_path "rl_policy/PPO_${PPO_TRIAL}/" &
+    python3 run_competition.py &
   else
-    python3 run_competition.py --ppo_path "rl_policy/RecurrentPPO_${PPO_TRIAL}/" &
+    DIR="rl_policy/PPO_${PPO_TRIAL}/"
+    if [ -d "$DIR" ]
+    then
+      python3 run_competition.py --ppo_path "rl_policy/PPO_${PPO_TRIAL}/" &
+    else
+      python3 run_competition.py --ppo_path "rl_policy/RecurrentPPO_${PPO_TRIAL}/" &
+    fi
   fi
   COMP_PID="$!"
 
