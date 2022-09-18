@@ -26,6 +26,7 @@ dependencies:
   - coverage=5.5=py38h27cfd23_2
   - cryptography=3.4.7=py38hd23ed53_0
   - cudatoolkit=10.2.89=hfd86e86_1
+  - cvxpy
   - cython=0.29.24=py38h295c915_0
   - dbus=1.13.18=hb2f20db_0
   - expat=2.2.10=he6710b0_2
