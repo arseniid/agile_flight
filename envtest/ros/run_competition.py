@@ -68,8 +68,9 @@ class AgilePilotNode:
             return
         if self.state is None:
             return
-        command = compute_command_state_based(state=self.state, obstacles=obs_data, rl_policy=self.rl_policy)
-        self.publish_command(command)
+        commands_list = compute_command_state_based(state=self.state, obstacles=obs_data, rl_policy=self.rl_policy)
+        for command in commands_list:
+            self.publish_command(command)
 
     def publish_command(self, command):
         if command.mode == AgileCommandMode.SRT:

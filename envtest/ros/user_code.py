@@ -75,16 +75,25 @@ def compute_command_state_based(state, obstacles, rl_policy=None):
     command.yawrate = 0.0
 
     # If you want to test your RL policy
+    commands_list = []
     if rl_policy is not None:
         command = rl_example(state, obstacles, rl_policy)
     else:
-        command.velocity = solve_nmpc(state, obstacles)
+        predicted_controls = solve_nmpc(state, obstacles)
+
+        for i, cmd_control in enumerate(predicted_controls):
+            command = AgileCommand(command_mode)
+            command.t = state.t + i * 0.01
+            command.velocity = cmd_control
+            command.yawrate = 0.0
+
+            commands_list.append(command)
 
     ################################################
     # !!! End of user code !!!
     ################################################
 
-    return command
+    return commands_list if commands_list else command
 
 
 def get_obstacle_absolute_states(state, obstacles, qty=10):
@@ -188,7 +197,7 @@ def solve_mpc_state_based(state, obstacles):
         problem.solve(max_iters=500, verbose=True)
     except cp.error.SolverError as e:
         print(e)
-        return np.array([1.0, 0.0, 0.0])
+        return np.array([[1.0, 0.0, 0.0]])
 
     print(f"MPC problem status: {problem.status}")
     print(f"Optimal value at time {state.t} is {problem.value}")
@@ -196,9 +205,9 @@ def solve_mpc_state_based(state, obstacles):
     print(f"(Current) optimal controls {u.value[:, 0] if u.value is not None else u.value}")
 
     if problem.status in ["optimal", "optimal_inaccurate"]:
-        return u.value[:3, 0]
+        return np.expand_dims(u.value[:3, 0], axis=0)
     elif problem.status in ["infeasible", "infeasible_inaccurate"]:
-        return np.array([1.0, 0.0, 0.0])
+        return np.array([[1.0, 0.0, 0.0]])
 
 
 def solve_nmpc(state, obstacles):
@@ -280,8 +289,8 @@ def solve_nmpc(state, obstacles):
         sol = opti.solve()
     except RuntimeError as e:
         print(e)
-        return opti.debug.value(x[1, 3:])
+        return opti.debug.value(x[1:41, 3:])
 
     x_optimal = sol.value(x)
 
-    return x_optimal[1, 3:]
+    return x_optimal[1:41, 3:]
