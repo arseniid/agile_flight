@@ -86,18 +86,6 @@ def compute_command_state_based(state, obstacles, rl_policy=None):
     return command
 
 
-def outer(a, b):
-    """ Inspired by https://github.com/cvxpy/cvxpy/issues/1724 """
-    a = cp.Expression.cast_to_const(a)  # if a is an Expression, return it unchanged.
-    assert a.ndim == 1
-    b = cp.Expression.cast_to_const(b)
-    assert b.ndim == 1
-    a = cp.reshape(a, (a.size, 1))
-    b = cp.reshape(b, (1, b.size))
-    expr = a @ b
-    return expr
-
-
 def solve_mpc_state_based(state, obstacles):
     """
     Solves (convex) linear MPC using CVXPY library.
@@ -154,19 +142,18 @@ def solve_mpc_state_based(state, obstacles):
         u[2, :] <= 5.0,
     ])
 
-    cost += cp.pos(x_goal - x[0, T])
     for t in range(T):
+        cost += cp.pos(x_goal - x[0, t + 1]) / T  # TODO: add soft cost as distance to obstacle?
         constraints.append(x[:, t + 1] == A @ x[:, t] + B @ u[:, t])  # x_t+1 = A * x_t + B * u_t
 
         # obstacle avoidance
+        m_identity_matrix = -np.eye(3)
         for abs_pos, abs_vel, radius in obstacles_full_state:
             safe_radius = radius + 0.5
-
             obs_rel_pos = cp.reshape(abs_pos + abs_vel * t * dt - x[:3, t], (n, 1))
             obs_rel_pos_T = cp.reshape(abs_pos + abs_vel * t * dt - x[:3, t], (1, n))
-            m_identity_matrix = -np.eye(3)
-            P = outer(obs_rel_pos, obs_rel_pos)
 
+            P = cp.Variable((n, n))
             constraints.append(
                 cp.trace(m_identity_matrix @ P) + safe_radius ** 2 <= 0
             )
