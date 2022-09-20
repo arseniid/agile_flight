@@ -45,7 +45,7 @@ def compute_command_vision_based(state, img):
     return command
 
 
-def compute_command_state_based(state, obstacles, rl_policy=None):
+def compute_command_state_based(state, obstacles, rl_policy=None, predicted=None):
     ################################################
     # !!! Begin of user code !!!
     # TODO: populate the command message
@@ -79,7 +79,10 @@ def compute_command_state_based(state, obstacles, rl_policy=None):
     if rl_policy is not None:
         command = rl_example(state, obstacles, rl_policy)
     else:
-        predicted_controls = solve_nmpc(state, obstacles)
+        predicted_controls, predicted_all_last = solve_nmpc(
+            state, obstacles,
+            warm_start_predictions=predicted
+        )
 
         for i, cmd_control in enumerate(predicted_controls):
             command = AgileCommand(command_mode)
@@ -93,7 +96,7 @@ def compute_command_state_based(state, obstacles, rl_policy=None):
     # !!! End of user code !!!
     ################################################
 
-    return commands_list if commands_list else command
+    return commands_list, predicted_all_last if commands_list else command
 
 
 def get_obstacle_absolute_states(state, obstacles, qty=10):
@@ -210,7 +213,7 @@ def solve_mpc_state_based(state, obstacles):
         return np.array([[1.0, 0.0, 0.0]])
 
 
-def solve_nmpc(state, obstacles):
+def solve_nmpc(state, obstacles, warm_start_predictions=None):
     """
     Solves (non-convex) non-linear MPC using Ipopt solver inside of CasADi wrapper.
 
@@ -218,10 +221,10 @@ def solve_nmpc(state, obstacles):
     """
     obstacles_full_state = get_obstacle_absolute_states(state, obstacles)
 
-    T = 50
+    T = 30
     dt = 0.01
     v_max = 5.0
-    min_distance = 0.3
+    min_distance = 0.1
     x0 = np.zeros((1, 6))
     x0[0, :3] = state.pos
     x0[0, 3:] = state.vel
@@ -249,12 +252,13 @@ def solve_nmpc(state, obstacles):
     opti.subject_to(x[1:, 2] == x[:-1, 2] + dt * x[:-1, 5])
 
     # bounding box
-    opti.subject_to(-5 < x[:, 0])
+    safe_dist = 0.5
+    opti.subject_to(-5.0 + safe_dist < x[:, 0])
     opti.subject_to(x[:, 0] < 65)
-    opti.subject_to(-10 < x[:, 1])
-    opti.subject_to(x[:, 1] < 10)
-    opti.subject_to(0 < x[:, 2])
-    opti.subject_to(x[:, 2] < 10)
+    opti.subject_to(-10.0 + safe_dist < x[:, 1])
+    opti.subject_to(x[:, 1] < 10.0 - safe_dist)
+    opti.subject_to(0.0 < x[:, 2])
+    opti.subject_to(x[:, 2] < 10.0 - safe_dist)
 
     # control constraints
     opti.subject_to(-v_max < x[:, 3])
@@ -281,16 +285,18 @@ def solve_nmpc(state, obstacles):
     opti.set_initial(x[1:, 3], v_max)
     opti.set_initial(x[1:, 4], 0.0)
     opti.set_initial(x[1:, 5], 0.0)
+    if warm_start_predictions is not None:
+        opti.set_initial(x[1:warm_start_predictions.shape[0] + 1, :], warm_start_predictions)
 
     silent_options = {"ipopt.print_level": 0, "print_time": 0, "ipopt.sb": "yes"}  # print_level: 0-12 (5 by default)
-    solver_options = {"ipopt.max_iter": 20, "verbose": True}
-    opti.solver("ipopt")
+    solver_options = {"ipopt.max_iter": 30, "verbose": False}
+    opti.solver("ipopt", solver_options)
     try:
         sol = opti.solve()
     except RuntimeError as e:
         print(e)
-        return opti.debug.value(x[1:41, 3:])
+        return opti.debug.value(x[1:21, 3:]), opti.debug.value(x[21:, :])
 
     x_optimal = sol.value(x)
 
-    return x_optimal[1:41, 3:]
+    return x_optimal[1:21, 3:], x_optimal[21:, :]

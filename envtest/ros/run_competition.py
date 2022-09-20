@@ -28,6 +28,8 @@ class AgilePilotNode:
         self.cv_bridge = CvBridge()
         self.state = None
 
+        self.predicted_not_executed_states = None
+
         rospy.on_shutdown(self.cleanup)
 
         quad_name = 'kingfisher'
@@ -68,7 +70,13 @@ class AgilePilotNode:
             return
         if self.state is None:
             return
-        commands_list = compute_command_state_based(state=self.state, obstacles=obs_data, rl_policy=self.rl_policy)
+        commands_list, not_executed = compute_command_state_based(
+            state=self.state,
+            obstacles=obs_data,
+            rl_policy=self.rl_policy,
+            predicted=self.predicted_not_executed_states,
+        )
+        self.predicted_not_executed_states = not_executed
         for command in commands_list:
             self.publish_command(command)
 
