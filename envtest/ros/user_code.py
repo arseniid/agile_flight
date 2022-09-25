@@ -223,7 +223,8 @@ def solve_nmpc(state, obstacles, warm_start_predictions=None):
 
     T = 30
     dt = 0.01
-    v_max = 5.0
+    v_max = 3.0
+    a_max = 10.0
     min_distance = 0.1
     x0 = np.zeros((1, 6))
     x0[0, :3] = state.pos
@@ -238,18 +239,22 @@ def solve_nmpc(state, obstacles, warm_start_predictions=None):
 
     # State consists of:
     #   x[t, 0:3] - 3-dimensional position
-    #   x[t, 3:6] - 3-dimensional control (i.e., velocity)
-    x = opti.variable(T, 6)
+    #   x[t, 3:6] - 3-dimensional outer control (i.e., velocity)
+    #   x[t, 6:9] - 3-dimensional inner control (i.e., acceleration)
+    x = opti.variable(T, 9)
 
     opti.minimize(casadi.norm_2((x[:, 0] - xg_T[:, 0]) ** 2))
 
     # initial state
-    opti.subject_to(x[0, :] == x0)
+    opti.subject_to(x[0, :6] == x0)
 
     # dynamic model
-    opti.subject_to(x[1:, 0] == x[:-1, 0] + dt * x[:-1, 3])
-    opti.subject_to(x[1:, 1] == x[:-1, 1] + dt * x[:-1, 4])
-    opti.subject_to(x[1:, 2] == x[:-1, 2] + dt * x[:-1, 5])
+    opti.subject_to(x[1:, 0] == x[:-1, 0] + dt * x[:-1, 3] + dt * dt * x[:-1, 6] / 2.0)
+    opti.subject_to(x[1:, 1] == x[:-1, 1] + dt * x[:-1, 4] + dt * dt * x[:-1, 7] / 2.0)
+    opti.subject_to(x[1:, 2] == x[:-1, 2] + dt * x[:-1, 5] + dt * dt * x[:-1, 8] / 2.0)
+    opti.subject_to(x[1:, 3] == x[:-1, 3] + dt * x[:-1, 6])
+    opti.subject_to(x[1:, 4] == x[:-1, 4] + dt * x[:-1, 7])
+    opti.subject_to(x[1:, 5] == x[:-1, 5] + dt * x[:-1, 8])
 
     # bounding box
     safe_dist = 0.5
@@ -260,13 +265,21 @@ def solve_nmpc(state, obstacles, warm_start_predictions=None):
     opti.subject_to(0.0 < x[:, 2])
     opti.subject_to(x[:, 2] < 10.0 - safe_dist)
 
-    # control constraints
+    # outer control constraints
     opti.subject_to(-v_max < x[:, 3])
     opti.subject_to(x[:, 3] < v_max)
     opti.subject_to(-v_max < x[:, 4])
     opti.subject_to(x[:, 4] < v_max)
     opti.subject_to(-v_max < x[:, 5])
     opti.subject_to(x[:, 5] < v_max)
+
+    # inner control constraints
+    opti.subject_to(-a_max < x[:, 6])
+    opti.subject_to(x[:, 6] < a_max)
+    opti.subject_to(-a_max < x[:, 7])
+    opti.subject_to(x[:, 7] < a_max)
+    opti.subject_to(-a_max < x[:, 8])
+    opti.subject_to(x[:, 8] < a_max)
 
     # obstacle avoidance
     for i in range(xo.shape[0]):
