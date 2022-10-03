@@ -45,7 +45,7 @@ def compute_command_vision_based(state, img):
     return command
 
 
-def compute_command_state_based(state, obstacles, rl_policy=None, predicted=None):
+def compute_command_state_based(state, obstacles, rl_policy=None, mpc_dt=None, predicted=None):
     ################################################
     # !!! Begin of user code !!!
     # TODO: populate the command message
@@ -81,12 +81,13 @@ def compute_command_state_based(state, obstacles, rl_policy=None, predicted=None
     else:
         predicted_controls, predicted_all_last = solve_nmpc(
             state, obstacles,
+            dt=mpc_dt,
             warm_start_predictions=predicted
         )
 
         for i, cmd_control in enumerate(predicted_controls):
             command = AgileCommand(command_mode)
-            command.t = state.t + i * 0.05
+            command.t = state.t + i * mpc_dt
             command.velocity = cmd_control
             command.yawrate = 0.0
 
@@ -213,7 +214,7 @@ def solve_mpc_state_based(state, obstacles):
         return np.array([[1.0, 0.0, 0.0]])
 
 
-def solve_nmpc(state, obstacles, warm_start_predictions=None):
+def solve_nmpc(state, obstacles, dt=0.05, warm_start_predictions=None):
     """
     Solves (non-convex) non-linear MPC using Ipopt solver inside of CasADi wrapper.
 
@@ -222,7 +223,6 @@ def solve_nmpc(state, obstacles, warm_start_predictions=None):
     obstacles_full_state = get_obstacle_absolute_states(state, obstacles)
 
     T = 15
-    dt = 0.05
     v_max = 3.0
     a_max = 11.3  # a_max = max_thrust (8.50 N) / mass (0.752 kg) = 11.30 m/s^2
     min_distance = 0.1
