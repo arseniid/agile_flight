@@ -76,9 +76,16 @@ class AgilePilotNode:
             rl_policy=self.rl_policy,
             predicted=self.predicted_not_executed_states,
         )
-        self.predicted_not_executed_states = not_executed
-        for command in commands_list:
-            self.publish_command(command)
+        executed_until = 0
+        for idx, command in enumerate(commands_list):
+            if command.t >= rospy.get_time():
+                if executed_until < 2:
+                    executed_until += 1
+                    self.publish_command(command)
+                    rospy.sleep(0.049)
+                else:
+                    break
+        self.predicted_not_executed_states = not_executed[idx:, :]
 
     def publish_command(self, command):
         if command.mode == AgileCommandMode.SRT:

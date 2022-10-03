@@ -86,7 +86,7 @@ def compute_command_state_based(state, obstacles, rl_policy=None, predicted=None
 
         for i, cmd_control in enumerate(predicted_controls):
             command = AgileCommand(command_mode)
-            command.t = state.t + i * 0.01
+            command.t = state.t + i * 0.05
             command.velocity = cmd_control
             command.yawrate = 0.0
 
@@ -165,7 +165,7 @@ def solve_mpc_state_based(state, obstacles):
     constraints.extend(
         [
             u[0, :] >= -5.0,
-            u[0, :] <= 5.0,  # 50 is possible for velocity
+            u[0, :] <= 5.0,  # ~32 seems to be max. for velocity
             u[1, :] >= -5.0,
             u[1, :] <= 5.0,
             u[2, :] >= -5.0,
@@ -221,10 +221,10 @@ def solve_nmpc(state, obstacles, warm_start_predictions=None):
     """
     obstacles_full_state = get_obstacle_absolute_states(state, obstacles)
 
-    T = 30
-    dt = 0.01
+    T = 15
+    dt = 0.05
     v_max = 3.0
-    a_max = 10.0
+    a_max = 11.3  # a_max = max_thrust (8.50 N) / mass (0.752 kg) = 11.30 m/s^2
     min_distance = 0.1
     x0 = np.zeros((1, 6))
     x0[0, :3] = state.pos
@@ -302,14 +302,14 @@ def solve_nmpc(state, obstacles, warm_start_predictions=None):
         opti.set_initial(x[1:warm_start_predictions.shape[0] + 1, :], warm_start_predictions)
 
     silent_options = {"ipopt.print_level": 0, "print_time": 0, "ipopt.sb": "yes"}  # print_level: 0-12 (5 by default)
-    solver_options = {"ipopt.max_iter": 30, "verbose": False}
+    solver_options = {"ipopt.max_iter": 40, "verbose": False}
     opti.solver("ipopt", solver_options)
     try:
         sol = opti.solve()
     except RuntimeError as e:
         print(e)
-        return opti.debug.value(x[1:21, 3:]), opti.debug.value(x[21:, :])
+        return opti.debug.value(x[1:, 3:6]), opti.debug.value(x[1:, :])
 
     x_optimal = sol.value(x)
 
-    return x_optimal[1:21, 3:], x_optimal[21:, :]
+    return x_optimal[1:, 3:6], x_optimal[1:, :]
