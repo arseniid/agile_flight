@@ -113,7 +113,7 @@ def main():
                 ent_coef=0.0,
                 vf_coef=0.5,
                 max_grad_norm=0.5,
-                batch_size=150000,
+                batch_size=50000,
                 clip_range=0.2,
                 use_sde=False,  # don't use (gSDE), doesn't work
                 env_cfg=cfg,
@@ -121,7 +121,7 @@ def main():
             )
 
         #
-        model.learn(total_timesteps=int(75 * 1e7), log_interval=(10, 50))
+        model.learn(total_timesteps=int(37.5 * 1e7), log_interval=(10, 50))
         model.save(rsg_root + f"/saved/{'Recurrent' if args.recurrent else ''}PPO_{args.trial}/ppo_{args.trial}_model")
     else:
         if args.render:

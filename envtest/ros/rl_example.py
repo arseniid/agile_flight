@@ -47,7 +47,7 @@ def rl_example(state, obstacles, rl_policy=None):
     free_paths_vec = np.array(free_paths_vec)
 
     # Convert state to vector observation
-    goal_vel = np.array([5.0, 0.0, 0.0])
+    goal_vel = np.array([3.0, 0.0, 0.0])
 
     att_aray = np.array([state.att[1], state.att[2], state.att[3], state.att[0]])
     rotation_matrix = R.from_quat(att_aray).as_matrix().reshape((9,), order="F")
