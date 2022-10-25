@@ -47,7 +47,7 @@ def rl_example(state, obstacles, rl_policy=None):
     free_paths_vec = np.array(free_paths_vec)
 
     # Convert state to vector observation
-    goal_vel = np.array([3.0, 0.0, 0.0])
+    goal_vel = np.array([5.0, 0.0, 0.0])
 
     att_aray = np.array([state.att[1], state.att[2], state.att[3], state.att[0]])
     rotation_matrix = R.from_quat(att_aray).as_matrix().reshape((9,), order="F")
@@ -69,8 +69,8 @@ def rl_example(state, obstacles, rl_policy=None):
 
 
 def load_rl_policy(policy_path):
-    policy_dir = policy_path + "/Policy/iter_02000.pth"
-    rms_dir = policy_path + "/RMS/iter_02000.npz"
+    policy_dir = policy_path + "/Policy/iter_02500.pth"
+    rms_dir = policy_path + "/RMS/iter_02500.npz"
     cfg_dir = policy_path + "/config.yaml"
 
     # action

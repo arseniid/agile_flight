@@ -103,7 +103,7 @@ def main():
                     net_arch=[dict(pi=[256, 256], vf=[512, 512])],
                     log_std_init=-0.5,
                 ),
-                learning_rate=5e-5,
+                learning_rate=1e-4,
                 env=train_env,
                 eval_env=eval_env,
                 use_tanh_act=True,
@@ -121,7 +121,7 @@ def main():
             )
 
         #
-        model.learn(total_timesteps=int(37.5 * 1e7), log_interval=(10, 50))
+        model.learn(total_timesteps=int(12.5 * 1e7), log_interval=(10, 50))
         model.save(rsg_root + f"/saved/{'Recurrent' if args.recurrent else ''}PPO_{args.trial}/ppo_{args.trial}_model")
     else:
         if args.render:
