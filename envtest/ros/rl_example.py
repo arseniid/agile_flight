@@ -37,13 +37,22 @@ def rl_example(state, obstacles, rl_policy=None):
         obs_vec.append(obstacle.scale)
     obs_vec = np.array(obs_vec)
 
+    # Convert free paths to vector observation
+    free_paths_vec = []
+    for free_path in obstacles.free_paths:
+        free_paths_vec.append(free_path.ray.x)
+        free_paths_vec.append(free_path.ray.y)
+        free_paths_vec.append(free_path.ray.z)
+        free_paths_vec.append(free_path.distance)
+    free_paths_vec = np.array(free_paths_vec)
+
     # Convert state to vector observation
     goal_vel = np.array([5.0, 0.0, 0.0])
 
     att_aray = np.array([state.att[1], state.att[2], state.att[3], state.att[0]])
     rotation_matrix = R.from_quat(att_aray).as_matrix().reshape((9,), order="F")
     obs = np.concatenate([
-        goal_vel, rotation_matrix, state.vel, obs_vec], axis=0).astype(np.float64)
+        goal_vel, rotation_matrix, state.vel, obs_vec, free_paths_vec], axis=0).astype(np.float64)
 
     obs = obs.reshape(-1, obs.shape[0])
     norm_obs = normalize_obs(obs, obs_mean, obs_var)
@@ -60,8 +69,8 @@ def rl_example(state, obstacles, rl_policy=None):
 
 
 def load_rl_policy(policy_path):
-    policy_dir = policy_path + "/Policy/iter_02000.pth"
-    rms_dir = policy_path + "/RMS/iter_02000.npz"
+    policy_dir = policy_path + "/Policy/iter_02500.pth"
+    rms_dir = policy_path + "/RMS/iter_02500.npz"
     cfg_dir = policy_path + "/config.yaml"
 
     # action

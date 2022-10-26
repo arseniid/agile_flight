@@ -103,16 +103,17 @@ def main():
                     net_arch=[dict(pi=[256, 256], vf=[512, 512])],
                     log_std_init=-0.5,
                 ),
+                learning_rate=1e-4,
                 env=train_env,
                 eval_env=eval_env,
                 use_tanh_act=True,
                 gae_lambda=0.95,
                 gamma=0.99,
-                n_steps=250,
+                n_steps=500,
                 ent_coef=0.0,
                 vf_coef=0.5,
                 max_grad_norm=0.5,
-                batch_size=75000,
+                batch_size=50000,
                 clip_range=0.2,
                 use_sde=False,  # don't use (gSDE), doesn't work
                 env_cfg=cfg,
@@ -120,7 +121,7 @@ def main():
             )
 
         #
-        model.learn(total_timesteps=int(15 * 1e7), log_interval=(10, 50))
+        model.learn(total_timesteps=int(12.5 * 1e7), log_interval=(10, 50))
         model.save(rsg_root + f"/saved/{'Recurrent' if args.recurrent else ''}PPO_{args.trial}/ppo_{args.trial}_model")
     else:
         if args.render:

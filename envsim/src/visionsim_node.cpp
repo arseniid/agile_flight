@@ -186,25 +186,42 @@ void VisionSim::publishObstacles(const QuadState &state) {
   envsim_msgs::ObstacleArray obstacle_msg;
   obstacle_msg.header.stamp = ros::Time(state.t);
   obstacle_msg.t = state.t;
-  obstacle_msg.num = vision_env_ptr_->getNumDetectedObstacles();
+  obstacle_msg.num_obstacles = vision_env_ptr_->getNumDetectedObstacles();
+  obstacle_msg.num_free_paths = flightlib::visionenv::kNFreePaths;
 
   flightlib::Vector<> obstacle_state;
+  flightlib::Vector<> free_paths;
   const int obstacle_obs_dim = flightlib::visionenv::kNObstaclesState;
-  obstacle_state.resize(obstacle_obs_dim * obstacle_msg.num);
-  vision_env_ptr_->getObstacleState(obstacle_state);
+  const int free_path_obs_dim = flightlib::visionenv::kNFreePathsState;
+  obstacle_state.resize(obstacle_obs_dim * obstacle_msg.num_obstacles);
+  free_paths.resize(free_path_obs_dim * obstacle_msg.num_free_paths);
+  vision_env_ptr_->getObstacleState(obstacle_state, free_paths);
 
-  for (int i = 0; i < obstacle_msg.num; i++) {
-    envsim_msgs::Obstacle single_obstacle;
-    single_obstacle.position.x = obstacle_state[obstacle_obs_dim * i];
-    single_obstacle.position.y = obstacle_state[obstacle_obs_dim * i + 1];
-    single_obstacle.position.z = obstacle_state[obstacle_obs_dim * i + 2];
-    single_obstacle.linear_velocity.x = obstacle_state[obstacle_obs_dim * i + 3];
-    single_obstacle.linear_velocity.y = obstacle_state[obstacle_obs_dim * i + 4];
-    single_obstacle.linear_velocity.z = obstacle_state[obstacle_obs_dim * i + 5];
-    single_obstacle.scale = obstacle_state[obstacle_obs_dim * i + 6];
+  for (int i = 0; i < std::max(obstacle_msg.num_obstacles, obstacle_msg.num_free_paths); i++) {
+    if (i < obstacle_msg.num_obstacles) {
+      envsim_msgs::Obstacle single_obstacle;
+      single_obstacle.position.x = obstacle_state[obstacle_obs_dim * i];
+      single_obstacle.position.y = obstacle_state[obstacle_obs_dim * i + 1];
+      single_obstacle.position.z = obstacle_state[obstacle_obs_dim * i + 2];
+      single_obstacle.linear_velocity.x = obstacle_state[obstacle_obs_dim * i + 3];
+      single_obstacle.linear_velocity.y = obstacle_state[obstacle_obs_dim * i + 4];
+      single_obstacle.linear_velocity.z = obstacle_state[obstacle_obs_dim * i + 5];
+      single_obstacle.scale = obstacle_state[obstacle_obs_dim * i + 6];
 
-    obstacle_msg.obstacles.push_back(single_obstacle);
+      obstacle_msg.obstacles.push_back(single_obstacle);
+    }
+
+    if (i < obstacle_msg.num_free_paths) {
+      envsim_msgs::PolarVoxel single_free_path;
+      single_free_path.ray.x = free_paths[free_path_obs_dim * i];
+      single_free_path.ray.y = free_paths[free_path_obs_dim * i + 1];
+      single_free_path.ray.z = free_paths[free_path_obs_dim * i + 2];
+      single_free_path.distance = free_paths[free_path_obs_dim * i + 3];
+
+      obstacle_msg.free_paths.push_back(single_free_path);
+    }
   }
+
   obstacle_pub_.publish(obstacle_msg);
 }
 
