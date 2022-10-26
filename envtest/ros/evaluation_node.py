@@ -89,12 +89,12 @@ class Evaluator:
             self.publishFinish()
 
         if rospy.get_time() - self.time_array[0] > self.timeout:
-            self.abortRun()
+            self.abortRun("timeout")
 
         outside = ((pos[1:] > self.bounding_box[1,:])
                     | (pos[1:] < self.bounding_box[0,:])).any(axis=-1)
         if (outside == True).any():
-            self.abortRun()
+            self.abortRun("out-of-bounds")
 
 
 
@@ -123,8 +123,8 @@ class Evaluator:
             self.hit_obstacle = False
 
 
-    def abortRun(self):
-        print("You did not reach the goal!")
+    def abortRun(self, reason):
+        print("You did not reach the goal! Due to " + reason)
         summary = {}
         summary['Success'] = False
         with open("summary.yaml", "w") as f:
