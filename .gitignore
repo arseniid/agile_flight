@@ -33,3 +33,6 @@ GPATH
 .vscode/*
 
 saved
+
+# trained models
+envtest/ros/rl_policy/PPO_*
