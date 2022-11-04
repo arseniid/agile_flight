@@ -7,7 +7,7 @@ from dodgeros_msgs.msg import QuadState
 from cv_bridge import CvBridge
 from geometry_msgs.msg import TwistStamped
 from sensor_msgs.msg import Image
-from std_msgs.msg import Empty
+from std_msgs.msg import Empty, Int8
 
 from envsim_msgs.msg import ObstacleArray
 from rl_example import load_rl_policy
@@ -28,6 +28,9 @@ class AgilePilotNode:
         self.cv_bridge = CvBridge()
         self.state = None
 
+
+        self.crashes = 0
+
         self.predicted_not_executed_states = None
 
         rospy.on_shutdown(self.cleanup)
@@ -46,6 +49,10 @@ class AgilePilotNode:
                                         queue_size=1, tcp_nodelay=True)
         self.obstacle_sub = rospy.Subscriber("/" + quad_name + "/dodgeros_pilot/groundtruth/obstacles", ObstacleArray,
                                              self.obstacle_callback, queue_size=1, tcp_nodelay=True)
+
+        # Information flow subscribers
+        self.crash_sub = rospy.Subscriber("/" + quad_name + "/times_crashed", Int8, self.crash_callback,
+                                          queue_size=1, tcp_nodelay=True)
 
         # Command publishers
         self.cmd_pub = rospy.Publisher("/" + quad_name + "/dodgeros_pilot/feedthrough_command", Command, queue_size=1)
@@ -142,6 +149,9 @@ class AgilePilotNode:
     def start_callback(self, data):
         print("Start publishing commands!")
         self.publish_commands = True
+
+    def crash_callback(self, data):
+        self.crashes = data.data
 
     def cleanup(self):
         rospy.logwarn("Shutdown called!")
