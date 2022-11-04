@@ -80,9 +80,7 @@ def compute_command_state_based(state, obstacles, rl_policy=None, mpc_dt=None, p
         command = rl_example(state, obstacles, rl_policy)
     else:
         predicted_controls, predicted_all_last = solve_nmpc(
-            state, obstacles,
-            dt=mpc_dt,
-            warm_start_predictions=predicted
+            state, obstacles, dt=mpc_dt, warm_start_predictions=predicted
         )
 
         for i, cmd_control in enumerate(predicted_controls):
@@ -100,7 +98,7 @@ def compute_command_state_based(state, obstacles, rl_policy=None, mpc_dt=None, p
     return commands_list, predicted_all_last if commands_list else command
 
 
-def get_obstacle_absolute_states(state, obstacles, qty=10):
+def get_obstacle_absolute_states(state, obstacles, qty=15):
     """ Parses ROS obstacle message into list of absolute obstacle states """
     obstacles_list = []
     for obstacle in obstacles.obstacles[:qty]:
@@ -186,14 +184,10 @@ def solve_mpc_state_based(state, obstacles):
             obs_rel_pos_T = cp.reshape(abs_pos + abs_vel * t * dt - x[:3, t], (1, n))
 
             P = cp.Variable((n, n))
-            constraints.append(
-                cp.trace(m_identity_matrix @ P) + safe_radius ** 2 <= 0
-            )
+            constraints.append(cp.trace(m_identity_matrix @ P) + safe_radius ** 2 <= 0)
 
             schur = cp.bmat([[P, obs_rel_pos], [obs_rel_pos_T, np.eye(1)]])
-            constraints.append(
-                schur >> 0
-            )
+            constraints.append(schur >> 0)
 
     problem = cp.Problem(cp.Minimize(cost), constraints)
 
@@ -220,9 +214,9 @@ def solve_nmpc(state, obstacles, dt=0.05, warm_start_predictions=None):
 
     If the problem is detected to be (locally) infeasible, the last (debug) control velocity is returned.
     """
-    obstacles_full_state = get_obstacle_absolute_states(state, obstacles)
+    obstacles_full_state = get_obstacle_absolute_states(state, obstacles, qty=15)
 
-    T = 15
+    T = 12
     v_max = 3.0
     a_max = 11.3  # a_max = max_thrust (8.50 N) / mass (0.752 kg) = 11.30 m/s^2
     min_distance = 0.1
@@ -232,8 +226,7 @@ def solve_nmpc(state, obstacles, dt=0.05, warm_start_predictions=None):
 
     xo = np.array([state_o[0] for state_o in obstacles_full_state])
     vo = np.array([state_o[1] for state_o in obstacles_full_state])
-    xg = np.array([60.5, 0, 0])
-    xg_T = np.resize(xg, (T, 3))
+    xg = np.array([65.0, 0, 0])  # larger x to not stop in front of goal
 
     opti = casadi.Opti()
 
@@ -243,7 +236,7 @@ def solve_nmpc(state, obstacles, dt=0.05, warm_start_predictions=None):
     #   x[t, 6:9] - 3-dimensional inner control (i.e., acceleration)
     x = opti.variable(T, 9)
 
-    opti.minimize(casadi.norm_2((x[:, 0] - xg_T[:, 0]) ** 2))
+    opti.minimize(xg[0] - x[T - 1, 0])
 
     # initial state
     opti.subject_to(x[0, :6] == x0)
@@ -284,12 +277,32 @@ def solve_nmpc(state, obstacles, dt=0.05, warm_start_predictions=None):
     # obstacle avoidance
     for i in range(xo.shape[0]):
         for k in range(T):
-            opti.subject_to(
-                casadi.sqrt(
-                    casadi.sumsqr(x[k, :3] - xo[i, None] - k * dt * vo[i, None])
+            constrain = False
+            if i < 5 and k < 10:
+                constrain = True
+            elif (
+                np.linalg.norm(
+                    x0[0, :3] + k * dt * x0[0, 3:] - xo[i, None] - k * dt * vo[i, None]
                 )
-                > obstacles_full_state[i][2] + min_distance
-            )
+                <= obstacles_full_state[i][2] + min_distance
+            ):
+                constrain = True
+            elif (
+                warm_start_predictions is not None
+                and k < warm_start_predictions.shape[0]
+                and np.linalg.norm(
+                    warm_start_predictions[k, :3] - xo[i, None] - k * dt * vo[i, None]
+                )
+                <= obstacles_full_state[i][2] + min_distance
+            ):
+                constrain = True
+            if constrain:
+                opti.subject_to(
+                    casadi.sqrt(
+                        casadi.sumsqr(x[k, :3] - xo[i, None] - k * dt * vo[i, None])
+                    )
+                    > obstacles_full_state[i][2] + min_distance
+                )
 
     # dummy warm start
     opti.set_initial(x[:, 0], np.linspace(x0[0, 0], x0[0, 0] + v_max * dt * T, T))
@@ -298,10 +311,23 @@ def solve_nmpc(state, obstacles, dt=0.05, warm_start_predictions=None):
     opti.set_initial(x[1:, 3], v_max)
     opti.set_initial(x[1:, 4], 0.0)
     opti.set_initial(x[1:, 5], 0.0)
+    if abs(x0[0, 3] - v_max) <= v_max / 2:
+        opti.set_initial(x[1:, 6], 0.0)
+    elif x0[0, 3] < v_max:
+        opti.set_initial(x[1:, 6], a_max)
+    else:
+        opti.set_initial(x[1:, 6], -a_max)
+    opti.set_initial(x[1:, 7], 0.0)
+    opti.set_initial(x[1:, 8], 0.0)
     if warm_start_predictions is not None:
         opti.set_initial(x[1:warm_start_predictions.shape[0] + 1, :], warm_start_predictions)
 
-    silent_options = {"ipopt.print_level": 0, "print_time": 0, "ipopt.sb": "yes"}  # print_level: 0-12 (5 by default)
+    silent_options = {
+        "ipopt.max_iter": 40,
+        "ipopt.print_level": 0,
+        "print_time": 0,
+        "ipopt.sb": "yes",
+    }  # print_level: 0-12 (5 by default)
     solver_options = {"ipopt.max_iter": 40, "verbose": False}
     opti.solver("ipopt", solver_options)
     try:

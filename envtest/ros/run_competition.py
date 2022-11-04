@@ -74,7 +74,7 @@ class AgilePilotNode:
             command = compute_command_state_based(state=self.state, obstacles=obs_data, rl_policy=self.rl_policy)
             self.publish_command(command)
         else:
-            mpc_dt = 0.05
+            mpc_dt = 0.08
             commands_list, not_executed = compute_command_state_based(
                 state=self.state,
                 obstacles=obs_data,
@@ -88,15 +88,17 @@ class AgilePilotNode:
     def publish_batch(self, commands_list, dt=0.01):
         """ Wrapper around `publish_command` function to publish a batch of commands """
         executed_until = 0
+        to_execute = 1
         for idx, command in enumerate(commands_list):
             if command.t >= rospy.get_time():
-                if executed_until < 2:
+                if executed_until < to_execute:
                     executed_until += 1
                     self.publish_command(command)
-                    rospy.sleep(dt - 0.001)
+                    if executed_until != to_execute:
+                        rospy.sleep(dt - 0.001)
                 else:
                     break
-        return idx
+        return to_execute
 
     def publish_command(self, command):
         if command.mode == AgileCommandMode.SRT:
