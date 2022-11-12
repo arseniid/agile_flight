@@ -216,7 +216,7 @@ def solve_nmpc(state, obstacles, dt=0.05, warm_start_predictions=None):
     """
     obstacles_full_state = get_obstacle_absolute_states(state, obstacles, qty=15)
 
-    T = 12
+    T = 25
     v_max = 3.0
     a_max = 11.3  # a_max = max_thrust (8.50 N) / mass (0.752 kg) = 11.30 m/s^2
     min_distance = 0.1
@@ -329,7 +329,7 @@ def solve_nmpc(state, obstacles, dt=0.05, warm_start_predictions=None):
         "ipopt.sb": "yes",
     }  # print_level: 0-12 (5 by default)
     solver_options = {"ipopt.max_iter": 40, "verbose": False}
-    opti.solver("ipopt", solver_options)
+    opti.solver("ipopt", silent_options)
     try:
         sol = opti.solve()
     except RuntimeError as e:

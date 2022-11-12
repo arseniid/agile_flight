@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import argparse
 
+import numpy as np
 import rospy
 from dodgeros_msgs.msg import Command
 from dodgeros_msgs.msg import QuadState
@@ -13,6 +14,8 @@ from envsim_msgs.msg import ObstacleArray
 from rl_example import load_rl_policy
 from user_code import compute_command_vision_based, compute_command_state_based
 from utils import AgileCommandMode, AgileQuadState
+
+from learn_mpc.utils import DataSaver  # flightmare/flightrl package
 
 
 class AgilePilotNode:
@@ -30,6 +33,15 @@ class AgilePilotNode:
         self.state = None
 
         self.crashes = 0
+
+        self.create_dataset = True
+        if self.create_dataset:
+            self.data_saver = DataSaver(folder="nmpc")
+            self.sequences_stored = 0
+            # 200 seems to be a good upper bound for the amount of sequences in the current setting
+            # FIXME: Use `np.zeros` instead of `np.empty`! Since `empty()` initializes values to random numbers.
+            self.data_sequences_in = np.empty(shape=(200, 111))
+            self.data_sequences_out = np.empty(shape=(200, 72))
 
         self.predicted_not_executed_states = None
 
@@ -71,16 +83,33 @@ class AgilePilotNode:
 
     def state_callback(self, state_data):
         self.state = AgileQuadState(state_data)
+        if self.create_dataset and self.state.pos[0] >= 60:
+            log_fn = rospy.logwarn_once if self.crashes else rospy.loginfo_once
+            log_fn(f"Created {self.sequences_stored} sequences, trying to save them... Times crashed: {self.crashes}")
+            self.data_saver.save_data(
+                input_data=self.data_sequences_in,
+                output_data=self.data_sequences_out,
+                environment=self.environment,
+                size=self.sequences_stored,
+                crashes=self.crashes,
+            )
 
     def obstacle_callback(self, obs_data):
         if self.vision_based:
             return
-        if self.state is None:
+        if self.state is None or self.state.pos[0] > 60:
             return
         if self.rl_policy:
             command = compute_command_state_based(state=self.state, obstacles=obs_data, rl_policy=self.rl_policy)
             self.publish_command(command)
         else:
+            if self.create_dataset:
+                obstacles_arr = self._transform_obstacles(state=self.state, obstacles=obs_data)
+                try:
+                    self.data_sequences_in[self.sequences_stored] = np.concatenate((obstacles_arr, self.state.pos, self.state.vel), axis=None)
+                except IndexError as e:  # usually, in case of no movement whysoever goes beyond of 200 (but no meaningful data)
+                    rospy.logerr(e)
+                    rospy.signal_shutdown("Shut down node due to no movement")
             mpc_dt = 0.08
             commands_list, not_executed = compute_command_state_based(
                 state=self.state,
@@ -89,14 +118,39 @@ class AgilePilotNode:
                 mpc_dt=mpc_dt,
                 predicted=self.predicted_not_executed_states,
             )
+            if self.create_dataset:
+                try:
+                    self.data_sequences_out[self.sequences_stored] = not_executed[:, 3:6].flatten()
+                except IndexError as e:  # usually, in case of no movement whysoever goes beyond of 200 (but no meaningful data)
+                    rospy.logerr(e)
+                    rospy.signal_shutdown("Shut down node due to no movement")
+                self.sequences_stored += 1
             idx_first_not_executed = self.publish_batch(commands_list, dt=mpc_dt)
             self.predicted_not_executed_states = not_executed[idx_first_not_executed:, :]
+
+    def _transform_obstacles(self, state, obstacles):
+        """ Transforms ROS obstacle message into NumPy array of absolute obstacle states """
+        obstacles_arr = np.empty(shape=(len(obstacles.obstacles), 7))
+        for idx, obstacle in enumerate(obstacles.obstacles):
+            if obstacle.scale != 0:
+                obs_rel_pos = np.array(
+                    [obstacle.position.x, obstacle.position.y, obstacle.position.z]
+                )
+                obs_vel = np.array(
+                    [
+                        obstacle.linear_velocity.x,
+                        obstacle.linear_velocity.y,
+                        obstacle.linear_velocity.z,
+                    ]
+                )
+                obstacles_arr[idx] = np.concatenate((obs_rel_pos + state.pos, obs_vel, obstacle.scale), axis=None)
+        return obstacles_arr
 
     def publish_batch(self, commands_list, dt=0.01):
         """ Wrapper around `publish_command` function to publish a batch of commands """
         executed_until = 0
-        to_execute = 1
-        for idx, command in enumerate(commands_list):
+        to_execute = 2
+        for command in commands_list:
             if command.t >= rospy.get_time():
                 if executed_until < to_execute:
                     executed_until += 1
