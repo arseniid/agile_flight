@@ -93,6 +93,7 @@ class AgilePilotNode:
                 size=self.sequences_stored,
                 crashes=self.crashes,
             )
+            self.create_dataset = False  # data should be already stored by now
 
     def obstacle_callback(self, obs_data):
         if self.vision_based:
