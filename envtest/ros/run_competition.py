@@ -16,18 +16,18 @@ from utils import AgileCommandMode, AgileQuadState
 
 
 class AgilePilotNode:
-    def __init__(self, vision_based=False, ppo_path=None):
+    def __init__(self, vision_based=False, ppo_path=None, environment=None):
         print("Initializing agile_pilot_node...")
         rospy.init_node('agile_pilot_node', anonymous=False)
 
         self.vision_based = vision_based
         self.rl_policy = None
+        self.environment = environment if environment else "undefined"
         if ppo_path is not None:
             self.rl_policy = load_rl_policy(ppo_path)
         self.publish_commands = False
         self.cv_bridge = CvBridge()
         self.state = None
-
 
         self.crashes = 0
 
@@ -164,7 +164,8 @@ if __name__ == '__main__':
     parser.add_argument('--vision_based', help='Fly vision-based', required=False, dest='vision_based',
                         action='store_true')
     parser.add_argument('--ppo_path', help='PPO neural network policy', required=False,  default=None)
+    parser.add_argument('--environment', help='Currently loaded environment', required=False,  default=None)
 
     args = parser.parse_args()
-    agile_pilot_node = AgilePilotNode(vision_based=args.vision_based, ppo_path=args.ppo_path)
+    agile_pilot_node = AgilePilotNode(vision_based=args.vision_based, ppo_path=args.ppo_path, environment=args.environment)
     rospy.spin()

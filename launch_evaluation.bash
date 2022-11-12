@@ -9,19 +9,28 @@ else
 fi
 
 # Pass PPO trial number as argument
+# In case it is not an integer, assume the MPC solution should be evaluated
 if [ $2 ]
 then
-  PPO_TRIAL="$2"
+  # Check if:
+  ## 1. length of string argument is non-zero;
+  ## 2. numeric value evaluation operation (i.e., `eq`) results in an error (only in case of non-numbers!)
+  if [ -n $2 ] && [ $2 -eq $2 ] 2>/dev/null # 2>_: redirects stderr to _; /dev/null is the null device: takes any input and throws it away
+  then
+    PPO_TRIAL="$2"
+  else
+    PPO_TRIAL=""
+  fi
 else
   PPO_TRIAL=""
 fi
 
 # Pass difficulty level and currently tested environment as argument
-# (only used during final evaluation)
-if [ $3 ] && [ $4 ]
+# (only used for final evaluation)
+# Format: <difficulty-level>_<environment-number>
+if [ $3 ]
 then
-  DIFFICULTY_LEVEL="$3"
-  TESTED_ENV="$4"
+  LOADED_ENV="$3"
 fi
 
 # Set Flightmare Path if it is not set
@@ -33,7 +42,7 @@ fi
 # Launch the simulator, unless it is already running
 if [ -z $(pgrep visionsim_node) ]
 then
-  roslaunch envsim visionenv_sim.launch render:=True rviz:=False &
+  roslaunch envsim visionenv_sim.launch render:=False rviz:=False gui:=False &
   ROS_PID="$!"
   echo $ROS_PID
   sleep 10
@@ -62,7 +71,7 @@ do
 
   if [[ -z ${PPO_TRIAL} ]]
   then
-    python3 run_competition.py &
+    python3 run_competition.py --environment ${LOADED_ENV} &
   else
     DIR="rl_policy/PPO_${PPO_TRIAL}/"
     if [ -d "$DIR" ]
@@ -91,10 +100,10 @@ do
   kill -SIGINT "$COMP_PID"
 done
 
-if [ $3 ] && [ $4 ]
+if ! [[ -z ${PPO_TRIAL} ]] && [ $3 ]
 then
   EVALUATION_SUMMARY_FILE="$HOME/Documents/PPO-baseline/Evaluation/PPO_${PPO_TRIAL}.yaml"
-  (echo -e "\n\n---[${DIFFICULTY_LEVEL}/environment_${TESTED_ENV}]---" ; cat "$SUMMARY_FILE" ) >> "$EVALUATION_SUMMARY_FILE"
+  (echo -e "\n\n---[${LOADED_ENV}]---" ; cat "$SUMMARY_FILE" ) >> "$EVALUATION_SUMMARY_FILE"
 fi
 
 if [ $ROS_PID ]
