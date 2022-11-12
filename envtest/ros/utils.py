@@ -40,6 +40,13 @@ class AgileCommand:
         self.velocity = [0.0, 0.0, 0.0]
         self.yawrate = 0.0
 
+    def __repr__(self):
+        repr_str = "AgileCommand:\n" \
+                   + " t:     [%.2f]\n" % self.t \
+                   + " vel:   [%.2f, %.2f, %.2f]\n" % (self.velocity[0], self.velocity[1], self.velocity[2]) \
+                   + " yawrate: [%.2f]" % self.yawrate
+        return repr_str
+
 
 class AgileQuadState:
     def __init__(self, quad_state):
