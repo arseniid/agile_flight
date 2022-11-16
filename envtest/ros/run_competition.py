@@ -39,9 +39,8 @@ class AgilePilotNode:
             self.data_saver = DataSaver(folder="nmpc")
             self.sequences_stored = 0
             # 200 seems to be a good upper bound for the amount of sequences in the current setting
-            # FIXME: Use `np.zeros` instead of `np.empty`! Since `empty()` initializes values to random numbers.
-            self.data_sequences_in = np.empty(shape=(200, 111))
-            self.data_sequences_out = np.empty(shape=(200, 72))
+            self.data_sequences_in = np.zeros(shape=(200, 111))
+            self.data_sequences_out = np.zeros(shape=(200, 72))
 
         self.predicted_not_executed_states = None
 
@@ -131,9 +130,9 @@ class AgilePilotNode:
 
     def _transform_obstacles(self, state, obstacles):
         """ Transforms ROS obstacle message into NumPy array of absolute obstacle states """
-        obstacles_arr = np.empty(shape=(len(obstacles.obstacles), 7))
+        obstacles_arr = np.zeros(shape=(len(obstacles.obstacles), 7))
         for idx, obstacle in enumerate(obstacles.obstacles):
-            if obstacle.scale != 0:
+            if obstacle.scale != 0:  # FIXME: be consistent -> zero-obstacles should go at the end
                 obs_rel_pos = np.array(
                     [obstacle.position.x, obstacle.position.y, obstacle.position.z]
                 )
