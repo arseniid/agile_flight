@@ -8,8 +8,9 @@ else
   N=10
 fi
 
-# Pass PPO trial number as argument
-# In case it is not an integer, assume the MPC solution should be evaluated
+MODEL_EXT=".pth"
+# Pass PPO trial number OR path to the trained MPC model as an argument
+# In case it is not an integer, assume either classical or learned MPC solution should be evaluated
 if [ $2 ]
 then
   # Check if:
@@ -18,11 +19,20 @@ then
   if [ -n $2 ] && [ $2 -eq $2 ] 2>/dev/null # 2>_: redirects stderr to _; /dev/null is the null device: takes any input and throws it away
   then
     PPO_TRIAL="$2"
+    MPC_PATH=""
   else
     PPO_TRIAL=""
+    # Check if argument contains a .pth file extension, and the file itself exists:
+    if grep -q ${MODEL_EXT} <<< $2 && [[ -f "./envtest/ros/$2" ]]
+    then
+      MPC_PATH="$2"
+    else
+      MPC_PATH=""
+    fi
   fi
 else
   PPO_TRIAL=""
+  MPC_PATH=""
 fi
 
 # Pass difficulty level and currently tested environment as argument
@@ -31,6 +41,8 @@ fi
 if [ $3 ]
 then
   LOADED_ENV="$3"
+else
+  LOADED_ENV=""
 fi
 
 # Set Flightmare Path if it is not set
@@ -71,7 +83,17 @@ do
 
   if [[ -z ${PPO_TRIAL} ]]
   then
-    python3 run_competition.py --environment ${LOADED_ENV} &
+    if [[ -z ${MPC_PATH} ]]
+    then
+      if [[ -z ${LOADED_ENV} ]]
+      then
+        python3 run_competition.py &
+      else
+        python3 run_competition.py --environment ${LOADED_ENV} &
+      fi
+    else
+      python3 run_competition.py --mpc_path ${MPC_PATH} &
+    fi
   else
     DIR="rl_policy/PPO_${PPO_TRIAL}/"
     if [ -d "$DIR" ]
@@ -97,10 +119,10 @@ do
   cat "$SUMMARY_FILE" "./envtest/ros/summary.yaml" > "tmp.yaml"
   mv "tmp.yaml" "$SUMMARY_FILE"
 
-  kill -SIGINT "$COMP_PID"
+  kill -SIGTERM "$COMP_PID"
 done
 
-if ! [[ -z ${PPO_TRIAL} ]] && [ $3 ]
+if ! [[ -z ${PPO_TRIAL} ]] && ! [[ -z ${LOADED_ENV} ]]
 then
   EVALUATION_SUMMARY_FILE="$HOME/Documents/PPO-baseline/Evaluation/PPO_${PPO_TRIAL}.yaml"
   (echo -e "\n\n---[${LOADED_ENV}]---" ; cat "$SUMMARY_FILE" ) >> "$EVALUATION_SUMMARY_FILE"

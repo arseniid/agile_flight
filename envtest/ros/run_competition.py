@@ -19,7 +19,7 @@ from learn_mpc.utils import DataSaver  # flightmare/flightrl package
 
 
 class AgilePilotNode:
-    def __init__(self, vision_based=False, ppo_path=None, environment=None):
+    def __init__(self, vision_based=False, ppo_path=None, mpc_path=None, environment=None):
         print("Initializing agile_pilot_node...")
         rospy.init_node('agile_pilot_node', anonymous=False)
 
@@ -34,7 +34,7 @@ class AgilePilotNode:
 
         self.crashes = 0
 
-        self.create_dataset = True
+        self.create_dataset = True and ppo_path is None and mpc_path is None and environment
         if self.create_dataset:
             self.data_saver = DataSaver(folder="nmpc")
             self.sequences_stored = 0
@@ -218,9 +218,10 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Agile Pilot.')
     parser.add_argument('--vision_based', help='Fly vision-based', required=False, dest='vision_based',
                         action='store_true')
-    parser.add_argument('--ppo_path', help='PPO neural network policy', required=False,  default=None)
-    parser.add_argument('--environment', help='Currently loaded environment', required=False,  default=None)
+    parser.add_argument('--ppo_path', help='PPO neural network policy', required=False, default=None)
+    parser.add_argument('--mpc_path', help='MPC learned neural network', required=False, default=None)
+    parser.add_argument('--environment', help='Currently loaded environment', required=False, default=None)
 
     args = parser.parse_args()
-    agile_pilot_node = AgilePilotNode(vision_based=args.vision_based, ppo_path=args.ppo_path, environment=args.environment)
+    agile_pilot_node = AgilePilotNode(vision_based=args.vision_based, ppo_path=args.ppo_path, mpc_path=args.mpc_path, environment=args.environment)
     rospy.spin()
