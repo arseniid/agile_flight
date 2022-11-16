@@ -95,7 +95,7 @@ def compute_command_state_based(state, obstacles, rl_policy=None, mpc_dt=None, p
     # !!! End of user code !!!
     ################################################
 
-    return commands_list, predicted_all_last if commands_list else command
+    return (commands_list, predicted_all_last) if commands_list else command
 
 
 def get_obstacle_absolute_states(state, obstacles, qty=15):
