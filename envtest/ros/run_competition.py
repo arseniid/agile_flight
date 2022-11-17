@@ -11,6 +11,7 @@ from sensor_msgs.msg import Image
 from std_msgs.msg import Empty, Int8
 
 from envsim_msgs.msg import ObstacleArray
+from mpc_example import load_learned_mpc
 from rl_example import load_rl_policy
 from user_code import compute_command_vision_based, compute_command_state_based
 from utils import AgileCommandMode, AgileQuadState
@@ -25,9 +26,12 @@ class AgilePilotNode:
 
         self.vision_based = vision_based
         self.rl_policy = None
+        self.learned_mpc = None
         self.environment = environment if environment else "undefined"
         if ppo_path is not None:
             self.rl_policy = load_rl_policy(ppo_path)
+        if mpc_path is not None:
+            self.learned_mpc = load_learned_mpc(mpc_path)
         self.publish_commands = False
         self.cv_bridge = CvBridge()
         self.state = None
@@ -99,8 +103,8 @@ class AgilePilotNode:
             return
         if self.state is None or self.state.pos[0] > 60:
             return
-        if self.rl_policy:
-            command = compute_command_state_based(state=self.state, obstacles=obs_data, rl_policy=self.rl_policy)
+        if self.rl_policy or self.learned_mpc:
+            command = compute_command_state_based(state=self.state, obstacles=obs_data, rl_policy=self.rl_policy, learned_mpc=self.learned_mpc)
             self.publish_command(command)
         else:
             if self.create_dataset:

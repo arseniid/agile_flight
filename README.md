@@ -190,7 +190,7 @@ How to (for all currently available solutions):
 
    where N: int (number of rollouts); MPC_MODEL_PATH: str (relative path to the trained (N)MPC model -- similar to 'learned_mpc/\<model_name\>.pth').
 
-   > **_NOTE:_** Adapt MPC class for [loading](https://github.com/arseniid/agile_flight/blob/main/envtest/ros/rl_example.py#L144) as well as [reading predictions](https://github.com/arseniid/agile_flight/blob/main/envtest/ros/rl_example.py#L138) according to the currently loaded model (see [hyperdata.txt](/envtest/ros/learned_mpc/hyperdata.txt) for the correct class & hyperparameters)
+   > **_NOTE:_** Adapt MPC class for [loading](https://github.com/arseniid/agile_flight/blob/main/envtest/ros/mpc_example.py#L43) as well as [reading predictions](https://github.com/arseniid/agile_flight/blob/main/envtest/ros/mpc_example.py#L37) according to the currently loaded model (see [hyperdata.txt](/envtest/ros/learned_mpc/hyperdata.txt) for the correct class & hyperparameters)
 
 
 ### launch_evaluation_all.py ###

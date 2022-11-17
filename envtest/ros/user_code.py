@@ -6,6 +6,7 @@ import numpy as np
 
 from pickle import NONE
 from utils import AgileCommandMode, AgileCommand
+from mpc_example import mpc_example
 from rl_example import rl_example
 
 
@@ -45,7 +46,7 @@ def compute_command_vision_based(state, img):
     return command
 
 
-def compute_command_state_based(state, obstacles, rl_policy=None, mpc_dt=None, predicted=None):
+def compute_command_state_based(state, obstacles, rl_policy=None, learned_mpc=None, mpc_dt=None, predicted=None):
     ################################################
     # !!! Begin of user code !!!
     # TODO: populate the command message
@@ -78,6 +79,8 @@ def compute_command_state_based(state, obstacles, rl_policy=None, mpc_dt=None, p
     commands_list = []
     if rl_policy is not None:
         command = rl_example(state, obstacles, rl_policy)
+    elif learned_mpc is not None:
+        command = mpc_example(state, obstacles, learned_mpc)
     else:
         predicted_controls, predicted_all_last = solve_nmpc(
             state, obstacles, dt=mpc_dt, warm_start_predictions=predicted
