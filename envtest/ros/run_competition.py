@@ -3,20 +3,19 @@ import argparse
 
 import numpy as np
 import rospy
-from dodgeros_msgs.msg import Command
-from dodgeros_msgs.msg import QuadState
 from cv_bridge import CvBridge
+from dodgeros_msgs.msg import Command, QuadState
 from geometry_msgs.msg import TwistStamped
-from sensor_msgs.msg import Image
-from std_msgs.msg import Empty, Int8
-
-from envsim_msgs.msg import ObstacleArray
+from learn_mpc.utils import DataSaver  # flightmare/flightrl package
 from mpc_example import load_learned_mpc
 from rl_example import load_rl_policy
-from user_code import compute_command_vision_based, compute_command_state_based
-from utils import AgileCommandMode, AgileQuadState
+from sensor_msgs.msg import Image
+from std_msgs.msg import Empty, Int8
+from user_code import compute_command_state_based, compute_command_vision_based
+from utils import (AgileCommandMode, AgileQuadState, get_goal_direction,
+                   transform_obstacles)
 
-from learn_mpc.utils import DataSaver  # flightmare/flightrl package
+from envsim_msgs.msg import ObstacleArray
 
 
 class AgilePilotNode:
@@ -40,11 +39,11 @@ class AgilePilotNode:
 
         self.create_dataset = True and ppo_path is None and mpc_path is None and environment
         if self.create_dataset:
-            self.data_saver = DataSaver(folder="nmpc")
+            self.data_saver = DataSaver(folder="nmpc_short")
             self.sequences_stored = 0
             # 200 seems to be a good upper bound for the amount of sequences in the current setting
-            self.data_sequences_in = np.zeros(shape=(200, 111))
-            self.data_sequences_out = np.zeros(shape=(200, 72))
+            self.data_sequences_in = np.zeros(shape=(200, 108))
+            self.data_sequences_out = np.zeros(shape=(200, 99))
 
         self.predicted_not_executed_states = None
 
@@ -108,9 +107,10 @@ class AgilePilotNode:
             self.publish_command(command)
         else:
             if self.create_dataset:
-                obstacles_arr = self._transform_obstacles(state=self.state, obstacles=obs_data)
+                obstacles_arr = transform_obstacles(state=self.state, obstacles=obs_data, absolute=False, as_np=True)
+                goal_direction = get_goal_direction(state=self.state)
                 try:
-                    self.data_sequences_in[self.sequences_stored] = np.concatenate((obstacles_arr, self.state.pos, self.state.vel), axis=None)
+                    self.data_sequences_in[self.sequences_stored] = np.concatenate((obstacles_arr, goal_direction), axis=None)
                 except IndexError as e:  # usually, in case of no movement whysoever goes beyond of 200 (but no meaningful data)
                     rospy.logerr(e)
                     rospy.signal_shutdown("Shut down node due to no movement")
@@ -124,31 +124,13 @@ class AgilePilotNode:
             )
             if self.create_dataset:
                 try:
-                    self.data_sequences_out[self.sequences_stored] = not_executed[:, 3:6].flatten()
+                    self.data_sequences_out[self.sequences_stored] = not_executed.flatten()
                 except IndexError as e:  # usually, in case of no movement whysoever goes beyond of 200 (but no meaningful data)
                     rospy.logerr(e)
                     rospy.signal_shutdown("Shut down node due to no movement")
                 self.sequences_stored += 1
             idx_first_not_executed = self.publish_batch(commands_list, dt=mpc_dt)
             self.predicted_not_executed_states = not_executed[idx_first_not_executed:, :]
-
-    def _transform_obstacles(self, state, obstacles):
-        """ Transforms ROS obstacle message into NumPy array of absolute obstacle states """
-        obstacles_arr = np.zeros(shape=(len(obstacles.obstacles), 7))
-        for idx, obstacle in enumerate(obstacles.obstacles):
-            if obstacle.scale != 0:  # FIXME: be consistent -> zero-obstacles should go at the end
-                obs_rel_pos = np.array(
-                    [obstacle.position.x, obstacle.position.y, obstacle.position.z]
-                )
-                obs_vel = np.array(
-                    [
-                        obstacle.linear_velocity.x,
-                        obstacle.linear_velocity.y,
-                        obstacle.linear_velocity.z,
-                    ]
-                )
-                obstacles_arr[idx] = np.concatenate((obs_rel_pos + state.pos, obs_vel, obstacle.scale), axis=None)
-        return obstacles_arr
 
     def publish_batch(self, commands_list, dt=0.01):
         """ Wrapper around `publish_command` function to publish a batch of commands """

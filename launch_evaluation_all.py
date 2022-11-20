@@ -6,9 +6,9 @@ import time
 
 def evaluate_all(difficulty="hard", start_from=0, end_with=100, rollouts=5):
     config_path = "flightmare/flightpy/configs/vision/config.yaml"
-    summary_path = "flightmare/flightpy/datasets/nmpc/summary.txt"
+    summary_path = "flightmare/flightpy/datasets/nmpc_short/summary.txt"
 
-    for i in range(start_from, end_with + 1):  # 100 is not evaluated
+    for i in range(start_from, end_with + 1):
         with open(config_path, "r") as config_file:
             config_lines = config_file.read().splitlines()
             difficulty_line = config_lines[1]
@@ -45,7 +45,7 @@ def evaluate_all(difficulty="hard", start_from=0, end_with=100, rollouts=5):
 
 
 def evaluate_smart(upper_bound=1):
-    metadata_path = "flightmare/flightpy/datasets/nmpc/metadata.txt"
+    metadata_path = "flightmare/flightpy/datasets/nmpc_short/metadata.txt"
 
     re_evaluation_needed = []
     with open(metadata_path, "r") as metadata_file:
@@ -64,7 +64,7 @@ def evaluate_smart(upper_bound=1):
             difficulty=difficulty,
             start_from=int(start),
             end_with=int(start),
-            rollouts=8,
+            rollouts=10,
         )
 
 

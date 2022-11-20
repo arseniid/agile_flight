@@ -5,7 +5,7 @@ import cvxpy as cp
 import numpy as np
 
 from pickle import NONE
-from utils import AgileCommandMode, AgileCommand
+from utils import AgileCommandMode, AgileCommand, transform_obstacles
 from mpc_example import mpc_example
 from rl_example import rl_example
 
@@ -101,25 +101,6 @@ def compute_command_state_based(state, obstacles, rl_policy=None, learned_mpc=No
     return (commands_list, predicted_all_last) if commands_list else command
 
 
-def get_obstacle_absolute_states(state, obstacles, qty=15):
-    """ Parses ROS obstacle message into list of absolute obstacle states """
-    obstacles_list = []
-    for obstacle in obstacles.obstacles[:qty]:
-        if obstacle.scale != 0:
-            obs_rel_pos = np.array(
-                [obstacle.position.x, obstacle.position.y, obstacle.position.z]
-            )
-            obs_vel = np.array(
-                [
-                    obstacle.linear_velocity.x,
-                    obstacle.linear_velocity.y,
-                    obstacle.linear_velocity.z,
-                ]
-            )
-            obstacles_list.append((obs_rel_pos + state.pos, obs_vel, obstacle.scale))
-    return obstacles_list
-
-
 def solve_mpc_state_based(state, obstacles):
     """
     Solves (convex) linear MPC using CVXPY library.
@@ -128,7 +109,7 @@ def solve_mpc_state_based(state, obstacles):
 
     If the problem is detected to be infeasible, the default control velocity [1.0, 0.0, 0.0] is returned.
     """
-    obstacles_full_state = get_obstacle_absolute_states(state, obstacles, qty=5)
+    obstacles_full_state = transform_obstacles(state, obstacles, absolute=True, as_np=False, qty=5)
 
     n = 3
     m = 3
@@ -217,9 +198,9 @@ def solve_nmpc(state, obstacles, dt=0.05, warm_start_predictions=None):
 
     If the problem is detected to be (locally) infeasible, the last (debug) control velocity is returned.
     """
-    obstacles_full_state = get_obstacle_absolute_states(state, obstacles, qty=15)
+    obstacles_full_state = transform_obstacles(state, obstacles, absolute=True, as_np=False, qty=15)
 
-    T = 25
+    T = 12
     v_max = 3.0
     a_max = 11.3  # a_max = max_thrust (8.50 N) / mass (0.752 kg) = 11.30 m/s^2
     min_distance = 0.1
