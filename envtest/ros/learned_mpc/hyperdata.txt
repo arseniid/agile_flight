@@ -1,0 +1,126 @@
+=== nmpc_short_controls_first_model.pth ===
+Model and hyperparameters are:
+    - filename: nmpc_short_controls_first_model.pth
+    - model_name: <class 'mpc_nn.LearnedMPCShortControlFirstSmall'>
+    - model_network: Sequential(
+  (0): Sequential(
+    (0): Linear(in_features=108, out_features=192, bias=True)
+    (1): Identity()
+    (2): Tanh()
+  )
+  (1): Sequential(
+    (0): Linear(in_features=192, out_features=48, bias=True)
+    (1): Identity()
+    (2): Tanh()
+  )
+  (2): Linear(in_features=48, out_features=3, bias=True)
+)
+    - batch_size: 64
+    - learning_rate: 0.0079
+    - lr_decay: 0.0384
+    - momentum: 0.11
+    - optimizer: <class 'torch.optim.sgd.SGD'>
+    - loss_fn: SmoothL1Loss()
+    - logger: <torch.utils.tensorboard.writer.SummaryWriter object at 0x7f310da897c0>
+    - final_validation_loss: 0.12633490703015957
+
+
+=== nmpc_short_controls_first_model_deep.pth ===
+Model and hyperparameters are:
+    - filename: nmpc_short_controls_first_model_deep.pth
+    - model_name: <class 'mpc_nn.LearnedMPCShortControlFirstDeep'>
+    - model_network: Sequential(
+  (0): Sequential(
+    (0): Linear(in_features=108, out_features=192, bias=True)
+    (1): Identity()
+    (2): ELU(alpha=1.0)
+  )
+  (1): Sequential(
+    (0): Linear(in_features=192, out_features=128, bias=True)
+    (1): Identity()
+    (2): ELU(alpha=1.0)
+  )
+  (2): Sequential(
+    (0): Linear(in_features=128, out_features=64, bias=True)
+    (1): Identity()
+    (2): ELU(alpha=1.0)
+  )
+  (3): Sequential(
+    (0): Linear(in_features=64, out_features=32, bias=True)
+    (1): Identity()
+    (2): ELU(alpha=1.0)
+  )
+  (4): Linear(in_features=32, out_features=3, bias=True)
+)
+    - batch_size: 64
+    - learning_rate: 0.0088
+    - lr_decay: 0.042
+    - momentum: 0.42
+    - optimizer: <class 'torch.optim.adam.Adam'>
+    - loss_fn: SmoothL1Loss()
+    - logger: <torch.utils.tensorboard.writer.SummaryWriter object at 0x7f0dd7e03970>
+    - final_validation_loss: 0.14548748084958993
+
+
+=== nmpc_short_controls_first_model_wide_relu.pth ===
+Model and hyperparameters are:
+    - filename: nmpc_short_controls_first_model_wide_relu.pth
+    - model_name: <class 'mpc_nn.LearnedMPCShortControlFirstSmallWide'>
+    - model_network: Sequential(
+  (0): Sequential(
+    (0): Linear(in_features=108, out_features=256, bias=True)
+    (1): Identity()
+    (2): ReLU()
+  )
+  (1): Sequential(
+    (0): Linear(in_features=256, out_features=128, bias=True)
+    (1): Identity()
+    (2): ReLU()
+  )
+  (2): Linear(in_features=128, out_features=3, bias=True)
+)
+    - batch_size: 128
+    - learning_rate: 0.0015
+    - lr_decay: 0.033
+    - momentum: 0.77
+    - optimizer: <class 'torch.optim.adam.Adam'>
+    - loss_fn: HuberLoss()
+    - logger: <torch.utils.tensorboard.writer.SummaryWriter object at 0x7fe6391d30a0>
+    - final_validation_loss: 3.1111030043275267
+
+
+=== nmpc_short_controls_first_model_deep_obstacles_only.pth ===
+Model and hyperparameters are:
+    - filename: nmpc_short_controls_first_model_deep_obstacles_only.pth
+    - model_name: <class 'mpc_nn.LearnedMPCShortControlFirstDeepObstaclesOnly'>
+    - model_network: Sequential(
+  (0): Sequential(
+    (0): Linear(in_features=105, out_features=192, bias=True)
+    (1): Identity()
+    (2): Tanh()
+  )
+  (1): Sequential(
+    (0): Linear(in_features=192, out_features=128, bias=True)
+    (1): Identity()
+    (2): Tanh()
+  )
+  (2): Sequential(
+    (0): Linear(in_features=128, out_features=64, bias=True)
+    (1): Identity()
+    (2): Tanh()
+  )
+  (3): Sequential(
+    (0): Linear(in_features=64, out_features=32, bias=True)
+    (1): Identity()
+    (2): Tanh()
+  )
+  (4): Linear(in_features=32, out_features=3, bias=True)
+)
+    - batch_size: 16
+    - learning_rate: 0.0035
+    - lr_decay: 0.047
+    - momentum: 0.14
+    - optimizer: <class 'torch.optim.sgd.SGD'>
+    - loss_fn: SmoothL1Loss()
+    - logger: <torch.utils.tensorboard.writer.SummaryWriter object at 0x7f2b5f13d370>
+    - final_validation_loss: 0.1417492334994505

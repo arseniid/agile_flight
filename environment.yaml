@@ -26,6 +26,7 @@ dependencies:
   - coverage=5.5=py38h27cfd23_2
   - cryptography=3.4.7=py38hd23ed53_0
   - cudatoolkit=10.2.89=hfd86e86_1
+  - cvxpy
   - cython=0.29.24=py38h295c915_0
   - dbus=1.13.18=hb2f20db_0
   - expat=2.2.10=he6710b0_2
@@ -104,6 +105,7 @@ dependencies:
   - torchvision=0.10.0=py38_cu102
   - typed-ast=1.4.3=py38h7f8727e_1
   - wheel=0.36.2=pyhd3eb1b0_0
+  - xgboost
   - xz=5.2.5=h7b6447c_0
   - yapf=0.31.0=pyhd3eb1b0_0
   - yarl=1.6.3=py38h27cfd23_0
