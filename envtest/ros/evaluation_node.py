@@ -138,6 +138,7 @@ class Evaluator:
         print("You did not reach the goal! Due to " + reason)
         summary = {}
         summary['Success'] = False
+        summary['Reason'] = reason
         with open("summary.yaml", "w") as f:
             if os.getenv('ROLLOUT_NAME') is not None:
                 tmp = {}

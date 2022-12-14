@@ -19,9 +19,10 @@ def solve_mpc(state, obstacles):
     n = 2  # TODO: was 3
     m = 2  # TODO: was 3
     T = 50
+    dt = 0.1  # TODO: was 0.01 here
 
     A = np.eye(n)
-    B = np.eye(m) * 0.1  # TODO: was 0.01 here
+    B = np.eye(m) * dt
 
     # start and end state
     x_0 = state.pos
@@ -62,8 +63,8 @@ def solve_mpc(state, obstacles):
         # TODO: obstacle avoidance
         for abs_pos, abs_vel, radius in obstacles_full_state:
             safe_radius = radius + 0.3  # TODO: was 0.5
-            obs_rel_pos = cp.reshape(abs_pos + abs_vel * t * 0.1 - x[:n, t], (n, 1))  # TODO: was 0.01 here
-            obs_rel_pos_T = cp.reshape(abs_pos + abs_vel * t * 0.1 - x[:n, t], (1, n))  # TODO: was 0.01 here
+            obs_rel_pos = cp.reshape(abs_pos + abs_vel * t * dt - x[:n, t], (n, 1))
+            obs_rel_pos_T = cp.reshape(abs_pos + abs_vel * t * dt - x[:n, t], (1, n))
 
             ## cost += cp.inv_pos(cp.norm(obs_rel_pos)) / T
 
