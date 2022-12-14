@@ -37,7 +37,7 @@ class AgilePilotNode:
 
         self.crashes = 0
 
-        self.create_dataset = True and ppo_path is None and mpc_path is None and environment
+        self.create_dataset = False and ppo_path is None and mpc_path is None and environment
         if self.create_dataset:
             self.data_saver = DataSaver(folder="nmpc_short")
             self.sequences_stored = 0
