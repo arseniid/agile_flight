@@ -7,7 +7,7 @@ import numpy as np
 
 from dodgeros_msgs.msg import Command, QuadState
 from envsim_msgs.msg import ObstacleArray
-from std_msgs.msg import Empty
+from std_msgs.msg import Empty, Int8
 
 from uniplot import plot
 
@@ -62,12 +62,22 @@ class Evaluator:
                 Empty,
                 queue_size=1,
                 tcp_nodelay=True)
+        self.crash_pub = rospy.Publisher(
+                "/%s/%s" % (config['quad_name'], config['crash']),
+                Int8,
+                queue_size=1,
+                tcp_nodelay=True)
 
 
     def publishFinish(self):
         self.finish_pub.publish()
+        self.publishCrash()
         self.printSummary()
 
+    def publishCrash(self):
+        crash_msg = Int8()
+        crash_msg.data = self.crash
+        self.crash_pub.publish(crash_msg)
 
     def callbackState(self, msg):
         if not self.is_active:
@@ -117,6 +127,7 @@ class Evaluator:
         if margin < 0:
             if not self.hit_obstacle:
                 self.crash += 1
+                self.publishCrash()
                 print("Crashed")
             self.hit_obstacle = True
         else:

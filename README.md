@@ -151,3 +151,53 @@ We provide an easy interface for training your navigation policy using reinforce
 Follow [this guide](/envtest/python/README.md) to know more about how to use the training code and some tips on how to develop reinforcement learning algorithms
 
 
+
+## Evaluation scripts ##
+Since the number of available solutions has grown quite largely, this section might be helpful to know all possibilities to evaluate them.
+
+
+### launch_evaluation.bash ###
+Core `.bash` script to evaluate *one* particular solution on **one** particular environment; allows for multiple rollouts.
+
+How to (for all currently available solutions):
+- Deep Reinforcement Learning (in form of a PPO algorithm): Trained policies are located in ['rl_policy/'](/envtest/ros/rl_policy/) folder. To evaluate, run:
+
+   ```
+   ./launch_evaluation.bash <N> <PPO_TRIAL_NUMBER> [<EVALUATED_ENV>]
+   ```
+
+   where N: int (number of rollouts); PPO_TRIAL_NUMBER: int (number of the trained policy to evaluate). If additionally EVALUATED_ENV: str (any string to distinguish between environments) is given, each result from [summary](evaluation.yaml) will be written to the following "$HOME/Documents/PPO-baseline/Evaluation/PPO_\<PPO_TRIAL\>.yaml" folders/files.
+
+   > **_NOTE:_** To set the desired policy iteration, refer to the [load_rl_policy()](https://github.com/arseniid/agile_flight/blob/main/envtest/ros/rl_example.py#L72-L73) function
+
+- Classical (N)MPC algorithm: Both linear and nonlinear MPCs are defined in [user_code.py](/envtest/ros/user_code.py). To evaluate, run:
+
+   ```
+   ./launch_evaluation.bash <N> <any_string> [<EVALUATED_ENV>]
+   ```
+
+   where N: int (number of rollouts); any_string: str (any random string, especially **not** an integer). If additionally EVALUATED_ENV: str (any string to distinguish between environments) is given, it will be only used during dataset creation to store data in the correct file.
+
+   > **_NOTE 1:_** To choose the desired algorithm (out of two), one has to adapt [user_code.py](https://github.com/arseniid/agile_flight/blob/main/envtest/ros/user_code.py#L84-L86) manually
+
+   > **_NOTE 2:_** By default, after each MPC run the data will be saved to a dataset (see ['datasets/'](/flightmare/flightpy/datasets/) folder). To stop this, one has to manually set `self.create_dataset = False` in [run_competition.py](https://github.com/arseniid/agile_flight/blob/main/envtest/ros/run_competition.py#L40) or **omit** the \<EVALUATED_ENV\> argument
+
+- Learned (N)MPC: Trained models are located in ['learned_mpc/'](/envtest/ros/learned_mpc/) folder. To evaluate, run:
+
+   ```
+   ./launch_evaluation.bash <N> <MPC_MODEL_PATH>
+   ```
+
+   where N: int (number of rollouts); MPC_MODEL_PATH: str (relative path to the trained (N)MPC model -- similar to 'learned_mpc/\<model_name\>.pth').
+
+   > **_NOTE:_** The correct MPC class will be inferenced automatically from the given MPC_MODEL_PATH (according to [hyperdata.txt](/envtest/ros/learned_mpc/hyperdata.txt))
+
+
+### launch_evaluation_all.py ###
+Broader `.py` script to evaluate *one* particular solution (by default: MPC) on **multiple** environments; allows for multiple rollouts for each environment.
+
+The script is self-explanatory, uses `./launch_evaluation.bash` internally and is mainly used for dataset creation with (N)MPC.
+
+> **_NOTE:_** The script has a lot of hard-coded parts, and it is advised *against* using this. If one would decided to use it,
+please change it accordingly (for example, [subprocess spawning](https://github.com/arseniid/agile_flight/blob/main/launch_evaluation_all.py#L31) -- 
+no guarantees for a smooth run!).
