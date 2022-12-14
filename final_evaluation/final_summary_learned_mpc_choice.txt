@@ -1,0 +1,7476 @@
+=======hard_23 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 4.019999980926514
+    '20': 7.3999998569488525
+    '30': 10.700000047683716
+    '40': 14.299999952316284
+    '50': 17.859999895095825
+    '60': 31.450000047683716
+  time_to_finish: 31.450000047683716
+rollout_2:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.5
+    '20': 6.879999876022339
+    '30': 10.180000066757202
+    '40': 13.849999904632568
+    '50': 17.299999952316284
+    '60': 21.109999895095825
+  time_to_finish: 21.109999895095825
+rollout_3:
+  Success: false
+  number_crashes: 3
+  segment_times:
+    '10': 3.809999942779541
+    '20': 7.200000047683716
+    '30': 11.059999942779541
+    '40': 15.609999895095825
+    '50': 19.289999961853027
+    '60': 22.919999837875366
+  time_to_finish: 22.919999837875366
+
+
+=======hard_24 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.5799999237060547
+    '20': 6.949999809265137
+    '30': 10.25
+    '40': 14.139999866485596
+    '50': 18.859999895095825
+    '60': 24.09999990463257
+  time_to_finish: 24.09999990463257
+rollout_3:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.8899998664855957
+    '20': 7.240000009536743
+    '30': 10.679999828338623
+    '40': 15.730000019073486
+    '50': 19.139999866485596
+    '60': 24.399999856948853
+  time_to_finish: 24.399999856948853
+
+
+=======hard_25 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_26 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.8499999046325684
+    '20': 7.4700000286102295
+    '30': 10.980000019073486
+    '40': 14.27999997138977
+    '50': 17.569999933242798
+    '60': 22.299999952316284
+  time_to_finish: 22.299999952316284
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.859999895095825
+    '20': 7.400000095367432
+    '30': 10.769999980926514
+    '40': 15.609999895095825
+    '50': 19.740000009536743
+    '60': 26.019999980926514
+  time_to_finish: 26.019999980926514
+
+
+=======hard_27 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 4
+  segment_times:
+    '10': 4.0
+    '20': 7.4100000858306885
+    '30': 10.829999923706055
+    '40': 14.139999866485596
+    '50': 17.450000047683716
+    '60': 21.049999952316284
+  time_to_finish: 21.049999952316284
+rollout_2:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 3.4800000190734863
+    '20': 6.930000066757202
+    '30': 10.25
+    '40': 13.539999961853027
+    '50': 17.609999895095825
+    '60': 21.66000008583069
+  time_to_finish: 21.66000008583069
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_28 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.6599998474121094
+    '20': 7.099999904632568
+    '30': 10.47000002861023
+    '40': 13.849999904632568
+    '50': 17.199999809265137
+    '60': 27.829999923706055
+  time_to_finish: 27.829999923706055
+rollout_3:
+  Success: false
+  number_crashes: 16
+  segment_times:
+    '10': 4.1600000858306885
+    '20': 7.400000095367432
+    '30': 13.320000171661377
+    '40': 16.460000038146973
+    '50': 25.039999961853027
+    '60': 33.94000005722046
+  time_to_finish: 33.94000005722046
+
+
+=======hard_29 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.8000001907348633
+    '20': 7.5400002002716064
+    '30': 10.820000171661377
+    '40': 14.270000219345093
+    '50': 17.72000002861023
+    '60': 21.69000005722046
+  time_to_finish: 21.69000005722046
+
+
+=======hard_30 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 4.059999942779541
+    '20': 7.3999998569488525
+    '30': 10.670000076293945
+    '40': 14.200000047683716
+    '50': 17.84999990463257
+    '60': 22.77999997138977
+  time_to_finish: 22.77999997138977
+
+
+=======hard_31 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Reason: timeout
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.930000066757202
+    '20': 7.289999961853027
+    '30': 10.640000104904175
+    '40': 13.990000009536743
+    '50': 17.62000012397766
+    '60': 21.41000008583069
+  time_to_finish: 21.41000008583069
+rollout_3:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.509999990463257
+    '20': 6.870000123977661
+    '30': 10.110000133514404
+    '40': 13.380000114440918
+    '50': 16.65000009536743
+    '60': 21.55999994277954
+  time_to_finish: 21.55999994277954
+
+
+=======hard_32 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 3.880000114440918
+    '20': 7.240000009536743
+    '30': 10.550000190734863
+    '40': 14.070000171661377
+    '50': 17.72000002861023
+    '60': 22.050000190734863
+  time_to_finish: 22.050000190734863
+rollout_2:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.569999933242798
+    '20': 6.930000066757202
+    '30': 10.259999990463257
+    '40': 13.650000095367432
+    '50': 17.08999991416931
+    '60': 20.960000038146973
+  time_to_finish: 20.960000038146973
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_33 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.569999933242798
+    '20': 6.930000066757202
+    '30': 10.180000066757202
+    '40': 13.680000066757202
+    '50': 17.009999990463257
+    '60': 20.83999991416931
+  time_to_finish: 20.83999991416931
+rollout_2:
+  Success: false
+  number_crashes: 11
+  segment_times:
+    '10': 3.870000123977661
+    '20': 7.240000009536743
+    '30': 10.299999952316284
+    '40': 15.140000104904175
+    '50': 19.180000066757202
+    '60': 23.09000015258789
+  time_to_finish: 23.09000015258789
+rollout_3:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.4600000381469727
+    '20': 6.829999923706055
+    '30': 10.269999980926514
+    '40': 13.700000047683716
+    '50': 16.990000009536743
+    '60': 23.240000009536743
+  time_to_finish: 23.240000009536743
+
+
+=======hard_34 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.9700000286102295
+    '20': 7.319999933242798
+    '30': 10.599999904632568
+    '40': 13.960000038146973
+    '50': 17.210000038146973
+    '60': 21.37999987602234
+  time_to_finish: 21.37999987602234
+rollout_2:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 3.56000018119812
+    '20': 6.930000066757202
+    '30': 10.81000018119812
+    '40': 13.880000114440918
+    '50': 17.97000002861023
+    '60': 21.600000143051147
+  time_to_finish: 21.600000143051147
+rollout_3:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 3.870000123977661
+    '20': 7.2200000286102295
+    '30': 10.519999980926514
+    '40': 13.890000104904175
+    '50': 17.22000002861023
+    '60': 20.90000009536743
+  time_to_finish: 20.90000009536743
+
+
+=======hard_35 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 3.4600000381469727
+    '20': 6.830000162124634
+    '30': 10.100000143051147
+    '40': 13.400000095367432
+    '50': 17.080000162124634
+    '60': 21.87000012397766
+  time_to_finish: 21.87000012397766
+rollout_2:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.7699999809265137
+    '20': 7.129999876022339
+    '30': 10.450000047683716
+    '40': 13.889999866485596
+    '50': 17.329999923706055
+    '60': 23.16000008583069
+  time_to_finish: 23.16000008583069
+rollout_3:
+  Success: false
+  number_crashes: 13
+  segment_times:
+    '10': 3.569999933242798
+    '20': 6.930000066757202
+    '30': 10.359999895095825
+    '40': 14.119999885559082
+    '50': 18.12999987602234
+    '60': 24.12999987602234
+  time_to_finish: 24.12999987602234
+
+
+=======hard_36 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.4700000286102295
+    '20': 6.829999923706055
+    '30': 10.22000002861023
+    '40': 13.740000009536743
+    '50': 18.37999987602234
+    '60': 22.430000066757202
+  time_to_finish: 22.430000066757202
+rollout_3:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 3.7699999809265137
+    '20': 7.129999876022339
+    '30': 10.419999837875366
+    '40': 13.769999980926514
+    '50': 17.90999984741211
+    '60': 23.139999866485596
+  time_to_finish: 23.139999866485596
+
+
+=======hard_37 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.4600000381469727
+    '20': 6.8399999141693115
+    '30': 10.099999904632568
+    '40': 13.450000047683716
+    '50': 17.84999990463257
+    '60': 22.039999961853027
+  time_to_finish: 22.039999961853027
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.4600000381469727
+    '20': 6.819999933242798
+    '30': 10.22000002861023
+    '40': 13.599999904632568
+    '50': 16.960000038146973
+    '60': 21.009999990463257
+  time_to_finish: 21.009999990463257
+
+
+=======hard_38 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.7699999809265137
+    '20': 7.109999895095825
+    '30': 10.450000047683716
+    '40': 13.77999997138977
+    '50': 17.30999994277954
+    '60': 27.930000066757202
+  time_to_finish: 27.930000066757202
+rollout_3:
+  Success: false
+  number_crashes: 13
+  segment_times:
+    '10': 3.869999885559082
+    '20': 7.230000019073486
+    '30': 10.5
+    '40': 13.819999933242798
+    '50': 17.569999933242798
+    '60': 22.049999952316284
+  time_to_finish: 22.049999952316284
+
+
+=======hard_39 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 3.569999933242798
+    '20': 6.93999981880188
+    '30': 10.199999809265137
+    '40': 13.559999942779541
+    '50': 17.329999923706055
+    '60': 21.5
+  time_to_finish: 21.5
+rollout_2:
+  Success: false
+  number_crashes: 13
+  segment_times:
+    '10': 3.870000123977661
+    '20': 7.230000019073486
+    '30': 10.480000019073486
+    '40': 13.940000057220459
+    '50': 18.640000104904175
+    '60': 25.360000133514404
+  time_to_finish: 25.360000133514404
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_40 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 15
+  segment_times:
+    '10': 3.869999885559082
+    '20': 7.230000019073486
+    '30': 10.559999942779541
+    '40': 13.93999981880188
+    '50': 18.019999980926514
+    '60': 24.549999952316284
+  time_to_finish: 24.549999952316284
+
+
+=======hard_41 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 3.869999885559082
+    '20': 7.230000019073486
+    '30': 10.52999997138977
+    '40': 14.269999980926514
+    '50': 17.62999987602234
+    '60': 21.980000019073486
+  time_to_finish: 21.980000019073486
+rollout_3:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.4700000286102295
+    '20': 6.830000162124634
+    '30': 10.100000143051147
+    '40': 13.53000020980835
+    '50': 16.830000162124634
+    '60': 22.480000019073486
+  time_to_finish: 22.480000019073486
+
+
+=======hard_42 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 14
+  segment_times:
+    '10': 3.8600001335144043
+    '20': 7.2200000286102295
+    '30': 11.400000095367432
+    '40': 15.269999980926514
+    '50': 19.850000143051147
+    '60': 26.25
+  time_to_finish: 26.25
+rollout_2:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 3.56000018119812
+    '20': 6.940000057220459
+    '30': 10.200000047683716
+    '40': 13.610000133514404
+    '50': 17.02999997138977
+    '60': 21.320000171661377
+  time_to_finish: 21.320000171661377
+rollout_3:
+  Success: false
+  number_crashes: 16
+  segment_times:
+    '10': 3.869999885559082
+    '20': 7.240000009536743
+    '30': 11.819999933242798
+    '40': 14.700000047683716
+    '50': 21.94000005722046
+    '60': 35.61999988555908
+  time_to_finish: 35.61999988555908
+
+
+=======hard_43 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 11
+  segment_times:
+    '10': 3.559999942779541
+    '20': 6.9100000858306885
+    '30': 10.299999952316284
+    '40': 13.809999942779541
+    '50': 17.41000008583069
+    '60': 22.12000012397766
+  time_to_finish: 22.12000012397766
+rollout_3:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.870000123977661
+    '20': 7.210000038146973
+    '30': 10.84000015258789
+    '40': 14.040000200271606
+    '50': 17.62000012397766
+    '60': 21.630000114440918
+  time_to_finish: 21.630000114440918
+
+
+=======hard_44 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.4699997901916504
+    '20': 6.819999933242798
+    '30': 10.109999895095825
+    '40': 13.419999837875366
+    '50': 18.609999895095825
+    '60': 23.65999984741211
+  time_to_finish: 23.65999984741211
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_45 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.569999933242798
+    '20': 6.930000066757202
+    '30': 10.299999952316284
+    '40': 13.519999980926514
+    '50': 16.980000019073486
+    '60': 20.5
+  time_to_finish: 20.5
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_46 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 3.859999895095825
+    '20': 7.2200000286102295
+    '30': 10.539999961853027
+    '40': 13.889999866485596
+    '50': 18.25
+    '60': 23.169999837875366
+  time_to_finish: 23.169999837875366
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_47 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 3.869999885559082
+    '20': 7.230000019073486
+    '30': 10.509999990463257
+    '40': 13.919999837875366
+    '50': 17.230000019073486
+    '60': 22.009999990463257
+  time_to_finish: 22.009999990463257
+rollout_2:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.4700000286102295
+    '20': 6.829999923706055
+    '30': 10.289999961853027
+    '40': 14.139999866485596
+    '50': 17.47000002861023
+    '60': 22.329999923706055
+  time_to_finish: 22.329999923706055
+rollout_3:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.759999990463257
+    '20': 7.109999895095825
+    '30': 10.389999866485596
+    '40': 13.679999828338623
+    '50': 17.08999991416931
+    '60': 22.759999990463257
+  time_to_finish: 22.759999990463257
+
+
+=======hard_48 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 11
+  segment_times:
+    '10': 3.4700000286102295
+    '20': 6.819999933242798
+    '30': 10.230000019073486
+    '40': 13.569999933242798
+    '50': 18.02999997138977
+    '60': 22.609999895095825
+  time_to_finish: 22.609999895095825
+rollout_2:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.869999885559082
+    '20': 7.229999780654907
+    '30': 10.77999997138977
+    '40': 14.069999933242798
+    '50': 16.71999979019165
+    '60': 26.75
+  time_to_finish: 26.75
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_49 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 11
+  segment_times:
+    '10': 3.879999876022339
+    '20': 7.2200000286102295
+    '30': 10.589999914169312
+    '40': 14.379999876022339
+    '50': 17.740000009536743
+    '60': 22.519999980926514
+  time_to_finish: 22.519999980926514
+
+
+=======hard_50 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.4700000286102295
+    '20': 6.829999923706055
+    '30': 10.180000066757202
+    '40': 13.759999990463257
+    '50': 17.22000002861023
+    '60': 22.22000002861023
+  time_to_finish: 22.22000002861023
+rollout_2:
+  Success: false
+  number_crashes: 14
+  segment_times:
+    '10': 3.879999876022339
+    '20': 7.240000009536743
+    '30': 10.369999885559082
+    '40': 13.809999942779541
+    '50': 17.139999866485596
+    '60': 24.700000047683716
+  time_to_finish: 24.700000047683716
+rollout_3:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.5799999237060547
+    '20': 6.940000057220459
+    '30': 11.329999923706055
+    '40': 14.670000076293945
+    '50': 18.119999885559082
+    '60': 23.649999856948853
+  time_to_finish: 23.649999856948853
+
+
+=======hard_51 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 13
+  segment_times:
+    '10': 3.7699999809265137
+    '20': 7.130000114440918
+    '30': 10.430000066757202
+    '40': 13.930000066757202
+    '50': 19.16000008583069
+    '60': 25.259999990463257
+  time_to_finish: 25.259999990463257
+rollout_2:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 3.4700000286102295
+    '20': 6.829999923706055
+    '30': 10.309999942779541
+    '40': 13.480000019073486
+    '50': 17.97000002861023
+    '60': 23.02999997138977
+  time_to_finish: 23.02999997138977
+rollout_3:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.869999885559082
+    '20': 7.230000019073486
+    '30': 11.019999980926514
+    '40': 14.669999837875366
+    '50': 23.77999997138977
+    '60': 37.46000003814697
+  time_to_finish: 37.46000003814697
+
+
+=======hard_52 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.4700000286102295
+    '20': 6.829999923706055
+    '30': 10.139999866485596
+    '40': 13.27999997138977
+    '50': 17.240000009536743
+    '60': 21.18999981880188
+  time_to_finish: 21.18999981880188
+rollout_3:
+  Success: false
+  number_crashes: 15
+  segment_times:
+    '10': 3.7700002193450928
+    '20': 7.130000114440918
+    '30': 10.980000019073486
+    '40': 14.06000018119812
+    '50': 17.710000038146973
+    '60': 23.25
+  time_to_finish: 23.25
+
+
+=======hard_53 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.4600000381469727
+    '20': 6.809999942779541
+    '30': 10.369999885559082
+    '40': 14.240000009536743
+    '50': 17.619999885559082
+    '60': 21.22000002861023
+  time_to_finish: 21.22000002861023
+rollout_2:
+  Success: false
+  number_crashes: 11
+  segment_times:
+    '10': 3.9700000286102295
+    '20': 7.319999933242798
+    '30': 10.569999933242798
+    '40': 14.440000057220459
+    '50': 17.640000104904175
+    '60': 23.240000009536743
+  time_to_finish: 23.240000009536743
+rollout_3:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 4.169999837875366
+    '20': 7.519999980926514
+    '30': 10.889999866485596
+    '40': 14.299999952316284
+    '50': 17.710000038146973
+    '60': 21.789999961853027
+  time_to_finish: 21.789999961853027
+
+
+=======hard_54 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.4600000381469727
+    '20': 6.819999933242798
+    '30': 10.120000123977661
+    '40': 13.710000038146973
+    '50': 17.200000047683716
+    '60': 20.84999990463257
+  time_to_finish: 20.84999990463257
+rollout_3:
+  Success: false
+  number_crashes: 15
+  segment_times:
+    '10': 3.869999885559082
+    '20': 7.2200000286102295
+    '30': 10.730000019073486
+    '40': 14.170000076293945
+    '50': 17.83999991416931
+    '60': 24.180000066757202
+  time_to_finish: 24.180000066757202
+
+
+=======hard_55 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.4700000286102295
+    '20': 6.820000171661377
+    '30': 10.25
+    '40': 13.800000190734863
+    '50': 17.69000005722046
+    '60': 21.65000009536743
+  time_to_finish: 21.65000009536743
+rollout_2:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 3.6600000858306885
+    '20': 7.019999980926514
+    '30': 10.299999952316284
+    '40': 13.740000009536743
+    '50': 17.94000005722046
+    '60': 24.600000143051147
+  time_to_finish: 24.600000143051147
+rollout_3:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 3.4600000381469727
+    '20': 6.820000171661377
+    '30': 10.160000085830688
+    '40': 14.130000114440918
+    '50': 17.519999980926514
+    '60': 21.110000133514404
+  time_to_finish: 21.110000133514404
+
+
+=======hard_56 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 11
+  segment_times:
+    '10': 3.8600001335144043
+    '20': 7.240000009536743
+    '30': 10.579999923706055
+    '40': 14.210000038146973
+    '50': 18.170000076293945
+    '60': 24.319999933242798
+  time_to_finish: 24.319999933242798
+rollout_2:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.4700000286102295
+    '20': 6.819999933242798
+    '30': 10.120000123977661
+    '40': 13.519999980926514
+    '50': 16.920000076293945
+    '60': 24.080000162124634
+  time_to_finish: 24.080000162124634
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_57 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_58 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Reason: timeout
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 11
+  segment_times:
+    '10': 3.869999885559082
+    '20': 7.230000019073486
+    '30': 10.549999952316284
+    '40': 13.879999876022339
+    '50': 17.55999994277954
+    '60': 22.25
+  time_to_finish: 22.25
+rollout_3:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.4600000381469727
+    '20': 6.830000162124634
+    '30': 10.230000019073486
+    '40': 13.509999990463257
+    '50': 17.450000047683716
+    '60': 22.75
+  time_to_finish: 22.75
+
+
+=======hard_59 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.869999885559082
+    '20': 7.21999979019165
+    '30': 10.539999961853027
+    '40': 13.989999771118164
+    '50': 17.299999952316284
+    '60': 21.479999780654907
+  time_to_finish: 21.479999780654907
+rollout_2:
+  Success: false
+  number_crashes: 23
+  segment_times:
+    '10': 3.570000171661377
+    '20': 6.930000066757202
+    '30': 10.269999980926514
+    '40': 13.860000133514404
+    '50': 17.920000076293945
+    '60': 29.360000133514404
+  time_to_finish: 29.360000133514404
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_60 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.75
+    '20': 7.120000123977661
+    '30': 10.47000002861023
+    '40': 13.59000015258789
+    '50': 18.62000012397766
+    '60': 22.350000143051147
+  time_to_finish: 22.350000143051147
+rollout_3:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.569999933242798
+    '20': 6.930000066757202
+    '30': 10.269999980926514
+    '40': 13.549999952316284
+    '50': 17.509999990463257
+    '60': 21.049999952316284
+  time_to_finish: 21.049999952316284
+
+
+=======hard_61 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_62 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 5
+  segment_times:
+    '10': 3.7799999713897705
+    '20': 7.140000104904175
+    '30': 10.420000076293945
+    '40': 13.740000009536743
+    '50': 17.59999990463257
+    '60': 21.319999933242798
+  time_to_finish: 21.319999933242798
+rollout_3:
+  Success: false
+  number_crashes: 13
+  segment_times:
+    '10': 3.569999933242798
+    '20': 6.93999981880188
+    '30': 10.769999980926514
+    '40': 15.329999923706055
+    '50': 18.97000002861023
+    '60': 24.40999984741211
+  time_to_finish: 24.40999984741211
+
+
+=======hard_23 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 4.049999952316284
+    '20': 7.359999895095825
+    '30': 10.679999828338623
+    '40': 14.099999904632568
+    '50': 17.639999866485596
+    '60': 21.44000005722046
+  time_to_finish: 21.44000005722046
+rollout_2:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 3.6500000953674316
+    '20': 6.9700000286102295
+    '30': 10.299999952316284
+    '40': 13.960000038146973
+    '50': 19.569999933242798
+    '60': 23.430000066757202
+  time_to_finish: 23.430000066757202
+rollout_3:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 4.039999961853027
+    '20': 7.370000123977661
+    '30': 10.670000076293945
+    '40': 14.25
+    '50': 18.009999990463257
+    '60': 21.740000009536743
+  time_to_finish: 21.740000009536743
+
+
+=======hard_24 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.6500000953674316
+    '20': 6.980000019073486
+    '30': 10.230000019073486
+    '40': 13.620000123977661
+    '50': 17.539999961853027
+    '60': 23.300000190734863
+  time_to_finish: 23.300000190734863
+rollout_2:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 4.06000018119812
+    '20': 7.380000114440918
+    '30': 10.690000057220459
+    '40': 14.190000057220459
+    '50': 17.790000200271606
+    '60': 22.540000200271606
+  time_to_finish: 22.540000200271606
+rollout_3:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.759999990463257
+    '20': 7.0899999141693115
+    '30': 10.40999984741211
+    '40': 13.789999961853027
+    '50': 17.479999780654907
+    '60': 21.240000009536743
+  time_to_finish: 21.240000009536743
+
+
+=======hard_25 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 4.049999952316284
+    '20': 7.390000104904175
+    '30': 10.730000019073486
+    '40': 14.089999914169312
+    '50': 17.670000076293945
+    '60': 24.859999895095825
+  time_to_finish: 24.859999895095825
+rollout_2:
+  Success: false
+  number_crashes: 11
+  segment_times:
+    '10': 3.6500000953674316
+    '20': 6.960000038146973
+    '30': 10.299999952316284
+    '40': 13.539999961853027
+    '50': 16.980000019073486
+    '60': 20.710000038146973
+  time_to_finish: 20.710000038146973
+rollout_3:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 4.050000190734863
+    '20': 7.3500001430511475
+    '30': 10.650000095367432
+    '40': 14.300000190734863
+    '50': 17.950000047683716
+    '60': 21.680000066757202
+  time_to_finish: 21.680000066757202
+
+
+=======hard_26 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.6499998569488525
+    '20': 6.980000019073486
+    '30': 10.319999933242798
+    '40': 13.669999837875366
+    '50': 17.859999895095825
+    '60': 21.679999828338623
+  time_to_finish: 21.679999828338623
+rollout_2:
+  Success: false
+  number_crashes: 11
+  segment_times:
+    '10': 4.059999942779541
+    '20': 7.369999885559082
+    '30': 10.769999980926514
+    '40': 14.170000076293945
+    '50': 17.66000008583069
+    '60': 21.59999990463257
+  time_to_finish: 21.59999990463257
+rollout_3:
+  Success: false
+  number_crashes: 11
+  segment_times:
+    '10': 3.7699999809265137
+    '20': 7.079999923706055
+    '30': 11.490000009536743
+    '40': 14.799999952316284
+    '50': 18.269999980926514
+    '60': 22.18999981880188
+  time_to_finish: 22.18999981880188
+
+
+=======hard_27 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 4.049999952316284
+    '20': 7.369999885559082
+    '30': 10.690000057220459
+    '40': 14.069999933242798
+    '50': 18.30999994277954
+    '60': 22.450000047683716
+  time_to_finish: 22.450000047683716
+rollout_2:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.75
+    '20': 7.059999942779541
+    '30': 10.360000133514404
+    '40': 14.980000019073486
+    '50': 18.269999980926514
+    '60': 21.930000066757202
+  time_to_finish: 21.930000066757202
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_28 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 3.6600000858306885
+    '20': 6.960000038146973
+    '30': 10.240000009536743
+    '40': 13.930000066757202
+    '50': 17.670000076293945
+    '60': 21.450000047683716
+  time_to_finish: 21.450000047683716
+rollout_2:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 4.049999952316284
+    '20': 7.360000133514404
+    '30': 10.650000095367432
+    '40': 14.210000038146973
+    '50': 19.600000143051147
+    '60': 23.80999994277954
+  time_to_finish: 23.80999994277954
+rollout_3:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.640000104904175
+    '20': 6.960000038146973
+    '30': 10.430000066757202
+    '40': 13.900000095367432
+    '50': 17.420000076293945
+    '60': 21.430000066757202
+  time_to_finish: 21.430000066757202
+
+
+=======hard_29 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 4.049999952316284
+    '20': 7.379999876022339
+    '30': 10.879999876022339
+    '40': 14.399999856948853
+    '50': 18.009999990463257
+    '60': 22.009999990463257
+  time_to_finish: 22.009999990463257
+rollout_2:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 4.25
+    '20': 7.5899999141693115
+    '30': 11.009999990463257
+    '40': 14.299999952316284
+    '50': 17.700000047683716
+    '60': 27.05999994277954
+  time_to_finish: 27.05999994277954
+rollout_3:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 4.059999942779541
+    '20': 7.400000095367432
+    '30': 11.009999990463257
+    '40': 14.490000009536743
+    '50': 18.009999990463257
+    '60': 22.109999895095825
+  time_to_finish: 22.109999895095825
+
+
+=======hard_30 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.6499998569488525
+    '20': 6.9700000286102295
+    '30': 10.389999866485596
+    '40': 15.399999856948853
+    '50': 18.740000009536743
+    '60': 23.289999961853027
+  time_to_finish: 23.289999961853027
+rollout_2:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 4.740000009536743
+    '20': 8.079999923706055
+    '30': 11.730000019073486
+    '40': 15.02999997138977
+    '50': 18.980000019073486
+    '60': 23.139999866485596
+  time_to_finish: 23.139999866485596
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_31 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 4.050000190734863
+    '20': 7.370000123977661
+    '30': 10.680000066757202
+    '40': 14.100000143051147
+    '50': 17.519999980926514
+    '60': 23.640000104904175
+  time_to_finish: 23.640000104904175
+rollout_2:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.75
+    '20': 7.080000162124634
+    '30': 10.31000018119812
+    '40': 14.380000114440918
+    '50': 17.990000009536743
+    '60': 22.170000076293945
+  time_to_finish: 22.170000076293945
+rollout_3:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.9499998092651367
+    '20': 7.289999961853027
+    '30': 10.559999942779541
+    '40': 13.980000019073486
+    '50': 17.399999856948853
+    '60': 22.449999809265137
+  time_to_finish: 22.449999809265137
+
+
+=======hard_32 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 11
+  segment_times:
+    '10': 3.75
+    '20': 7.059999942779541
+    '30': 10.329999923706055
+    '40': 14.02999997138977
+    '50': 17.730000019073486
+    '60': 22.41000008583069
+  time_to_finish: 22.41000008583069
+rollout_2:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 3.9600000381469727
+    '20': 7.259999990463257
+    '30': 10.789999961853027
+    '40': 14.380000114440918
+    '50': 18.039999961853027
+    '60': 21.83999991416931
+  time_to_finish: 21.83999991416931
+rollout_3:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.6500000953674316
+    '20': 6.960000038146973
+    '30': 10.309999942779541
+    '40': 13.670000076293945
+    '50': 17.0
+    '60': 21.12000012397766
+  time_to_finish: 21.12000012397766
+
+
+=======hard_33 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.950000047683716
+    '20': 7.28000020980835
+    '30': 10.490000009536743
+    '40': 14.070000171661377
+    '50': 17.480000019073486
+    '60': 21.28000020980835
+  time_to_finish: 21.28000020980835
+rollout_2:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.6499998569488525
+    '20': 6.9700000286102295
+    '30': 10.25
+    '40': 13.569999933242798
+    '50': 17.679999828338623
+    '60': 21.169999837875366
+  time_to_finish: 21.169999837875366
+rollout_3:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 4.049999952316284
+    '20': 7.379999876022339
+    '30': 10.75
+    '40': 14.379999876022339
+    '50': 18.87999987602234
+    '60': 22.80999994277954
+  time_to_finish: 22.80999994277954
+
+
+=======hard_34 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.75
+    '20': 7.059999942779541
+    '30': 10.450000047683716
+    '40': 13.740000009536743
+    '50': 17.110000133514404
+    '60': 21.0
+  time_to_finish: 21.0
+rollout_2:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 4.050000190734863
+    '20': 7.380000114440918
+    '30': 10.640000104904175
+    '40': 14.009999990463257
+    '50': 17.850000143051147
+    '60': 21.830000162124634
+  time_to_finish: 21.830000162124634
+rollout_3:
+  Success: false
+  number_crashes: 13
+  segment_times:
+    '10': 3.6499998569488525
+    '20': 6.979999780654907
+    '30': 10.559999942779541
+    '40': 14.169999837875366
+    '50': 18.09999990463257
+    '60': 21.859999895095825
+  time_to_finish: 21.859999895095825
+
+
+=======hard_35 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 4.049999952316284
+    '20': 7.379999876022339
+    '30': 10.75
+    '40': 14.359999895095825
+    '50': 18.08999991416931
+    '60': 22.77999997138977
+  time_to_finish: 22.77999997138977
+rollout_2:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.6500000953674316
+    '20': 6.9700000286102295
+    '30': 10.329999923706055
+    '40': 13.77999997138977
+    '50': 17.27999997138977
+    '60': 21.009999990463257
+  time_to_finish: 21.009999990463257
+rollout_3:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 4.039999961853027
+    '20': 7.400000095367432
+    '30': 10.730000019073486
+    '40': 14.019999980926514
+    '50': 18.210000038146973
+    '60': 21.670000076293945
+  time_to_finish: 21.670000076293945
+
+
+=======hard_36 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.75
+    '20': 7.0899999141693115
+    '30': 10.419999837875366
+    '40': 14.959999799728394
+    '50': 19.25
+    '60': 23.87999987602234
+  time_to_finish: 23.87999987602234
+rollout_2:
+  Success: false
+  number_crashes: 5
+  segment_times:
+    '10': 4.049999952316284
+    '20': 7.359999895095825
+    '30': 10.849999904632568
+    '40': 14.15999984741211
+    '50': 17.609999895095825
+    '60': 21.71999979019165
+  time_to_finish: 21.71999979019165
+rollout_3:
+  Success: false
+  number_crashes: 18
+  segment_times:
+    '10': 3.6499998569488525
+    '20': 6.960000038146973
+    '30': 10.389999866485596
+    '40': 14.200000047683716
+    '50': 18.899999856948853
+    '60': 24.539999961853027
+  time_to_finish: 24.539999961853027
+
+
+=======hard_37 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 4.069999933242798
+    '20': 7.429999828338623
+    '30': 10.77999997138977
+    '40': 14.21999979019165
+    '50': 17.65999984741211
+    '60': 23.039999961853027
+  time_to_finish: 23.039999961853027
+rollout_2:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 3.6500000953674316
+    '20': 6.960000038146973
+    '30': 10.77999997138977
+    '40': 14.52999997138977
+    '50': 18.259999990463257
+    '60': 22.16000008583069
+  time_to_finish: 22.16000008583069
+rollout_3:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 4.050000190734863
+    '20': 7.380000114440918
+    '30': 10.730000019073486
+    '40': 14.140000104904175
+    '50': 18.830000162124634
+    '60': 26.47000002861023
+  time_to_finish: 26.47000002861023
+
+
+=======hard_38 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 11
+  segment_times:
+    '10': 4.049999952316284
+    '20': 7.400000095367432
+    '30': 10.819999933242798
+    '40': 14.759999990463257
+    '50': 18.09999990463257
+    '60': 22.430000066757202
+  time_to_finish: 22.430000066757202
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_39 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 11
+  segment_times:
+    '10': 3.740000009536743
+    '20': 7.1000001430511475
+    '30': 10.410000085830688
+    '40': 13.740000009536743
+    '50': 17.41000008583069
+    '60': 21.330000162124634
+  time_to_finish: 21.330000162124634
+rollout_2:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.950000047683716
+    '20': 7.269999980926514
+    '30': 10.809999942779541
+    '40': 15.990000009536743
+    '50': 19.62999987602234
+    '60': 23.859999895095825
+  time_to_finish: 23.859999895095825
+rollout_3:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.75
+    '20': 7.070000171661377
+    '30': 10.580000162124634
+    '40': 14.56000018119812
+    '50': 18.260000228881836
+    '60': 23.020000219345093
+  time_to_finish: 23.020000219345093
+
+
+=======hard_40 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 4.039999961853027
+    '20': 7.380000114440918
+    '30': 10.569999933242798
+    '40': 13.940000057220459
+    '50': 19.230000019073486
+    '60': 22.850000143051147
+  time_to_finish: 22.850000143051147
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 11
+  segment_times:
+    '10': 4.120000123977661
+    '20': 7.430000066757202
+    '30': 11.070000171661377
+    '40': 14.450000047683716
+    '50': 18.230000019073486
+    '60': 22.200000047683716
+  time_to_finish: 22.200000047683716
+
+
+=======hard_41 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 17
+  segment_times:
+    '10': 3.6600000858306885
+    '20': 6.980000019073486
+    '30': 10.960000038146973
+    '40': 14.420000076293945
+    '50': 18.139999866485596
+    '60': 23.87999987602234
+  time_to_finish: 23.87999987602234
+rollout_2:
+  Success: false
+  number_crashes: 11
+  segment_times:
+    '10': 4.139999866485596
+    '20': 7.460000038146973
+    '30': 10.809999942779541
+    '40': 14.269999980926514
+    '50': 18.069999933242798
+    '60': 22.27999997138977
+  time_to_finish: 22.27999997138977
+rollout_3:
+  Success: false
+  number_crashes: 17
+  segment_times:
+    '10': 3.75
+    '20': 7.090000152587891
+    '30': 10.830000162124634
+    '40': 14.420000076293945
+    '50': 19.519999980926514
+    '60': 26.52999997138977
+  time_to_finish: 26.52999997138977
+
+
+=======hard_42 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 5
+  segment_times:
+    '10': 4.159999847412109
+    '20': 7.5
+    '30': 10.75
+    '40': 14.509999990463257
+    '50': 19.180000066757202
+    '60': 22.829999923706055
+  time_to_finish: 22.829999923706055
+rollout_2:
+  Success: false
+  number_crashes: 14
+  segment_times:
+    '10': 3.6500000953674316
+    '20': 6.960000038146973
+    '30': 10.400000095367432
+    '40': 13.859999895095825
+    '50': 17.58999991416931
+    '60': 22.25
+  time_to_finish: 22.25
+rollout_3:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.9499998092651367
+    '20': 7.2799999713897705
+    '30': 10.679999828338623
+    '40': 14.240000009536743
+    '50': 17.97000002861023
+    '60': 22.62999987602234
+  time_to_finish: 22.62999987602234
+
+
+=======hard_43 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 4.049999952316284
+    '20': 7.360000133514404
+    '30': 10.830000162124634
+    '40': 14.509999990463257
+    '50': 18.100000143051147
+    '60': 21.91000008583069
+  time_to_finish: 21.91000008583069
+rollout_3:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.6500000953674316
+    '20': 6.960000038146973
+    '30': 10.440000057220459
+    '40': 13.759999990463257
+    '50': 17.230000019073486
+    '60': 21.91000008583069
+  time_to_finish: 21.91000008583069
+
+
+=======hard_44 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 13
+  segment_times:
+    '10': 4.059999942779541
+    '20': 7.379999876022339
+    '30': 10.789999961853027
+    '40': 14.199999809265137
+    '50': 18.18999981880188
+    '60': 23.149999856948853
+  time_to_finish: 23.149999856948853
+rollout_2:
+  Success: false
+  number_crashes: 16
+  segment_times:
+    '10': 3.75
+    '20': 7.059999942779541
+    '30': 10.440000057220459
+    '40': 14.079999923706055
+    '50': 17.919999837875366
+    '60': 21.429999828338623
+  time_to_finish: 21.429999828338623
+rollout_3:
+  Success: false
+  number_crashes: 11
+  segment_times:
+    '10': 4.039999961853027
+    '20': 7.369999885559082
+    '30': 10.769999980926514
+    '40': 14.690000057220459
+    '50': 21.079999923706055
+    '60': 24.90000009536743
+  time_to_finish: 24.90000009536743
+
+
+=======hard_45 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 4
+  segment_times:
+    '10': 3.75
+    '20': 7.069999933242798
+    '30': 10.47000002861023
+    '40': 13.850000143051147
+    '50': 17.27999997138977
+    '60': 25.630000114440918
+  time_to_finish: 25.630000114440918
+rollout_2:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 4.049999952316284
+    '20': 7.360000133514404
+    '30': 10.710000038146973
+    '40': 14.230000019073486
+    '50': 17.730000019073486
+    '60': 21.34000015258789
+  time_to_finish: 21.34000015258789
+rollout_3:
+  Success: false
+  number_crashes: 5
+  segment_times:
+    '10': 3.75
+    '20': 7.080000162124634
+    '30': 10.52999997138977
+    '40': 13.960000038146973
+    '50': 17.47000002861023
+    '60': 20.980000019073486
+  time_to_finish: 20.980000019073486
+
+
+=======hard_46 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 4.049999952316284
+    '20': 7.389999866485596
+    '30': 10.679999828338623
+    '40': 14.179999828338623
+    '50': 17.480000019073486
+    '60': 23.579999923706055
+  time_to_finish: 23.579999923706055
+rollout_2:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 3.6499998569488525
+    '20': 6.9700000286102295
+    '30': 10.259999990463257
+    '40': 13.559999942779541
+    '50': 16.919999837875366
+    '60': 22.230000019073486
+  time_to_finish: 22.230000019073486
+rollout_3:
+  Success: false
+  number_crashes: 5
+  segment_times:
+    '10': 4.059999942779541
+    '20': 7.369999885559082
+    '30': 10.649999856948853
+    '40': 14.359999895095825
+    '50': 17.80999994277954
+    '60': 21.52999997138977
+  time_to_finish: 21.52999997138977
+
+
+=======hard_47 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 11
+  segment_times:
+    '10': 3.740000009536743
+    '20': 7.1000001430511475
+    '30': 10.31000018119812
+    '40': 13.789999961853027
+    '50': 17.75
+    '60': 22.299999952316284
+  time_to_finish: 22.299999952316284
+rollout_2:
+  Success: false
+  number_crashes: 11
+  segment_times:
+    '10': 4.050000190734863
+    '20': 7.360000133514404
+    '30': 10.800000190734863
+    '40': 14.77999997138977
+    '50': 18.540000200271606
+    '60': 22.52999997138977
+  time_to_finish: 22.52999997138977
+rollout_3:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 3.629999876022339
+    '20': 6.989999771118164
+    '30': 10.339999914169312
+    '40': 14.579999923706055
+    '50': 18.80999994277954
+    '60': 22.699999809265137
+  time_to_finish: 22.699999809265137
+
+
+=======hard_48 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 3.75
+    '20': 7.079999923706055
+    '30': 10.40999984741211
+    '40': 13.990000009536743
+    '50': 17.699999809265137
+    '60': 21.369999885559082
+  time_to_finish: 21.369999885559082
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_49 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.75
+    '20': 7.079999923706055
+    '30': 10.77999997138977
+    '40': 13.990000009536743
+    '50': 17.66000008583069
+    '60': 21.37000012397766
+  time_to_finish: 21.37000012397766
+rollout_2:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 4.049999952316284
+    '20': 7.380000114440918
+    '30': 10.660000085830688
+    '40': 14.47000002861023
+    '50': 18.27999997138977
+    '60': 22.630000114440918
+  time_to_finish: 22.630000114440918
+rollout_3:
+  Success: false
+  number_crashes: 11
+  segment_times:
+    '10': 3.6500000953674316
+    '20': 6.990000009536743
+    '30': 10.370000123977661
+    '40': 14.47000002861023
+    '50': 18.480000019073486
+    '60': 22.050000190734863
+  time_to_finish: 22.050000190734863
+
+
+=======hard_50 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 4.049999952316284
+    '20': 7.370000123977661
+    '30': 11.730000019073486
+    '40': 15.240000009536743
+    '50': 19.850000143051147
+    '60': 24.019999980926514
+  time_to_finish: 24.019999980926514
+rollout_2:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.6500000953674316
+    '20': 6.9700000286102295
+    '30': 10.390000104904175
+    '40': 14.200000047683716
+    '50': 17.860000133514404
+    '60': 21.580000162124634
+  time_to_finish: 21.580000162124634
+rollout_3:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 4.049999952316284
+    '20': 7.390000104904175
+    '30': 10.759999990463257
+    '40': 14.620000123977661
+    '50': 18.039999961853027
+    '60': 24.829999923706055
+  time_to_finish: 24.829999923706055
+
+
+=======hard_51 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 3.6500000953674316
+    '20': 7.039999961853027
+    '30': 10.410000085830688
+    '40': 13.900000095367432
+    '50': 18.039999961853027
+    '60': 21.700000047683716
+  time_to_finish: 21.700000047683716
+rollout_2:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 4.049999952316284
+    '20': 7.370000123977661
+    '30': 10.700000047683716
+    '40': 14.089999914169312
+    '50': 17.549999952316284
+    '60': 22.069999933242798
+  time_to_finish: 22.069999933242798
+rollout_3:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.75
+    '20': 7.090000152587891
+    '30': 10.460000038146973
+    '40': 13.940000057220459
+    '50': 17.570000171661377
+    '60': 21.230000019073486
+  time_to_finish: 21.230000019073486
+
+
+=======hard_52 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 4.049999952316284
+    '20': 7.369999885559082
+    '30': 10.589999914169312
+    '40': 14.630000114440918
+    '50': 18.180000066757202
+    '60': 24.670000076293945
+  time_to_finish: 24.670000076293945
+rollout_2:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.6600000858306885
+    '20': 6.9700000286102295
+    '30': 10.350000143051147
+    '40': 13.920000076293945
+    '50': 17.259999990463257
+    '60': 21.5
+  time_to_finish: 21.5
+rollout_3:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 4.049999952316284
+    '20': 7.360000133514404
+    '30': 10.769999980926514
+    '40': 14.25
+    '50': 17.880000114440918
+    '60': 21.59000015258789
+  time_to_finish: 21.59000015258789
+
+
+=======hard_53 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 3.75
+    '20': 7.069999933242798
+    '30': 10.459999799728394
+    '40': 14.68999981880188
+    '50': 18.75
+    '60': 22.419999837875366
+  time_to_finish: 22.419999837875366
+rollout_2:
+  Success: false
+  number_crashes: 5
+  segment_times:
+    '10': 4.1499998569488525
+    '20': 7.480000019073486
+    '30': 10.809999942779541
+    '40': 14.210000038146973
+    '50': 17.90999984741211
+    '60': 21.889999866485596
+  time_to_finish: 21.889999866485596
+rollout_3:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.6500000953674316
+    '20': 6.9700000286102295
+    '30': 10.490000009536743
+    '40': 14.609999895095825
+    '50': 18.019999980926514
+    '60': 22.269999980926514
+  time_to_finish: 22.269999980926514
+
+
+=======hard_54 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 4.049999952316284
+    '20': 7.390000104904175
+    '30': 10.759999990463257
+    '40': 14.150000095367432
+    '50': 17.66000008583069
+    '60': 21.380000114440918
+  time_to_finish: 21.380000114440918
+rollout_2:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.6500000953674316
+    '20': 6.9700000286102295
+    '30': 10.620000123977661
+    '40': 14.069999933242798
+    '50': 17.460000038146973
+    '60': 21.990000009536743
+  time_to_finish: 21.990000009536743
+rollout_3:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 4.450000047683716
+    '20': 7.789999961853027
+    '30': 10.97000002861023
+    '40': 14.289999961853027
+    '50': 17.90000009536743
+    '60': 22.180000066757202
+  time_to_finish: 22.180000066757202
+
+
+=======hard_55 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.740000009536743
+    '20': 7.079999923706055
+    '30': 10.480000019073486
+    '40': 13.52999997138977
+    '50': 18.079999923706055
+    '60': 21.819999933242798
+  time_to_finish: 21.819999933242798
+rollout_2:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 4.049999952316284
+    '20': 7.359999895095825
+    '30': 10.72000002861023
+    '40': 13.440000057220459
+    '50': 18.299999952316284
+    '60': 22.369999885559082
+  time_to_finish: 22.369999885559082
+rollout_3:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.6500000953674316
+    '20': 6.980000019073486
+    '30': 10.210000038146973
+    '40': 13.700000047683716
+    '50': 17.420000076293945
+    '60': 21.670000076293945
+  time_to_finish: 21.670000076293945
+
+
+=======hard_56 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 4.049999952316284
+    '20': 7.349999904632568
+    '30': 10.68999981880188
+    '40': 14.199999809265137
+    '50': 18.079999923706055
+    '60': 21.980000019073486
+  time_to_finish: 21.980000019073486
+rollout_2:
+  Success: false
+  number_crashes: 11
+  segment_times:
+    '10': 3.6599998474121094
+    '20': 6.980000019073486
+    '30': 10.460000038146973
+    '40': 15.460000038146973
+    '50': 18.869999885559082
+    '60': 23.039999961853027
+  time_to_finish: 23.039999961853027
+rollout_3:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 4.139999866485596
+    '20': 7.43999981880188
+    '30': 10.68999981880188
+    '40': 14.049999952316284
+    '50': 17.449999809265137
+    '60': 22.149999856948853
+  time_to_finish: 22.149999856948853
+
+
+=======hard_57 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.6500000953674316
+    '20': 6.980000019073486
+    '30': 10.240000009536743
+    '40': 13.52999997138977
+    '50': 17.55999994277954
+    '60': 21.34000015258789
+  time_to_finish: 21.34000015258789
+rollout_2:
+  Success: false
+  number_crashes: 11
+  segment_times:
+    '10': 4.150000095367432
+    '20': 7.490000009536743
+    '30': 10.759999990463257
+    '40': 14.400000095367432
+    '50': 18.619999885559082
+    '60': 23.049999952316284
+  time_to_finish: 23.049999952316284
+rollout_3:
+  Success: false
+  number_crashes: 11
+  segment_times:
+    '10': 3.75
+    '20': 7.090000152587891
+    '30': 11.190000057220459
+    '40': 15.120000123977661
+    '50': 18.350000143051147
+    '60': 22.039999961853027
+  time_to_finish: 22.039999961853027
+
+
+=======hard_58 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 4.059999942779541
+    '20': 7.389999866485596
+    '30': 10.72000002861023
+    '40': 14.430000066757202
+    '50': 17.919999837875366
+    '60': 21.58999991416931
+  time_to_finish: 21.58999991416931
+rollout_2:
+  Success: false
+  number_crashes: 13
+  segment_times:
+    '10': 3.75
+    '20': 7.059999942779541
+    '30': 10.5
+    '40': 13.859999895095825
+    '50': 17.40999984741211
+    '60': 22.979999780654907
+  time_to_finish: 22.979999780654907
+rollout_3:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.9499998092651367
+    '20': 7.2799999713897705
+    '30': 10.68999981880188
+    '40': 14.009999990463257
+    '50': 17.389999866485596
+    '60': 23.179999828338623
+  time_to_finish: 23.179999828338623
+
+
+=======hard_59 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.75
+    '20': 7.06000018119812
+    '30': 10.440000057220459
+    '40': 14.420000076293945
+    '50': 17.87000012397766
+    '60': 21.47000002861023
+  time_to_finish: 21.47000002861023
+rollout_2:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 4.050000190734863
+    '20': 7.380000114440918
+    '30': 10.650000095367432
+    '40': 14.190000057220459
+    '50': 17.56000018119812
+    '60': 21.450000047683716
+  time_to_finish: 21.450000047683716
+rollout_3:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.75
+    '20': 7.059999942779541
+    '30': 10.429999828338623
+    '40': 13.960000038146973
+    '50': 17.419999837875366
+    '60': 21.359999895095825
+  time_to_finish: 21.359999895095825
+
+
+=======hard_60 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.740000009536743
+    '20': 7.070000171661377
+    '30': 10.490000009536743
+    '40': 14.259999990463257
+    '50': 18.140000104904175
+    '60': 22.06000018119812
+  time_to_finish: 22.06000018119812
+rollout_3:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.950000047683716
+    '20': 7.2900002002716064
+    '30': 10.850000143051147
+    '40': 14.170000076293945
+    '50': 17.860000133514404
+    '60': 21.570000171661377
+  time_to_finish: 21.570000171661377
+
+
+=======hard_61 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.75
+    '20': 7.099999904632568
+    '30': 10.339999914169312
+    '40': 14.02999997138977
+    '50': 17.490000009536743
+    '60': 21.18999981880188
+  time_to_finish: 21.18999981880188
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.6500000953674316
+    '20': 6.990000009536743
+    '30': 10.269999980926514
+    '40': 13.980000019073486
+    '50': 17.640000104904175
+    '60': 21.66000008583069
+  time_to_finish: 21.66000008583069
+
+
+=======hard_62 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 4.050000190734863
+    '20': 7.370000123977661
+    '30': 11.009999990463257
+    '40': 14.790000200271606
+    '50': 18.34000015258789
+    '60': 22.53000020980835
+  time_to_finish: 22.53000020980835
+rollout_2:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.6599998474121094
+    '20': 6.979999780654907
+    '30': 10.25
+    '40': 13.789999961853027
+    '50': 17.949999809265137
+    '60': 22.289999961853027
+  time_to_finish: 22.289999961853027
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_23 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.5999999046325684
+    '20': 7.0899999141693115
+    '30': 10.480000019073486
+    '40': 14.609999895095825
+    '50': 18.649999856948853
+    '60': 25.169999837875366
+  time_to_finish: 25.169999837875366
+rollout_2:
+  Success: false
+  number_crashes: 19
+  segment_times:
+    '10': 3.9000000953674316
+    '20': 7.370000123977661
+    '30': 11.049999952316284
+    '40': 15.870000123977661
+    '50': 19.769999980926514
+    '60': 28.52999997138977
+  time_to_finish: 28.52999997138977
+rollout_3:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.5
+    '20': 7.0
+    '30': 11.200000047683716
+    '40': 15.980000019073486
+    '50': 20.360000133514404
+    '60': 26.799999952316284
+  time_to_finish: 26.799999952316284
+
+
+=======hard_24 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.5900001525878906
+    '20': 7.0299999713897705
+    '30': 10.690000057220459
+    '40': 15.480000019073486
+    '50': 22.55999994277954
+    '60': 27.759999990463257
+  time_to_finish: 27.759999990463257
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_25 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 4.0
+    '20': 7.440000057220459
+    '30': 11.25
+    '40': 15.240000009536743
+    '50': 20.19000005722046
+    '60': 25.139999866485596
+  time_to_finish: 25.139999866485596
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_26 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.890000104904175
+    '20': 7.330000162124634
+    '30': 11.06000018119812
+    '40': 14.980000019073486
+    '50': 19.15000009536743
+    '60': 25.0
+  time_to_finish: 25.0
+rollout_2:
+  Success: false
+  number_crashes: 21
+  segment_times:
+    '10': 3.5
+    '20': 6.929999828338623
+    '30': 10.730000019073486
+    '40': 15.319999933242798
+    '50': 19.569999933242798
+    '60': 25.299999952316284
+  time_to_finish: 25.299999952316284
+rollout_3:
+  Success: false
+  number_crashes: 13
+  segment_times:
+    '10': 3.8999998569488525
+    '20': 7.369999885559082
+    '30': 11.359999895095825
+    '40': 15.609999895095825
+    '50': 19.5
+    '60': 26.65999984741211
+  time_to_finish: 26.65999984741211
+
+
+=======hard_27 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 3.9100000858306885
+    '20': 7.369999885559082
+    '30': 10.77999997138977
+    '40': 14.619999885559082
+    '50': 19.450000047683716
+    '60': 25.22000002861023
+  time_to_finish: 25.22000002861023
+
+
+=======hard_28 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 11
+  segment_times:
+    '10': 3.580000162124634
+    '20': 7.050000190734863
+    '30': 10.610000133514404
+    '40': 14.580000162124634
+    '50': 19.890000104904175
+    '60': 25.06000018119812
+  time_to_finish: 25.06000018119812
+rollout_2:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 3.8899998664855957
+    '20': 7.319999933242798
+    '30': 11.049999952316284
+    '40': 14.90999984741211
+    '50': 19.009999990463257
+    '60': 24.27999997138977
+  time_to_finish: 24.27999997138977
+rollout_3:
+  Success: false
+  number_crashes: 15
+  segment_times:
+    '10': 3.490000009536743
+    '20': 7.019999980926514
+    '30': 10.509999990463257
+    '40': 15.410000085830688
+    '50': 20.66000008583069
+    '60': 26.399999856948853
+  time_to_finish: 26.399999856948853
+
+
+=======hard_29 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.990000009536743
+    '20': 7.519999980926514
+    '30': 11.190000057220459
+    '40': 15.130000114440918
+    '50': 19.730000019073486
+    '60': 26.009999990463257
+  time_to_finish: 26.009999990463257
+rollout_2:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.5
+    '20': 6.950000047683716
+    '30': 10.75
+    '40': 14.52999997138977
+    '50': 19.609999895095825
+    '60': 26.139999866485596
+  time_to_finish: 26.139999866485596
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_30 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 3.509999990463257
+    '20': 7.0899999141693115
+    '30': 10.620000123977661
+    '40': 15.769999980926514
+    '50': 21.22000002861023
+    '60': 26.480000019073486
+  time_to_finish: 26.480000019073486
+
+
+=======hard_31 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.490000009536743
+    '20': 6.990000009536743
+    '30': 10.669999837875366
+    '40': 14.93999981880188
+    '50': 21.490000009536743
+    '60': 27.369999885559082
+  time_to_finish: 27.369999885559082
+rollout_3:
+  Success: false
+  number_crashes: 18
+  segment_times:
+    '10': 3.799999952316284
+    '20': 7.240000009536743
+    '30': 10.880000114440918
+    '40': 14.509999990463257
+    '50': 20.16000008583069
+    '60': 29.110000133514404
+  time_to_finish: 29.110000133514404
+
+
+=======hard_32 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_33 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.7899999618530273
+    '20': 7.210000038146973
+    '30': 10.870000123977661
+    '40': 14.81000018119812
+    '50': 21.509999990463257
+    '60': 27.41000008583069
+  time_to_finish: 27.41000008583069
+rollout_3:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.6000001430511475
+    '20': 7.150000095367432
+    '30': 12.040000200271606
+    '40': 16.0
+    '50': 20.97000002861023
+    '60': 27.170000076293945
+  time_to_finish: 27.170000076293945
+
+
+=======hard_34 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.8999998569488525
+    '20': 7.3999998569488525
+    '30': 10.849999904632568
+    '40': 15.389999866485596
+    '50': 19.079999923706055
+    '60': 24.94000005722046
+  time_to_finish: 24.94000005722046
+rollout_2:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.5899999141693115
+    '20': 7.039999961853027
+    '30': 10.509999990463257
+    '40': 16.16000008583069
+    '50': 20.769999980926514
+    '60': 25.94000005722046
+  time_to_finish: 25.94000005722046
+rollout_3:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 3.890000104904175
+    '20': 7.309999942779541
+    '30': 11.069999933242798
+    '40': 15.920000076293945
+    '50': 20.41000008583069
+    '60': 25.90000009536743
+  time_to_finish: 25.90000009536743
+
+
+=======hard_35 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.7799999713897705
+    '20': 7.229999780654907
+    '30': 10.789999961853027
+    '40': 15.009999990463257
+    '50': 19.019999980926514
+    '60': 23.869999885559082
+  time_to_finish: 23.869999885559082
+
+
+=======hard_36 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_37 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_38 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 18
+  segment_times:
+    '10': 3.5899999141693115
+    '20': 7.019999980926514
+    '30': 10.829999923706055
+    '40': 15.52999997138977
+    '50': 20.509999990463257
+    '60': 25.72000002861023
+  time_to_finish: 25.72000002861023
+rollout_2:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.9099998474121094
+    '20': 7.359999895095825
+    '30': 11.22000002861023
+    '40': 15.72000002861023
+    '50': 20.77999997138977
+    '60': 25.30999994277954
+  time_to_finish: 25.30999994277954
+rollout_3:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.490000009536743
+    '20': 7.06000018119812
+    '30': 10.880000114440918
+    '40': 14.769999980926514
+    '50': 18.550000190734863
+    '60': 24.850000143051147
+  time_to_finish: 24.850000143051147
+
+
+=======hard_39 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.8899998664855957
+    '20': 7.3399999141693115
+    '30': 10.849999904632568
+    '40': 15.25
+    '50': 20.30999994277954
+    '60': 27.0
+  time_to_finish: 27.0
+
+
+=======hard_40 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.890000104904175
+    '20': 7.3399999141693115
+    '30': 12.259999990463257
+    '40': 15.710000038146973
+    '50': 20.039999961853027
+    '60': 27.12999987602234
+  time_to_finish: 27.12999987602234
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 18
+  segment_times:
+    '10': 3.890000104904175
+    '20': 7.299999952316284
+    '30': 11.120000123977661
+    '40': 15.490000009536743
+    '50': 20.110000133514404
+    '60': 27.549999952316284
+  time_to_finish: 27.549999952316284
+
+
+=======hard_41 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 3.990000009536743
+    '20': 7.440000057220459
+    '30': 11.180000066757202
+    '40': 17.170000076293945
+    '50': 21.880000114440918
+    '60': 29.180000066757202
+  time_to_finish: 29.180000066757202
+rollout_2:
+  Success: false
+  number_crashes: 11
+  segment_times:
+    '10': 3.490000009536743
+    '20': 6.950000047683716
+    '30': 11.27999997138977
+    '40': 15.230000019073486
+    '50': 20.509999990463257
+    '60': 26.139999866485596
+  time_to_finish: 26.139999866485596
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_42 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.9100000858306885
+    '20': 7.3500001430511475
+    '30': 11.570000171661377
+    '40': 15.360000133514404
+    '50': 19.850000143051147
+    '60': 25.740000009536743
+  time_to_finish: 25.740000009536743
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_43 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.8999998569488525
+    '20': 7.359999895095825
+    '30': 11.129999876022339
+    '40': 14.809999942779541
+    '50': 19.710000038146973
+    '60': 27.859999895095825
+  time_to_finish: 27.859999895095825
+rollout_2:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 3.5999999046325684
+    '20': 7.049999952316284
+    '30': 10.72000002861023
+    '40': 15.25
+    '50': 19.18999981880188
+    '60': 25.83999991416931
+  time_to_finish: 25.83999991416931
+rollout_3:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.7899999618530273
+    '20': 7.240000009536743
+    '30': 10.97000002861023
+    '40': 15.730000019073486
+    '50': 20.450000047683716
+    '60': 24.69000005722046
+  time_to_finish: 24.69000005722046
+
+
+=======hard_44 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 17
+  segment_times:
+    '10': 3.490000009536743
+    '20': 6.960000038146973
+    '30': 10.620000123977661
+    '40': 14.320000171661377
+    '50': 20.56000018119812
+    '60': 28.700000047683716
+  time_to_finish: 28.700000047683716
+rollout_2:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 4.009999990463257
+    '20': 7.509999990463257
+    '30': 11.190000057220459
+    '40': 14.890000104904175
+    '50': 19.460000038146973
+    '60': 24.47000002861023
+  time_to_finish: 24.47000002861023
+rollout_3:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.489999771118164
+    '20': 6.929999828338623
+    '30': 10.569999933242798
+    '40': 14.489999771118164
+    '50': 20.209999799728394
+    '60': 23.269999980926514
+  time_to_finish: 23.269999980926514
+
+
+=======hard_45 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.8999998569488525
+    '20': 7.389999866485596
+    '30': 11.419999837875366
+    '40': 15.609999895095825
+    '50': 19.83999991416931
+    '60': 26.119999885559082
+  time_to_finish: 26.119999885559082
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_46 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 3.890000104904175
+    '20': 7.430000066757202
+    '30': 11.240000009536743
+    '40': 15.210000038146973
+    '50': 19.740000009536743
+    '60': 24.920000076293945
+  time_to_finish: 24.920000076293945
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_47 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.890000104904175
+    '20': 7.319999933242798
+    '30': 11.019999980926514
+    '40': 15.019999980926514
+    '50': 20.069999933242798
+    '60': 28.37000012397766
+  time_to_finish: 28.37000012397766
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 11
+  segment_times:
+    '10': 3.8899998664855957
+    '20': 7.4700000286102295
+    '30': 11.15999984741211
+    '40': 15.179999828338623
+    '50': 21.009999990463257
+    '60': 28.72000002861023
+  time_to_finish: 28.72000002861023
+
+
+=======hard_48 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 17
+  segment_times:
+    '10': 3.7899999618530273
+    '20': 7.2200000286102295
+    '30': 11.759999990463257
+    '40': 15.920000076293945
+    '50': 21.509999990463257
+    '60': 29.269999980926514
+  time_to_finish: 29.269999980926514
+
+
+=======hard_49 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_50 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 3.5
+    '20': 6.990000009536743
+    '30': 10.839999914169312
+    '40': 15.509999990463257
+    '50': 21.549999952316284
+    '60': 28.450000047683716
+  time_to_finish: 28.450000047683716
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 11
+  segment_times:
+    '10': 3.5999999046325684
+    '20': 7.059999942779541
+    '30': 10.789999961853027
+    '40': 15.269999980926514
+    '50': 21.22000002861023
+    '60': 26.480000019073486
+  time_to_finish: 26.480000019073486
+
+
+=======hard_51 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 11
+  segment_times:
+    '10': 3.490000009536743
+    '20': 6.9700000286102295
+    '30': 10.450000047683716
+    '40': 14.850000143051147
+    '50': 19.630000114440918
+    '60': 25.480000019073486
+  time_to_finish: 25.480000019073486
+rollout_3:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.9100000858306885
+    '20': 7.3500001430511475
+    '30': 11.240000009536743
+    '40': 15.120000123977661
+    '50': 19.820000171661377
+    '60': 23.69000005722046
+  time_to_finish: 23.69000005722046
+
+
+=======hard_52 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.4799997806549072
+    '20': 6.8999998569488525
+    '30': 10.46999979019165
+    '40': 14.21999979019165
+    '50': 18.679999828338623
+    '60': 24.83999991416931
+  time_to_finish: 24.83999991416931
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_53 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_54 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.5900001525878906
+    '20': 7.110000133514404
+    '30': 11.080000162124634
+    '40': 14.77999997138977
+    '50': 20.06000018119812
+    '60': 27.759999990463257
+  time_to_finish: 27.759999990463257
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 3.5
+    '20': 6.9100000858306885
+    '30': 10.440000057220459
+    '40': 15.019999980926514
+    '50': 19.56000018119812
+    '60': 25.630000114440918
+  time_to_finish: 25.630000114440918
+
+
+=======hard_55 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 4.0
+    '20': 7.43999981880188
+    '30': 10.869999885559082
+    '40': 14.869999885559082
+    '50': 19.759999990463257
+    '60': 25.87999987602234
+  time_to_finish: 25.87999987602234
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_56 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.8000001907348633
+    '20': 7.230000019073486
+    '30': 10.880000114440918
+    '40': 15.06000018119812
+    '50': 20.290000200271606
+    '60': 26.360000133514404
+  time_to_finish: 26.360000133514404
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_57 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 11
+  segment_times:
+    '10': 3.8899998664855957
+    '20': 7.450000047683716
+    '30': 11.089999914169312
+    '40': 15.429999828338623
+    '50': 22.27999997138977
+    '60': 29.369999885559082
+  time_to_finish: 29.369999885559082
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_58 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 14
+  segment_times:
+    '10': 3.5
+    '20': 6.909999847412109
+    '30': 10.75
+    '40': 14.759999990463257
+    '50': 22.299999952316284
+    '60': 29.489999771118164
+  time_to_finish: 29.489999771118164
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 16
+  segment_times:
+    '10': 3.6000001430511475
+    '20': 7.170000076293945
+    '30': 11.690000057220459
+    '40': 15.430000066757202
+    '50': 20.759999990463257
+    '60': 27.540000200271606
+  time_to_finish: 27.540000200271606
+
+
+=======hard_59 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.9000000953674316
+    '20': 7.329999923706055
+    '30': 10.710000038146973
+    '40': 15.02999997138977
+    '50': 18.980000019073486
+    '60': 26.83999991416931
+  time_to_finish: 26.83999991416931
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.8899998664855957
+    '20': 7.329999923706055
+    '30': 11.25
+    '40': 15.309999942779541
+    '50': 23.170000076293945
+    '60': 29.119999885559082
+  time_to_finish: 29.119999885559082
+
+
+=======hard_60 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.9800000190734863
+    '20': 7.490000009536743
+    '30': 11.78000020980835
+    '40': 15.830000162124634
+    '50': 20.180000066757202
+    '60': 25.47000002861023
+  time_to_finish: 25.47000002861023
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.8999998569488525
+    '20': 7.319999933242798
+    '30': 10.889999866485596
+    '40': 15.069999933242798
+    '50': 21.65999984741211
+    '60': 28.669999837875366
+  time_to_finish: 28.669999837875366
+
+
+=======hard_61 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.5999999046325684
+    '20': 7.0899999141693115
+    '30': 10.700000047683716
+    '40': 14.829999923706055
+    '50': 19.58999991416931
+    '60': 25.109999895095825
+  time_to_finish: 25.109999895095825
+rollout_3:
+  Success: false
+  number_crashes: 14
+  segment_times:
+    '10': 3.9000000953674316
+    '20': 7.359999895095825
+    '30': 10.759999990463257
+    '40': 14.889999866485596
+    '50': 21.920000076293945
+    '60': 29.58999991416931
+  time_to_finish: 29.58999991416931
+
+
+=======hard_62 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.9000000953674316
+    '20': 7.360000133514404
+    '30': 11.380000114440918
+    '40': 15.800000190734863
+    '50': 21.15000009536743
+    '60': 27.480000019073486
+  time_to_finish: 27.480000019073486
+
+
+=======hard_23 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_24 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.609999895095825
+    '20': 7.049999952316284
+    '30': 10.389999866485596
+    '40': 13.740000009536743
+    '50': 17.109999895095825
+    '60': 20.569999933242798
+  time_to_finish: 20.569999933242798
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_25 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_26 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_27 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_28 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_29 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_30 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_31 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 3.9100000858306885
+    '20': 7.340000152587891
+    '30': 10.690000057220459
+    '40': 14.049999952316284
+    '50': 17.380000114440918
+    '60': 20.80999994277954
+  time_to_finish: 20.80999994277954
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_32 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_33 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_34 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.5999999046325684
+    '20': 7.0299999713897705
+    '30': 10.549999952316284
+    '40': 13.649999856948853
+    '50': 17.569999933242798
+    '60': 20.950000047683716
+  time_to_finish: 20.950000047683716
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_35 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_36 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_37 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_38 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_39 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_40 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_41 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.5899999141693115
+    '20': 7.0299999713897705
+    '30': 10.519999980926514
+    '40': 13.839999914169312
+    '50': 17.16000008583069
+    '60': 20.539999961853027
+  time_to_finish: 20.539999961853027
+
+
+=======hard_42 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_43 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_44 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.6000001430511475
+    '20': 7.019999980926514
+    '30': 10.390000104904175
+    '40': 13.830000162124634
+    '50': 17.170000076293945
+    '60': 20.640000104904175
+  time_to_finish: 20.640000104904175
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_45 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_46 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_47 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_48 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_49 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_50 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_51 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_52 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_53 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_54 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_55 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_56 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.509999990463257
+    '20': 6.930000066757202
+    '30': 10.319999933242798
+    '40': 13.639999866485596
+    '50': 17.05999994277954
+    '60': 20.460000038146973
+  time_to_finish: 20.460000038146973
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_57 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_58 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_59 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_60 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_61 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_62 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_23 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_24 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_25 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_26 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 16
+  segment_times:
+    '10': 3.4200000762939453
+    '20': 6.860000133514404
+    '30': 10.880000114440918
+    '40': 14.960000038146973
+    '50': 18.30999994277954
+    '60': 21.710000038146973
+  time_to_finish: 21.710000038146973
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_27 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 13
+  segment_times:
+    '10': 3.7200000286102295
+    '20': 7.200000047683716
+    '30': 10.550000190734863
+    '40': 14.270000219345093
+    '50': 17.980000019073486
+    '60': 21.34000015258789
+  time_to_finish: 21.34000015258789
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_28 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 13
+  segment_times:
+    '10': 3.8299999237060547
+    '20': 7.309999942779541
+    '30': 10.889999866485596
+    '40': 14.619999885559082
+    '50': 18.450000047683716
+    '60': 24.72000002861023
+  time_to_finish: 24.72000002861023
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_29 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_30 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 13
+  segment_times:
+    '10': 3.5299999713897705
+    '20': 6.9599997997283936
+    '30': 10.389999866485596
+    '40': 14.099999904632568
+    '50': 17.549999952316284
+    '60': 20.819999933242798
+  time_to_finish: 20.819999933242798
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_31 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 15
+  segment_times:
+    '10': 3.430000066757202
+    '20': 6.859999895095825
+    '30': 10.509999990463257
+    '40': 14.079999923706055
+    '50': 17.460000038146973
+    '60': 20.97000002861023
+  time_to_finish: 20.97000002861023
+
+
+=======hard_32 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.7300000190734863
+    '20': 7.140000104904175
+    '30': 10.660000085830688
+    '40': 14.22000002861023
+    '50': 17.430000066757202
+    '60': 20.740000009536743
+  time_to_finish: 20.740000009536743
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_33 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_34 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 13
+  segment_times:
+    '10': 3.8299999237060547
+    '20': 7.289999961853027
+    '30': 10.609999895095825
+    '40': 14.0
+    '50': 17.740000009536743
+    '60': 21.87999987602234
+  time_to_finish: 21.87999987602234
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 13
+  segment_times:
+    '10': 4.119999885559082
+    '20': 7.609999895095825
+    '30': 11.359999895095825
+    '40': 15.150000095367432
+    '50': 18.869999885559082
+    '60': 27.109999895095825
+  time_to_finish: 27.109999895095825
+
+
+=======hard_35 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 14
+  segment_times:
+    '10': 3.830000162124634
+    '20': 7.300000190734863
+    '30': 11.25
+    '40': 16.34000015258789
+    '50': 20.94000005722046
+    '60': 25.84000015258789
+  time_to_finish: 25.84000015258789
+
+
+=======hard_36 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.809999942779541
+    '20': 7.169999837875366
+    '30': 10.549999952316284
+    '40': 13.949999809265137
+    '50': 17.269999980926514
+    '60': 20.649999856948853
+  time_to_finish: 20.649999856948853
+rollout_2:
+  Success: false
+  number_crashes: 11
+  segment_times:
+    '10': 3.5199999809265137
+    '20': 6.960000038146973
+    '30': 10.460000038146973
+    '40': 13.880000114440918
+    '50': 18.740000009536743
+    '60': 22.450000047683716
+  time_to_finish: 22.450000047683716
+rollout_3:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 3.820000171661377
+    '20': 7.330000162124634
+    '30': 10.790000200271606
+    '40': 14.790000200271606
+    '50': 18.520000219345093
+    '60': 22.580000162124634
+  time_to_finish: 22.580000162124634
+
+
+=======hard_37 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 3.8399999141693115
+    '20': 7.2799999713897705
+    '30': 11.22000002861023
+    '40': 14.569999933242798
+    '50': 18.09999990463257
+    '60': 21.55999994277954
+  time_to_finish: 21.55999994277954
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_38 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.700000047683716
+    '20': 7.059999942779541
+    '30': 10.440000057220459
+    '40': 13.880000114440918
+    '50': 17.289999961853027
+    '60': 20.820000171661377
+  time_to_finish: 20.820000171661377
+
+
+=======hard_39 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 3.5299999713897705
+    '20': 7.0299999713897705
+    '30': 10.729999780654907
+    '40': 16.869999885559082
+    '50': 20.709999799728394
+    '60': 24.12999987602234
+  time_to_finish: 24.12999987602234
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_40 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 13
+  segment_times:
+    '10': 3.819999933242798
+    '20': 7.269999980926514
+    '30': 10.97000002861023
+    '40': 14.289999961853027
+    '50': 17.75
+    '60': 21.480000019073486
+  time_to_finish: 21.480000019073486
+
+
+=======hard_41 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 14
+  segment_times:
+    '10': 3.820000171661377
+    '20': 7.270000219345093
+    '30': 10.920000076293945
+    '40': 14.460000038146973
+    '50': 17.980000019073486
+    '60': 21.759999990463257
+  time_to_finish: 21.759999990463257
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_42 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_43 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 11
+  segment_times:
+    '10': 3.4200000762939453
+    '20': 6.9100000858306885
+    '30': 10.890000104904175
+    '40': 14.769999980926514
+    '50': 18.83999991416931
+    '60': 22.210000038146973
+  time_to_finish: 22.210000038146973
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_44 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_45 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.429999828338623
+    '20': 6.909999847412109
+    '30': 10.679999828338623
+    '40': 14.869999885559082
+    '50': 18.229999780654907
+    '60': 21.58999991416931
+  time_to_finish: 21.58999991416931
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_46 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_47 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_48 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_49 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 14
+  segment_times:
+    '10': 3.919999837875366
+    '20': 7.450000047683716
+    '30': 11.740000009536743
+    '40': 15.169999837875366
+    '50': 18.33999991416931
+    '60': 24.480000019073486
+  time_to_finish: 24.480000019073486
+rollout_2:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.509999990463257
+    '20': 6.980000019073486
+    '30': 10.859999895095825
+    '40': 15.02999997138977
+    '50': 20.240000009536743
+    '60': 25.02999997138977
+  time_to_finish: 25.02999997138977
+rollout_3:
+  Success: false
+  number_crashes: 18
+  segment_times:
+    '10': 3.740000009536743
+    '20': 7.130000114440918
+    '30': 11.039999961853027
+    '40': 14.27999997138977
+    '50': 17.65000009536743
+    '60': 21.180000066757202
+  time_to_finish: 21.180000066757202
+
+
+=======hard_50 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 11
+  segment_times:
+    '10': 3.5199999809265137
+    '20': 7.039999961853027
+    '30': 10.390000104904175
+    '40': 13.799999952316284
+    '50': 17.15000009536743
+    '60': 20.759999990463257
+  time_to_finish: 20.759999990463257
+
+
+=======hard_51 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 3.8400001525878906
+    '20': 7.300000190734863
+    '30': 11.040000200271606
+    '40': 14.680000066757202
+    '50': 18.050000190734863
+    '60': 21.65000009536743
+  time_to_finish: 21.65000009536743
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_52 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.509999990463257
+    '20': 6.819999933242798
+    '30': 10.589999914169312
+    '40': 14.160000085830688
+    '50': 17.41000008583069
+    '60': 20.960000038146973
+  time_to_finish: 20.960000038146973
+
+
+=======hard_53 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 3.8400001525878906
+    '20': 7.269999980926514
+    '30': 10.700000047683716
+    '40': 14.039999961853027
+    '50': 18.30999994277954
+    '60': 22.390000104904175
+  time_to_finish: 22.390000104904175
+rollout_2:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.509999990463257
+    '20': 7.009999990463257
+    '30': 10.640000104904175
+    '40': 13.980000019073486
+    '50': 17.300000190734863
+    '60': 21.140000104904175
+  time_to_finish: 21.140000104904175
+rollout_3:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.75
+    '20': 7.25
+    '30': 10.599999904632568
+    '40': 14.139999866485596
+    '50': 17.679999828338623
+    '60': 21.46999979019165
+  time_to_finish: 21.46999979019165
+
+
+=======hard_54 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_55 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_56 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_57 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 21
+  segment_times:
+    '10': 3.930000066757202
+    '20': 7.3999998569488525
+    '30': 10.799999952316284
+    '40': 14.210000038146973
+    '50': 17.65999984741211
+    '60': 32.77999997138977
+  time_to_finish: 32.77999997138977
+
+
+=======hard_58 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 3.43999981880188
+    '20': 6.819999933242798
+    '30': 10.289999961853027
+    '40': 14.649999856948853
+    '50': 17.979999780654907
+    '60': 21.34999990463257
+  time_to_finish: 21.34999990463257
+rollout_3:
+  Success: false
+  number_crashes: 14
+  segment_times:
+    '10': 3.830000162124634
+    '20': 7.259999990463257
+    '30': 10.800000190734863
+    '40': 14.490000009536743
+    '50': 17.75
+    '60': 21.110000133514404
+  time_to_finish: 21.110000133514404
+
+
+=======hard_59 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 14
+  segment_times:
+    '10': 3.5199999809265137
+    '20': 6.989999771118164
+    '30': 10.959999799728394
+    '40': 14.43999981880188
+    '50': 17.77999997138977
+    '60': 21.299999952316284
+  time_to_finish: 21.299999952316284
+
+
+=======hard_60 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.7300000190734863
+    '20': 7.200000047683716
+    '30': 10.660000085830688
+    '40': 14.069999933242798
+    '50': 17.519999980926514
+    '60': 20.920000076293945
+  time_to_finish: 20.920000076293945
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_61 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.7199997901916504
+    '20': 7.2099997997283936
+    '30': 10.869999885559082
+    '40': 14.229999780654907
+    '50': 18.769999980926514
+    '60': 22.989999771118164
+  time_to_finish: 22.989999771118164
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_62 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======medium_23 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Success: true
+  number_crashes: 0
+  segment_times:
+    '10': 4.109999895095825
+    '20': 7.5
+    '30': 10.799999952316284
+    '40': 14.079999923706055
+    '50': 19.799999952316284
+    '60': 30.87999987602234
+  time_to_finish: 30.87999987602234
+rollout_2:
+  Success: true
+  number_crashes: 0
+  segment_times:
+    '10': 3.7100000381469727
+    '20': 7.099999904632568
+    '30': 10.430000066757202
+    '40': 19.210000038146973
+    '50': 27.5
+    '60': 40.019999980926514
+  time_to_finish: 40.019999980926514
+rollout_3:
+  Success: true
+  number_crashes: 0
+  segment_times:
+    '10': 4.009999990463257
+    '20': 7.420000076293945
+    '30': 10.769999980926514
+    '40': 14.089999914169312
+    '50': 24.009999990463257
+    '60': 35.14999985694885
+  time_to_finish: 35.14999985694885
+
+
+=======medium_24 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 4
+  segment_times:
+    '10': 3.5400002002716064
+    '20': 6.900000095367432
+    '30': 11.190000057220459
+    '40': 14.420000076293945
+    '50': 17.950000047683716
+    '60': 21.920000076293945
+  time_to_finish: 21.920000076293945
+rollout_3:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.950000047683716
+    '20': 7.320000171661377
+    '30': 10.980000019073486
+    '40': 14.610000133514404
+    '50': 18.140000104904175
+    '60': 21.59000015258789
+  time_to_finish: 21.59000015258789
+
+
+=======medium_25 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 5
+  segment_times:
+    '10': 4.109999895095825
+    '20': 7.539999961853027
+    '30': 10.849999904632568
+    '40': 14.21999979019165
+    '50': 17.75
+    '60': 21.5
+  time_to_finish: 21.5
+rollout_2:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 3.75
+    '20': 7.170000076293945
+    '30': 10.460000038146973
+    '40': 13.75
+    '50': 18.290000200271606
+    '60': 21.84000015258789
+  time_to_finish: 21.84000015258789
+rollout_3:
+  Success: false
+  number_crashes: 2
+  segment_times:
+    '10': 3.9800000190734863
+    '20': 7.409999847412109
+    '30': 10.699999809265137
+    '40': 13.97000002861023
+    '50': 17.259999990463257
+    '60': 20.77999997138977
+  time_to_finish: 20.77999997138977
+
+
+=======medium_26 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======medium_27 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======medium_28 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.9800000190734863
+    '20': 7.370000123977661
+    '30': 11.580000162124634
+    '40': 14.850000143051147
+    '50': 18.710000038146973
+    '60': 27.350000143051147
+  time_to_finish: 27.350000143051147
+rollout_2:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.4700000286102295
+    '20': 6.920000076293945
+    '30': 10.080000162124634
+    '40': 15.600000143051147
+    '50': 19.630000114440918
+    '60': 23.15000009536743
+  time_to_finish: 23.15000009536743
+rollout_3:
+  Success: false
+  number_crashes: 5
+  segment_times:
+    '10': 3.870000123977661
+    '20': 7.289999961853027
+    '30': 10.640000104904175
+    '40': 14.650000095367432
+    '50': 19.130000114440918
+    '60': 23.05999994277954
+  time_to_finish: 23.05999994277954
+
+
+=======medium_29 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 3.9599997997283936
+    '20': 7.329999923706055
+    '30': 10.639999866485596
+    '40': 13.889999866485596
+    '50': 17.209999799728394
+    '60': 20.669999837875366
+  time_to_finish: 20.669999837875366
+rollout_2:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.6600000858306885
+    '20': 7.03000020980835
+    '30': 10.360000133514404
+    '40': 13.670000076293945
+    '50': 16.97000002861023
+    '60': 20.420000076293945
+  time_to_finish: 20.420000076293945
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======medium_30 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.9200000762939453
+    '20': 7.329999923706055
+    '30': 10.670000076293945
+    '40': 13.980000019073486
+    '50': 17.460000038146973
+    '60': 21.15000009536743
+  time_to_finish: 21.15000009536743
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======medium_31 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.9200000762939453
+    '20': 7.2799999713897705
+    '30': 10.980000019073486
+    '40': 14.100000143051147
+    '50': 18.90000009536743
+    '60': 24.390000104904175
+  time_to_finish: 24.390000104904175
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.9200000762939453
+    '20': 7.2799999713897705
+    '30': 10.629999876022339
+    '40': 14.440000057220459
+    '50': 18.09999990463257
+    '60': 21.930000066757202
+  time_to_finish: 21.930000066757202
+
+
+=======medium_32 | nmpc_short_controls_first_model.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 3
+  segment_times:
+    '10': 4.329999923706055
+    '20': 7.730000019073486
+    '30': 11.039999961853027
+    '40': 14.319999933242798
+    '50': 17.740000009536743
+    '60': 21.230000019073486
+  time_to_finish: 21.230000019073486
+rollout_2:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 3.5199999809265137
+    '20': 6.920000076293945
+    '30': 10.210000038146973
+    '40': 13.47000002861023
+    '50': 16.829999923706055
+    '60': 20.889999866485596
+  time_to_finish: 20.889999866485596
+rollout_3:
+  Success: false
+  number_crashes: 4
+  segment_times:
+    '10': 3.819999933242798
+    '20': 7.230000019073486
+    '30': 10.519999980926514
+    '40': 13.829999923706055
+    '50': 17.179999828338623
+    '60': 23.329999923706055
+  time_to_finish: 23.329999923706055
+
+
+=======medium_23 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 4.110000133514404
+    '20': 7.539999961853027
+    '30': 11.100000143051147
+    '40': 14.420000076293945
+    '50': 17.819999933242798
+    '60': 21.230000019073486
+  time_to_finish: 21.230000019073486
+rollout_2:
+  Success: false
+  number_crashes: 3
+  segment_times:
+    '10': 3.81000018119812
+    '20': 7.300000190734863
+    '30': 10.540000200271606
+    '40': 13.730000019073486
+    '50': 18.5
+    '60': 26.66000008583069
+  time_to_finish: 26.66000008583069
+rollout_3:
+  Success: false
+  number_crashes: 3
+  segment_times:
+    '10': 4.099999904632568
+    '20': 7.599999904632568
+    '30': 10.829999923706055
+    '40': 14.039999961853027
+    '50': 19.02999997138977
+    '60': 27.230000019073486
+  time_to_finish: 27.230000019073486
+
+
+=======medium_24 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 4.230000019073486
+    '20': 7.539999961853027
+    '30': 10.789999961853027
+    '40': 14.309999942779541
+    '50': 23.69000005722046
+    '60': 28.639999866485596
+  time_to_finish: 28.639999866485596
+rollout_2:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.75
+    '20': 7.079999923706055
+    '30': 10.379999876022339
+    '40': 13.680000066757202
+    '50': 16.980000019073486
+    '60': 20.519999980926514
+  time_to_finish: 20.519999980926514
+rollout_3:
+  Success: false
+  number_crashes: 5
+  segment_times:
+    '10': 4.1600000858306885
+    '20': 7.490000009536743
+    '30': 10.890000104904175
+    '40': 14.150000095367432
+    '50': 17.52999997138977
+    '60': 22.100000143051147
+  time_to_finish: 22.100000143051147
+
+
+=======medium_25 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 4.309999942779541
+    '20': 7.900000095367432
+    '30': 14.259999990463257
+    '40': 21.170000076293945
+    '50': 25.480000019073486
+    '60': 31.30999994277954
+  time_to_finish: 31.30999994277954
+rollout_2:
+  Success: false
+  number_crashes: 1
+  segment_times:
+    '10': 4.009999990463257
+    '20': 8.019999980926514
+    '30': 14.25
+    '40': 22.019999980926514
+    '50': 30.240000009536743
+    '60': 40.40000009536743
+  time_to_finish: 40.40000009536743
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======medium_26 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 5.330000162124634
+    '20': 8.610000133514404
+    '30': 13.400000095367432
+    '40': 22.05999994277954
+    '50': 29.62000012397766
+    '60': 37.00999999046326
+  time_to_finish: 37.00999999046326
+rollout_2:
+  Success: false
+  number_crashes: 4
+  segment_times:
+    '10': 4.799999952316284
+    '20': 8.089999914169312
+    '30': 12.139999866485596
+    '40': 19.789999961853027
+    '50': 27.80999994277954
+    '60': 38.17999982833862
+  time_to_finish: 38.17999982833862
+rollout_3:
+  Success: false
+  number_crashes: 4
+  segment_times:
+    '10': 5.230000019073486
+    '20': 8.549999952316284
+    '30': 13.930000066757202
+    '40': 18.990000009536743
+    '50': 26.460000038146973
+    '60': 34.58999991416931
+  time_to_finish: 34.58999991416931
+
+
+=======medium_27 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 3
+  segment_times:
+    '10': 3.569999933242798
+    '20': 6.9700000286102295
+    '30': 10.269999980926514
+    '40': 13.630000114440918
+    '50': 16.950000047683716
+    '60': 20.47000002861023
+  time_to_finish: 20.47000002861023
+rollout_3:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.870000123977661
+    '20': 7.289999961853027
+    '30': 10.600000143051147
+    '40': 13.980000019073486
+    '50': 17.320000171661377
+    '60': 21.039999961853027
+  time_to_finish: 21.039999961853027
+
+
+=======medium_28 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 5
+  segment_times:
+    '10': 3.990000009536743
+    '20': 7.559999942779541
+    '30': 11.539999961853027
+    '40': 15.619999885559082
+    '50': 19.05999994277954
+    '60': 22.699999809265137
+  time_to_finish: 22.699999809265137
+
+
+=======medium_29 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 4
+  segment_times:
+    '10': 4.460000038146973
+    '20': 7.920000076293945
+    '30': 11.289999961853027
+    '40': 14.519999980926514
+    '50': 23.490000009536743
+    '60': 32.049999952316284
+  time_to_finish: 32.049999952316284
+rollout_2:
+  Success: false
+  number_crashes: 3
+  segment_times:
+    '10': 3.9499998092651367
+    '20': 7.3999998569488525
+    '30': 10.93999981880188
+    '40': 14.149999856948853
+    '50': 17.549999952316284
+    '60': 25.65999984741211
+  time_to_finish: 25.65999984741211
+rollout_3:
+  Success: false
+  number_crashes: 4
+  segment_times:
+    '10': 4.460000038146973
+    '20': 7.9100000858306885
+    '30': 11.22000002861023
+    '40': 14.430000066757202
+    '50': 20.330000162124634
+    '60': 29.200000047683716
+  time_to_finish: 29.200000047683716
+
+
+=======medium_30 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 3.8899998664855957
+    '20': 7.319999933242798
+    '30': 10.609999895095825
+    '40': 13.930000066757202
+    '50': 23.77999997138977
+    '60': 30.44000005722046
+  time_to_finish: 30.44000005722046
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 4.0
+    '20': 7.440000057220459
+    '30': 10.789999961853027
+    '40': 14.099999904632568
+    '50': 17.450000047683716
+    '60': 21.09999990463257
+  time_to_finish: 21.09999990463257
+
+
+=======medium_31 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======medium_32 | nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 1
+  segment_times:
+    '10': 3.5
+    '20': 6.900000095367432
+    '30': 10.180000066757202
+    '40': 13.430000066757202
+    '50': 16.75
+    '60': 20.200000047683716
+  time_to_finish: 20.200000047683716
+rollout_2:
+  Success: false
+  number_crashes: 2
+  segment_times:
+    '10': 4.210000038146973
+    '20': 7.620000123977661
+    '30': 10.850000143051147
+    '40': 14.09000015258789
+    '50': 17.380000114440918
+    '60': 26.550000190734863
+  time_to_finish: 26.550000190734863
+rollout_3:
+  Success: false
+  number_crashes: 4
+  segment_times:
+    '10': 3.6100001335144043
+    '20': 7.06000018119812
+    '30': 10.400000095367432
+    '40': 13.650000095367432
+    '50': 17.080000162124634
+    '60': 20.600000143051147
+  time_to_finish: 20.600000143051147
+
+
+=======medium_23 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 4
+  segment_times:
+    '10': 4.360000133514404
+    '20': 8.140000104904175
+    '30': 12.440000057220459
+    '40': 17.25
+    '50': 23.850000143051147
+    '60': 31.05999994277954
+  time_to_finish: 31.05999994277954
+rollout_2:
+  Success: true
+  number_crashes: 0
+  segment_times:
+    '10': 4.009999990463257
+    '20': 7.7200000286102295
+    '30': 11.789999961853027
+    '40': 16.950000047683716
+    '50': 22.170000076293945
+    '60': 28.799999952316284
+  time_to_finish: 28.799999952316284
+rollout_3:
+  Success: false
+  number_crashes: 3
+  segment_times:
+    '10': 4.31000018119812
+    '20': 8.049999952316284
+    '30': 12.490000009536743
+    '40': 18.769999980926514
+    '50': 24.759999990463257
+    '60': 31.15000009536743
+  time_to_finish: 31.15000009536743
+
+
+=======medium_24 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 4
+  segment_times:
+    '10': 4.0
+    '20': 7.569999933242798
+    '30': 11.339999914169312
+    '40': 15.299999952316284
+    '50': 19.130000114440918
+    '60': 23.59999990463257
+  time_to_finish: 23.59999990463257
+
+
+=======medium_25 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 4
+  segment_times:
+    '10': 4.4100000858306885
+    '20': 8.079999923706055
+    '30': 11.72000002861023
+    '40': 17.84999990463257
+    '50': 24.579999923706055
+    '60': 31.58999991416931
+  time_to_finish: 31.58999991416931
+rollout_2:
+  Success: false
+  number_crashes: 2
+  segment_times:
+    '10': 4.009999990463257
+    '20': 7.569999933242798
+    '30': 11.339999914169312
+    '40': 16.670000076293945
+    '50': 22.52999997138977
+    '60': 29.569999933242798
+  time_to_finish: 29.569999933242798
+rollout_3:
+  Success: false
+  number_crashes: 3
+  segment_times:
+    '10': 4.2099997997283936
+    '20': 7.879999876022339
+    '30': 11.539999961853027
+    '40': 16.12999987602234
+    '50': 23.259999990463257
+    '60': 30.429999828338623
+  time_to_finish: 30.429999828338623
+
+
+=======medium_26 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======medium_27 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======medium_28 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 5
+  segment_times:
+    '10': 3.9100000858306885
+    '20': 7.380000114440918
+    '30': 10.690000057220459
+    '40': 15.0
+    '50': 18.94000005722046
+    '60': 22.800000190734863
+  time_to_finish: 22.800000190734863
+rollout_2:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 3.509999990463257
+    '20': 6.979999780654907
+    '30': 10.479999780654907
+    '40': 14.039999961853027
+    '50': 18.18999981880188
+    '60': 22.269999980926514
+  time_to_finish: 22.269999980926514
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======medium_29 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 4
+  segment_times:
+    '10': 4.129999876022339
+    '20': 7.710000038146973
+    '30': 11.5
+    '40': 15.240000009536743
+    '50': 19.960000038146973
+    '60': 27.549999952316284
+  time_to_finish: 27.549999952316284
+rollout_2:
+  Success: false
+  number_crashes: 1
+  segment_times:
+    '10': 3.819999933242798
+    '20': 7.349999904632568
+    '30': 11.069999933242798
+    '40': 14.860000133514404
+    '50': 19.33999991416931
+    '60': 23.40000009536743
+  time_to_finish: 23.40000009536743
+rollout_3:
+  Success: false
+  number_crashes: 5
+  segment_times:
+    '10': 4.130000114440918
+    '20': 7.7200000286102295
+    '30': 11.450000047683716
+    '40': 15.230000019073486
+    '50': 19.320000171661377
+    '60': 23.800000190734863
+  time_to_finish: 23.800000190734863
+
+
+=======medium_30 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 4
+  segment_times:
+    '10': 3.950000047683716
+    '20': 7.980000019073486
+    '30': 13.299999952316284
+    '40': 19.039999961853027
+    '50': 25.579999923706055
+    '60': 32.78999996185303
+  time_to_finish: 32.78999996185303
+rollout_2:
+  Success: false
+  number_crashes: 4
+  segment_times:
+    '10': 3.5399999618530273
+    '20': 8.549999952316284
+    '30': 12.619999885559082
+    '40': 18.869999885559082
+    '50': 26.179999828338623
+    '60': 30.58999991416931
+  time_to_finish: 30.58999991416931
+rollout_3:
+  Success: false
+  number_crashes: 3
+  segment_times:
+    '10': 3.859999895095825
+    '20': 8.619999885559082
+    '30': 12.629999876022339
+    '40': 17.980000019073486
+    '50': 25.119999885559082
+    '60': 32.30999994277954
+  time_to_finish: 32.30999994277954
+
+
+=======medium_31 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 5
+  segment_times:
+    '10': 4.1000001430511475
+    '20': 7.4100000858306885
+    '30': 12.22000002861023
+    '40': 16.40000009536743
+    '50': 20.180000066757202
+    '60': 23.97000002861023
+  time_to_finish: 23.97000002861023
+rollout_2:
+  Success: false
+  number_crashes: 2
+  segment_times:
+    '10': 3.8000001907348633
+    '20': 7.130000114440918
+    '30': 10.960000038146973
+    '40': 14.78000020980835
+    '50': 18.390000104904175
+    '60': 22.56000018119812
+  time_to_finish: 22.56000018119812
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======medium_32 | nmpc_short_controls_first_model_old_relu.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 3
+  segment_times:
+    '10': 3.2799999713897705
+    '20': 7.059999942779541
+    '30': 10.579999923706055
+    '40': 16.130000114440918
+    '50': 21.069999933242798
+    '60': 28.490000009536743
+  time_to_finish: 28.490000009536743
+rollout_2:
+  Success: false
+  number_crashes: 4
+  segment_times:
+    '10': 3.7799999713897705
+    '20': 7.549999952316284
+    '30': 11.019999980926514
+    '40': 15.509999990463257
+    '50': 21.730000019073486
+    '60': 26.97000002861023
+  time_to_finish: 26.97000002861023
+rollout_3:
+  Success: false
+  number_crashes: 1
+  segment_times:
+    '10': 3.370000123977661
+    '20': 7.190000057220459
+    '30': 10.84000015258789
+    '40': 15.019999980926514
+    '50': 21.880000114440918
+    '60': 26.630000114440918
+  time_to_finish: 26.630000114440918
+
+
+=======medium_23 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 1
+  segment_times:
+    '10': 3.620000123977661
+    '20': 7.269999980926514
+    '30': 13.240000009536743
+    '40': 19.950000047683716
+    '50': 26.890000104904175
+    '60': 35.049999952316284
+  time_to_finish: 35.049999952316284
+rollout_3:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 4.129999876022339
+    '20': 7.809999942779541
+    '30': 13.639999866485596
+    '40': 20.619999885559082
+    '50': 28.039999961853027
+    '60': 35.59999990463257
+  time_to_finish: 35.59999990463257
+
+
+=======medium_24 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======medium_25 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 3
+  segment_times:
+    '10': 3.8500001430511475
+    '20': 8.940000057220459
+    '30': 14.31000018119812
+    '40': 19.78000020980835
+    '50': 26.960000038146973
+    '60': 34.830000162124634
+  time_to_finish: 34.830000162124634
+rollout_3:
+  Success: false
+  number_crashes: 3
+  segment_times:
+    '10': 3.950000047683716
+    '20': 7.509999990463257
+    '30': 14.210000038146973
+    '40': 20.02999997138977
+    '50': 27.109999895095825
+    '60': 34.83999991416931
+  time_to_finish: 34.83999991416931
+
+
+=======medium_26 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======medium_27 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 3
+  segment_times:
+    '10': 3.4600000381469727
+    '20': 6.960000038146973
+    '30': 10.380000114440918
+    '40': 13.710000038146973
+    '50': 17.09999990463257
+    '60': 20.450000047683716
+  time_to_finish: 20.450000047683716
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 4
+  segment_times:
+    '10': 3.4600000381469727
+    '20': 6.960000038146973
+    '30': 10.289999961853027
+    '40': 13.619999885559082
+    '50': 16.919999837875366
+    '60': 20.289999961853027
+  time_to_finish: 20.289999961853027
+
+
+=======medium_28 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 4.230000019073486
+    '20': 7.710000038146973
+    '30': 11.079999923706055
+    '40': 14.920000076293945
+    '50': 18.130000114440918
+    '60': 22.0
+  time_to_finish: 22.0
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======medium_29 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 4
+  segment_times:
+    '10': 4.009999990463257
+    '20': 7.359999895095825
+    '30': 10.710000038146973
+    '40': 14.02999997138977
+    '50': 17.40000009536743
+    '60': 20.72000002861023
+  time_to_finish: 20.72000002861023
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======medium_30 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======medium_31 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 4.0
+    '20': 7.3399999141693115
+    '30': 10.680000066757202
+    '40': 14.009999990463257
+    '50': 17.30999994277954
+    '60': 20.579999923706055
+  time_to_finish: 20.579999923706055
+rollout_2:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.5799999237060547
+    '20': 6.929999828338623
+    '30': 10.419999837875366
+    '40': 14.139999866485596
+    '50': 17.480000019073486
+    '60': 20.80999994277954
+  time_to_finish: 20.80999994277954
+rollout_3:
+  Success: false
+  number_crashes: 5
+  segment_times:
+    '10': 3.990000009536743
+    '20': 7.319999933242798
+    '30': 10.959999799728394
+    '40': 14.609999895095825
+    '50': 17.869999885559082
+    '60': 21.30999994277954
+  time_to_finish: 21.30999994277954
+
+
+=======medium_32 | nmpc_short_controls_first_model_mse.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.8500001430511475
+    '20': 7.269999980926514
+    '30': 10.630000114440918
+    '40': 13.950000047683716
+    '50': 17.269999980926514
+    '60': 20.569999933242798
+  time_to_finish: 20.569999933242798
+rollout_2:
+  Success: false
+  number_crashes: 5
+  segment_times:
+    '10': 3.5399999618530273
+    '20': 6.9700000286102295
+    '30': 10.339999914169312
+    '40': 13.650000095367432
+    '50': 17.09999990463257
+    '60': 20.420000076293945
+  time_to_finish: 20.420000076293945
+rollout_3:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 3.7300000190734863
+    '20': 7.150000095367432
+    '30': 10.490000009536743
+    '40': 13.849999904632568
+    '50': 17.369999885559082
+    '60': 20.609999895095825
+  time_to_finish: 20.609999895095825
+
+
+=======medium_23 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 3
+  segment_times:
+    '10': 3.799999952316284
+    '20': 7.140000104904175
+    '30': 10.72000002861023
+    '40': 14.350000143051147
+    '50': 17.920000076293945
+    '60': 21.289999961853027
+  time_to_finish: 21.289999961853027
+
+
+=======medium_24 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======medium_25 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 3
+  segment_times:
+    '10': 4.099999904632568
+    '20': 7.440000057220459
+    '30': 10.77999997138977
+    '40': 14.099999904632568
+    '50': 17.59999990463257
+    '60': 20.829999923706055
+  time_to_finish: 20.829999923706055
+rollout_3:
+  Success: false
+  number_crashes: 4
+  segment_times:
+    '10': 3.700000047683716
+    '20': 7.079999923706055
+    '30': 10.47000002861023
+    '40': 14.150000095367432
+    '50': 17.59999990463257
+    '60': 21.16000008583069
+  time_to_finish: 21.16000008583069
+
+
+=======medium_26 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 4.1600000858306885
+    '20': 7.490000009536743
+    '30': 11.02999997138977
+    '40': 14.660000085830688
+    '50': 18.579999923706055
+    '60': 22.130000114440918
+  time_to_finish: 22.130000114440918
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======medium_27 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======medium_28 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 3.450000047683716
+    '20': 6.980000019073486
+    '30': 10.329999923706055
+    '40': 13.789999961853027
+    '50': 17.950000047683716
+    '60': 21.610000133514404
+  time_to_finish: 21.610000133514404
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.950000047683716
+    '20': 7.400000095367432
+    '30': 10.759999990463257
+    '40': 14.06000018119812
+    '50': 17.44000005722046
+    '60': 21.02999997138977
+  time_to_finish: 21.02999997138977
+
+
+=======medium_29 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.9000000953674316
+    '20': 7.299999952316284
+    '30': 11.06000018119812
+    '40': 14.630000114440918
+    '50': 20.450000047683716
+    '60': 23.769999980926514
+  time_to_finish: 23.769999980926514
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 5
+  segment_times:
+    '10': 3.990000009536743
+    '20': 7.690000057220459
+    '30': 11.759999990463257
+    '40': 15.190000057220459
+    '50': 18.5
+    '60': 21.830000162124634
+  time_to_finish: 21.830000162124634
+
+
+=======medium_30 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.490000009536743
+    '20': 6.820000171661377
+    '30': 10.180000066757202
+    '40': 13.710000038146973
+    '50': 17.62000012397766
+    '60': 20.960000038146973
+  time_to_finish: 20.960000038146973
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======medium_31 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.4700000286102295
+    '20': 6.819999933242798
+    '30': 10.150000095367432
+    '40': 13.490000009536743
+    '50': 16.860000133514404
+    '60': 20.789999961853027
+  time_to_finish: 20.789999961853027
+rollout_2:
+  Success: false
+  number_crashes: 5
+  segment_times:
+    '10': 3.760000228881836
+    '20': 7.120000123977661
+    '30': 10.450000047683716
+    '40': 13.770000219345093
+    '50': 17.080000162124634
+    '60': 20.40000009536743
+  time_to_finish: 20.40000009536743
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======medium_32 | nmpc_short_controls_first_model_old_l1.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.4700000286102295
+    '20': 6.830000162124634
+    '30': 12.410000085830688
+    '40': 18.680000066757202
+    '50': 26.759999990463257
+    '60': 37.46000003814697
+  time_to_finish: 37.46000003814697
+rollout_3:
+  Success: false
+  number_crashes: 4
+  segment_times:
+    '10': 3.7699999809265137
+    '20': 7.109999895095825
+    '30': 10.480000019073486
+    '40': 13.799999952316284
+    '50': 17.269999980926514
+    '60': 25.740000009536743
+  time_to_finish: 25.740000009536743
+
+
+=======medium_23 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 3
+  segment_times:
+    '10': 3.8500001430511475
+    '20': 8.640000104904175
+    '30': 14.830000162124634
+    '40': 21.420000076293945
+    '50': 27.980000019073486
+    '60': 32.769999980926514
+  time_to_finish: 32.769999980926514
+rollout_2:
+  Success: true
+  number_crashes: 0
+  segment_times:
+    '10': 3.56000018119812
+    '20': 7.940000057220459
+    '30': 13.890000104904175
+    '40': 20.240000009536743
+    '50': 26.25
+    '60': 30.81000018119812
+  time_to_finish: 30.81000018119812
+rollout_3:
+  Success: false
+  number_crashes: 1
+  segment_times:
+    '10': 3.75
+    '20': 8.290000200271606
+    '30': 14.410000085830688
+    '40': 20.600000143051147
+    '50': 27.360000133514404
+    '60': 34.63000011444092
+  time_to_finish: 34.63000011444092
+
+
+=======medium_24 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 4
+  segment_times:
+    '10': 3.75
+    '20': 7.0
+    '30': 10.309999942779541
+    '40': 13.549999952316284
+    '50': 16.77999997138977
+    '60': 20.0
+  time_to_finish: 20.0
+rollout_2:
+  Success: false
+  number_crashes: 4
+  segment_times:
+    '10': 3.3400001525878906
+    '20': 6.590000152587891
+    '30': 9.84000015258789
+    '40': 13.09000015258789
+    '50': 16.610000133514404
+    '60': 22.290000200271606
+  time_to_finish: 22.290000200271606
+rollout_3:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 3.740000009536743
+    '20': 6.990000009536743
+    '30': 10.25
+    '40': 13.509999990463257
+    '50': 16.880000114440918
+    '60': 20.130000114440918
+  time_to_finish: 20.130000114440918
+
+
+=======medium_25 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 4
+  segment_times:
+    '10': 3.5299999713897705
+    '20': 6.859999895095825
+    '30': 10.180000066757202
+    '40': 15.079999923706055
+    '50': 21.30999994277954
+    '60': 28.02999997138977
+  time_to_finish: 28.02999997138977
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======medium_26 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.430000066757202
+    '20': 6.690000057220459
+    '30': 9.930000066757202
+    '40': 13.150000095367432
+    '50': 16.420000076293945
+    '60': 19.569999933242798
+  time_to_finish: 19.569999933242798
+rollout_2:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.7200000286102295
+    '20': 6.990000009536743
+    '30': 10.170000076293945
+    '40': 13.360000133514404
+    '50': 16.610000133514404
+    '60': 19.66000008583069
+  time_to_finish: 19.66000008583069
+rollout_3:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.5299999713897705
+    '20': 6.7900002002716064
+    '30': 9.940000057220459
+    '40': 13.110000133514404
+    '50': 16.360000133514404
+    '60': 19.580000162124634
+  time_to_finish: 19.580000162124634
+
+
+=======medium_27 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 5
+  segment_times:
+    '10': 3.700000047683716
+    '20': 6.9100000858306885
+    '30': 10.190000057220459
+    '40': 13.410000085830688
+    '50': 16.66000008583069
+    '60': 19.69000005722046
+  time_to_finish: 19.69000005722046
+rollout_2:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 3.4099998474121094
+    '20': 6.609999895095825
+    '30': 9.849999904632568
+    '40': 13.099999904632568
+    '50': 16.269999980926514
+    '60': 18.75
+  time_to_finish: 18.75
+rollout_3:
+  Success: false
+  number_crashes: 3
+  segment_times:
+    '10': 3.609999895095825
+    '20': 6.819999933242798
+    '30': 10.059999942779541
+    '40': 13.269999980926514
+    '50': 16.46999979019165
+    '60': 19.569999933242798
+  time_to_finish: 19.569999933242798
+
+
+=======medium_28 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======medium_29 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 3
+  segment_times:
+    '10': 3.5400002002716064
+    '20': 6.860000133514404
+    '30': 10.120000123977661
+    '40': 15.680000066757202
+    '50': 22.920000076293945
+    '60': 28.69000005722046
+  time_to_finish: 28.69000005722046
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 2
+  segment_times:
+    '10': 3.430000066757202
+    '20': 6.740000009536743
+    '30': 10.049999952316284
+    '40': 13.330000162124634
+    '50': 16.52999997138977
+    '60': 22.390000104904175
+  time_to_finish: 22.390000104904175
+
+
+=======medium_30 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 2
+  segment_times:
+    '10': 3.330000162124634
+    '20': 8.390000104904175
+    '30': 15.02999997138977
+    '40': 21.41000008583069
+    '50': 27.81000018119812
+    '60': 32.78999996185303
+  time_to_finish: 32.78999996185303
+rollout_3:
+  Success: false
+  number_crashes: 3
+  segment_times:
+    '10': 3.7200000286102295
+    '20': 9.25
+    '30': 15.789999961853027
+    '40': 22.700000047683716
+    '50': 28.460000038146973
+    '60': 33.28999996185303
+  time_to_finish: 33.28999996185303
+
+
+=======medium_31 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======medium_32 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 3
+  segment_times:
+    '10': 4.190000057220459
+    '20': 8.02999997138977
+    '30': 14.710000038146973
+    '40': 20.72000002861023
+    '50': 27.289999961853027
+    '60': 33.3199999332428
+  time_to_finish: 33.3199999332428
+rollout_2:
+  Success: false
+  number_crashes: 3
+  segment_times:
+    '10': 3.2799999713897705
+    '20': 7.519999980926514
+    '30': 13.730000019073486
+    '40': 20.15000009536743
+    '50': 26.759999990463257
+    '60': 33.03999996185303
+  time_to_finish: 33.03999996185303
+rollout_3:
+  Success: false
+  number_crashes: 2
+  segment_times:
+    '10': 3.679999828338623
+    '20': 8.679999828338623
+    '30': 14.93999981880188
+    '40': 21.429999828338623
+    '50': 28.210000038146973
+    '60': 36.11999988555908
+  time_to_finish: 36.11999988555908
+
+
+=======hard_23 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.890000104904175
+    '20': 7.180000066757202
+    '30': 10.650000095367432
+    '40': 14.309999942779541
+    '50': 18.289999961853027
+    '60': 22.519999980926514
+  time_to_finish: 22.519999980926514
+rollout_2:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.490000009536743
+    '20': 6.7799999713897705
+    '30': 10.0
+    '40': 13.230000019073486
+    '50': 18.740000009536743
+    '60': 23.180000066757202
+  time_to_finish: 23.180000066757202
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_24 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.4499998092651367
+    '20': 6.5899999141693115
+    '30': 9.889999866485596
+    '40': 14.839999914169312
+    '50': 21.139999866485596
+    '60': 25.25
+  time_to_finish: 25.25
+rollout_3:
+  Success: false
+  number_crashes: 4
+  segment_times:
+    '10': 3.7300000190734863
+    '20': 7.009999990463257
+    '30': 10.419999837875366
+    '40': 13.589999914169312
+    '50': 19.869999885559082
+    '60': 23.93999981880188
+  time_to_finish: 23.93999981880188
+
+
+=======hard_25 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.9000000953674316
+    '20': 7.130000114440918
+    '30': 10.410000085830688
+    '40': 15.579999923706055
+    '50': 20.630000114440918
+    '60': 25.009999990463257
+  time_to_finish: 25.009999990463257
+rollout_2:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.5
+    '20': 6.789999961853027
+    '30': 10.09000015258789
+    '40': 13.650000095367432
+    '50': 19.240000009536743
+    '60': 25.59000015258789
+  time_to_finish: 25.59000015258789
+rollout_3:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 3.890000104904175
+    '20': 7.200000047683716
+    '30': 14.070000171661377
+    '40': 20.380000114440918
+    '50': 26.019999980926514
+    '60': 31.84000015258789
+  time_to_finish: 31.84000015258789
+
+
+=======hard_26 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 2
+  segment_times:
+    '10': 3.7200000286102295
+    '20': 6.9700000286102295
+    '30': 10.259999990463257
+    '40': 13.580000162124634
+    '50': 17.270000219345093
+    '60': 20.0
+  time_to_finish: 20.0
+rollout_2:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.4100000858306885
+    '20': 6.640000104904175
+    '30': 9.980000019073486
+    '40': 13.100000143051147
+    '50': 17.40000009536743
+    '60': 20.140000104904175
+  time_to_finish: 20.140000104904175
+rollout_3:
+  Success: false
+  number_crashes: 5
+  segment_times:
+    '10': 3.7200000286102295
+    '20': 6.950000047683716
+    '30': 10.230000019073486
+    '40': 13.440000057220459
+    '50': 16.72000002861023
+    '60': 19.430000066757202
+  time_to_finish: 19.430000066757202
+
+
+=======hard_27 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 3.820000171661377
+    '20': 7.070000171661377
+    '30': 12.680000066757202
+    '40': 18.90000009536743
+    '50': 26.37000012397766
+    '60': 30.050000190734863
+  time_to_finish: 30.050000190734863
+rollout_2:
+  Success: false
+  number_crashes: 5
+  segment_times:
+    '10': 3.4200000762939453
+    '20': 6.759999990463257
+    '30': 12.009999990463257
+    '40': 17.880000114440918
+    '50': 24.59000015258789
+    '60': 28.490000009536743
+  time_to_finish: 28.490000009536743
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_28 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 5
+  segment_times:
+    '10': 3.9800000190734863
+    '20': 7.1600000858306885
+    '30': 10.509999990463257
+    '40': 13.740000009536743
+    '50': 16.980000019073486
+    '60': 19.84000015258789
+  time_to_finish: 19.84000015258789
+rollout_2:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.5900001525878906
+    '20': 6.75
+    '30': 10.190000057220459
+    '40': 13.480000019073486
+    '50': 17.77999997138977
+    '60': 20.730000019073486
+  time_to_finish: 20.730000019073486
+rollout_3:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.890000104904175
+    '20': 7.059999942779541
+    '30': 10.259999990463257
+    '40': 13.700000047683716
+    '50': 17.37000012397766
+    '60': 20.009999990463257
+  time_to_finish: 20.009999990463257
+
+
+=======hard_29 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 11
+  segment_times:
+    '10': 3.440000057220459
+    '20': 6.710000038146973
+    '30': 10.02999997138977
+    '40': 13.390000104904175
+    '50': 16.72000002861023
+    '60': 21.87000012397766
+  time_to_finish: 21.87000012397766
+rollout_3:
+  Success: false
+  number_crashes: 5
+  segment_times:
+    '10': 3.8399999141693115
+    '20': 7.079999923706055
+    '30': 10.389999866485596
+    '40': 16.77999997138977
+    '50': 22.139999866485596
+    '60': 26.87999987602234
+  time_to_finish: 26.87999987602234
+
+
+=======hard_30 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.379999876022339
+    '20': 6.609999895095825
+    '30': 9.90999984741211
+    '40': 13.210000038146973
+    '50': 16.34999990463257
+    '60': 19.269999980926514
+  time_to_finish: 19.269999980926514
+rollout_3:
+  Success: false
+  number_crashes: 5
+  segment_times:
+    '10': 3.740000009536743
+    '20': 6.9700000286102295
+    '30': 10.069999933242798
+    '40': 14.160000085830688
+    '50': 19.920000076293945
+    '60': 23.680000066757202
+  time_to_finish: 23.680000066757202
+
+
+=======hard_31 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.8399999141693115
+    '20': 7.099999904632568
+    '30': 11.52999997138977
+    '40': 17.699999809265137
+    '50': 22.83999991416931
+    '60': 27.02999997138977
+  time_to_finish: 27.02999997138977
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_32 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 5
+  segment_times:
+    '10': 3.3400001525878906
+    '20': 6.610000133514404
+    '30': 9.850000143051147
+    '40': 13.040000200271606
+    '50': 16.509999990463257
+    '60': 19.820000171661377
+  time_to_finish: 19.820000171661377
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_33 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_34 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.799999952316284
+    '20': 7.109999895095825
+    '30': 10.450000047683716
+    '40': 13.990000009536743
+    '50': 17.259999990463257
+    '60': 20.72000002861023
+  time_to_finish: 20.72000002861023
+rollout_2:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 3.309999942779541
+    '20': 6.599999904632568
+    '30': 9.899999856948853
+    '40': 13.369999885559082
+    '50': 17.02999997138977
+    '60': 20.670000076293945
+  time_to_finish: 20.670000076293945
+rollout_3:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 3.609999895095825
+    '20': 6.920000076293945
+    '30': 10.059999942779541
+    '40': 13.450000047683716
+    '50': 17.799999952316284
+    '60': 20.369999885559082
+  time_to_finish: 20.369999885559082
+
+
+=======hard_35 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 4.009999990463257
+    '20': 7.289999961853027
+    '30': 10.479999780654907
+    '40': 15.129999876022339
+    '50': 20.21999979019165
+    '60': 22.55999994277954
+  time_to_finish: 22.55999994277954
+rollout_3:
+  Success: false
+  number_crashes: 11
+  segment_times:
+    '10': 3.7100000381469727
+    '20': 6.980000019073486
+    '30': 12.379999876022339
+    '40': 19.12999987602234
+    '50': 25.34999990463257
+    '60': 29.669999837875366
+  time_to_finish: 29.669999837875366
+
+
+=======hard_36 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 4.049999952316284
+    '20': 7.319999933242798
+    '30': 10.609999895095825
+    '40': 16.83999991416931
+    '50': 22.759999990463257
+    '60': 26.65999984741211
+  time_to_finish: 26.65999984741211
+rollout_2:
+  Success: false
+  number_crashes: 16
+  segment_times:
+    '10': 3.450000047683716
+    '20': 6.75
+    '30': 10.329999923706055
+    '40': 17.149999856948853
+    '50': 22.97000002861023
+    '60': 26.859999895095825
+  time_to_finish: 26.859999895095825
+rollout_3:
+  Success: false
+  number_crashes: 4
+  segment_times:
+    '10': 3.75
+    '20': 7.019999980926514
+    '30': 10.299999952316284
+    '40': 15.589999914169312
+    '50': 21.799999952316284
+    '60': 25.950000047683716
+  time_to_finish: 25.950000047683716
+
+
+=======hard_37 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.5299999713897705
+    '20': 6.830000162124634
+    '30': 10.309999942779541
+    '40': 13.319999933242798
+    '50': 16.819999933242798
+    '60': 19.830000162124634
+  time_to_finish: 19.830000162124634
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_38 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.859999895095825
+    '20': 7.0899999141693115
+    '30': 10.430000066757202
+    '40': 13.869999885559082
+    '50': 18.450000047683716
+    '60': 21.12999987602234
+  time_to_finish: 21.12999987602234
+rollout_2:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.4600000381469727
+    '20': 6.710000038146973
+    '30': 9.97000002861023
+    '40': 13.430000066757202
+    '50': 16.83999991416931
+    '60': 19.130000114440918
+  time_to_finish: 19.130000114440918
+rollout_3:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 3.759999990463257
+    '20': 6.990000009536743
+    '30': 10.180000066757202
+    '40': 13.410000085830688
+    '50': 17.009999990463257
+    '60': 19.820000171661377
+  time_to_finish: 19.820000171661377
+
+
+=======hard_39 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 3.8299999237060547
+    '20': 7.099999904632568
+    '30': 10.349999904632568
+    '40': 13.710000038146973
+    '50': 19.519999980926514
+    '60': 24.639999866485596
+  time_to_finish: 24.639999866485596
+rollout_2:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.5299999713897705
+    '20': 6.799999952316284
+    '30': 9.950000047683716
+    '40': 14.089999914169312
+    '50': 20.43999981880188
+    '60': 27.84999990463257
+  time_to_finish: 27.84999990463257
+rollout_3:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.8399999141693115
+    '20': 7.109999895095825
+    '30': 10.230000019073486
+    '40': 14.210000038146973
+    '50': 18.699999809265137
+    '60': 23.960000038146973
+  time_to_finish: 23.960000038146973
+
+
+=======hard_40 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 4.0899999141693115
+    '20': 7.299999952316284
+    '30': 10.929999828338623
+    '40': 14.569999933242798
+    '50': 17.859999895095825
+    '60': 23.289999961853027
+  time_to_finish: 23.289999961853027
+rollout_2:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.419999837875366
+    '20': 6.6499998569488525
+    '30': 10.009999990463257
+    '40': 13.269999980926514
+    '50': 16.799999952316284
+    '60': 19.609999895095825
+  time_to_finish: 19.609999895095825
+rollout_3:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.7899999618530273
+    '20': 7.0
+    '30': 10.660000085830688
+    '40': 15.210000038146973
+    '50': 18.430000066757202
+    '60': 25.549999952316284
+  time_to_finish: 25.549999952316284
+
+
+=======hard_41 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.8899998664855957
+    '20': 7.119999885559082
+    '30': 10.399999856948853
+    '40': 14.179999828338623
+    '50': 19.59999990463257
+    '60': 22.710000038146973
+  time_to_finish: 22.710000038146973
+rollout_2:
+  Success: false
+  number_crashes: 5
+  segment_times:
+    '10': 3.490000009536743
+    '20': 6.730000019073486
+    '30': 10.059999942779541
+    '40': 13.399999856948853
+    '50': 16.789999961853027
+    '60': 19.80999994277954
+  time_to_finish: 19.80999994277954
+rollout_3:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 3.7799999713897705
+    '20': 7.0299999713897705
+    '30': 10.710000038146973
+    '40': 14.049999952316284
+    '50': 20.700000047683716
+    '60': 28.59999990463257
+  time_to_finish: 28.59999990463257
+
+
+=======hard_42 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.8499999046325684
+    '20': 7.109999895095825
+    '30': 11.559999942779541
+    '40': 16.799999952316284
+    '50': 24.389999866485596
+    '60': 28.619999885559082
+  time_to_finish: 28.619999885559082
+rollout_2:
+  Success: false
+  number_crashes: 3
+  segment_times:
+    '10': 3.440000057220459
+    '20': 6.740000009536743
+    '30': 10.019999980926514
+    '40': 15.259999990463257
+    '50': 21.5
+    '60': 26.05999994277954
+  time_to_finish: 26.05999994277954
+rollout_3:
+  Success: false
+  number_crashes: 5
+  segment_times:
+    '10': 3.75
+    '20': 7.009999990463257
+    '30': 11.130000114440918
+    '40': 16.880000114440918
+    '50': 23.41000008583069
+    '60': 27.549999952316284
+  time_to_finish: 27.549999952316284
+
+
+=======hard_43 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 3.869999885559082
+    '20': 7.099999904632568
+    '30': 10.239999771118164
+    '40': 13.46999979019165
+    '50': 16.949999809265137
+    '60': 19.93999981880188
+  time_to_finish: 19.93999981880188
+rollout_2:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.3899998664855957
+    '20': 6.609999895095825
+    '30': 9.859999895095825
+    '40': 15.629999876022339
+    '50': 21.84999990463257
+    '60': 26.72000002861023
+  time_to_finish: 26.72000002861023
+rollout_3:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 3.68999981880188
+    '20': 6.909999847412109
+    '30': 10.399999856948853
+    '40': 13.5
+    '50': 17.62999987602234
+    '60': 21.929999828338623
+  time_to_finish: 21.929999828338623
+
+
+=======hard_44 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.299999952316284
+    '20': 6.599999904632568
+    '30': 9.929999828338623
+    '40': 14.27999997138977
+    '50': 19.90999984741211
+    '60': 23.990000009536743
+  time_to_finish: 23.990000009536743
+rollout_3:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.700000047683716
+    '20': 6.990000009536743
+    '30': 10.359999895095825
+    '40': 13.690000057220459
+    '50': 17.700000047683716
+    '60': 21.680000066757202
+  time_to_finish: 21.680000066757202
+
+
+=======hard_45 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 5
+  segment_times:
+    '10': 3.3899998664855957
+    '20': 6.609999895095825
+    '30': 12.019999980926514
+    '40': 18.740000009536743
+    '50': 25.02999997138977
+    '60': 29.55999994277954
+  time_to_finish: 29.55999994277954
+rollout_3:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.6999998092651367
+    '20': 6.929999828338623
+    '30': 12.71999979019165
+    '40': 19.93999981880188
+    '50': 27.21999979019165
+    '60': 31.65999984741211
+  time_to_finish: 31.65999984741211
+
+
+=======hard_46 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 3.8600001335144043
+    '20': 7.150000095367432
+    '30': 10.490000009536743
+    '40': 15.27999997138977
+    '50': 20.920000076293945
+    '60': 26.5
+  time_to_finish: 26.5
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_47 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.5999999046325684
+    '20': 6.919999837875366
+    '30': 12.75
+    '40': 18.319999933242798
+    '50': 23.539999961853027
+    '60': 28.34999990463257
+  time_to_finish: 28.34999990463257
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_48 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.8299999237060547
+    '20': 7.079999923706055
+    '30': 10.149999856948853
+    '40': 15.519999980926514
+    '50': 19.0
+    '60': 22.149999856948853
+  time_to_finish: 22.149999856948853
+rollout_2:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.429999828338623
+    '20': 6.6499998569488525
+    '30': 9.90999984741211
+    '40': 13.629999876022339
+    '50': 18.359999895095825
+    '60': 22.619999885559082
+  time_to_finish: 22.619999885559082
+rollout_3:
+  Success: false
+  number_crashes: 10
+  segment_times:
+    '10': 3.7200000286102295
+    '20': 6.940000057220459
+    '30': 10.259999990463257
+    '40': 13.740000009536743
+    '50': 17.12999987602234
+    '60': 19.90999984741211
+  time_to_finish: 19.90999984741211
+
+
+=======hard_49 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.799999952316284
+    '20': 7.039999961853027
+    '30': 10.170000076293945
+    '40': 13.870000123977661
+    '50': 17.100000143051147
+    '60': 19.860000133514404
+  time_to_finish: 19.860000133514404
+rollout_2:
+  Success: false
+  number_crashes: 5
+  segment_times:
+    '10': 3.390000104904175
+    '20': 6.630000114440918
+    '30': 9.910000085830688
+    '40': 12.980000019073486
+    '50': 16.87000012397766
+    '60': 19.350000143051147
+  time_to_finish: 19.350000143051147
+rollout_3:
+  Success: false
+  number_crashes: 5
+  segment_times:
+    '10': 3.700000047683716
+    '20': 6.940000057220459
+    '30': 10.25
+    '40': 13.410000085830688
+    '50': 16.75
+    '60': 21.91000008583069
+  time_to_finish: 21.91000008583069
+
+
+=======hard_50 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.950000047683716
+    '20': 7.210000038146973
+    '30': 10.480000019073486
+    '40': 13.52999997138977
+    '50': 19.329999923706055
+    '60': 23.44000005722046
+  time_to_finish: 23.44000005722046
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.759999990463257
+    '20': 7.009999990463257
+    '30': 10.240000009536743
+    '40': 13.549999952316284
+    '50': 16.740000009536743
+    '60': 22.360000133514404
+  time_to_finish: 22.360000133514404
+
+
+=======hard_51 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 5
+  segment_times:
+    '10': 3.819999933242798
+    '20': 7.079999923706055
+    '30': 10.259999990463257
+    '40': 13.759999990463257
+    '50': 17.44000005722046
+    '60': 20.860000133514404
+  time_to_finish: 20.860000133514404
+rollout_2:
+  Success: false
+  number_crashes: 5
+  segment_times:
+    '10': 3.430000066757202
+    '20': 6.710000038146973
+    '30': 10.0
+    '40': 13.240000009536743
+    '50': 16.91000008583069
+    '60': 19.670000076293945
+  time_to_finish: 19.670000076293945
+rollout_3:
+  Success: false
+  number_crashes: 7
+  segment_times:
+    '10': 3.7300000190734863
+    '20': 6.980000019073486
+    '30': 10.410000085830688
+    '40': 14.5
+    '50': 18.41000008583069
+    '60': 22.19000005722046
+  time_to_finish: 22.19000005722046
+
+
+=======hard_52 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 3.9600000381469727
+    '20': 7.1499998569488525
+    '30': 10.419999837875366
+    '40': 14.809999942779541
+    '50': 20.83999991416931
+    '60': 24.90999984741211
+  time_to_finish: 24.90999984741211
+rollout_2:
+  Success: false
+  number_crashes: 5
+  segment_times:
+    '10': 3.569999933242798
+    '20': 6.75
+    '30': 10.0
+    '40': 13.200000047683716
+    '50': 17.819999933242798
+    '60': 20.769999980926514
+  time_to_finish: 20.769999980926514
+rollout_3:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.7699999809265137
+    '20': 6.9700000286102295
+    '30': 10.349999904632568
+    '40': 14.480000019073486
+    '50': 21.680000066757202
+    '60': 26.30999994277954
+  time_to_finish: 26.30999994277954
+
+
+=======hard_53 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 3.7100000381469727
+    '20': 6.920000076293945
+    '30': 10.160000085830688
+    '40': 13.940000057220459
+    '50': 17.65000009536743
+    '60': 20.880000114440918
+  time_to_finish: 20.880000114440918
+rollout_2:
+  Success: false
+  number_crashes: 5
+  segment_times:
+    '10': 3.4100000858306885
+    '20': 6.620000123977661
+    '30': 9.960000038146973
+    '40': 13.72000002861023
+    '50': 16.820000171661377
+    '60': 19.72000002861023
+  time_to_finish: 19.72000002861023
+rollout_3:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.7100000381469727
+    '20': 6.920000076293945
+    '30': 10.180000066757202
+    '40': 13.549999952316284
+    '50': 17.820000171661377
+    '60': 20.55999994277954
+  time_to_finish: 20.55999994277954
+
+
+=======hard_54 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 3.940000057220459
+    '20': 7.190000057220459
+    '30': 10.230000019073486
+    '40': 13.879999876022339
+    '50': 19.59999990463257
+    '60': 22.730000019073486
+  time_to_finish: 22.730000019073486
+rollout_2:
+  Success: false
+  number_crashes: 11
+  segment_times:
+    '10': 3.549999952316284
+    '20': 6.789999961853027
+    '30': 9.910000085830688
+    '40': 13.400000095367432
+    '50': 16.960000038146973
+    '60': 22.390000104904175
+  time_to_finish: 22.390000104904175
+rollout_3:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.950000047683716
+    '20': 7.170000076293945
+    '30': 10.349999904632568
+    '40': 13.759999990463257
+    '50': 17.789999961853027
+    '60': 21.360000133514404
+  time_to_finish: 21.360000133514404
+
+
+=======hard_55 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.619999885559082
+    '20': 8.210000038146973
+    '30': 14.349999904632568
+    '40': 20.069999933242798
+    '50': 26.460000038146973
+    '60': 31.22000002861023
+  time_to_finish: 31.22000002861023
+rollout_3:
+  Success: false
+  number_crashes: 11
+  segment_times:
+    '10': 3.819999933242798
+    '20': 9.149999856948853
+    '30': 15.980000019073486
+    '40': 23.34999990463257
+    '50': 28.930000066757202
+    '60': 33.87999987602234
+  time_to_finish: 33.87999987602234
+
+
+=======hard_56 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 5
+  segment_times:
+    '10': 3.680000066757202
+    '20': 6.919999837875366
+    '30': 10.25
+    '40': 13.889999866485596
+    '50': 18.109999895095825
+    '60': 22.049999952316284
+  time_to_finish: 22.049999952316284
+rollout_2:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 3.4000000953674316
+    '20': 6.670000076293945
+    '30': 10.02999997138977
+    '40': 13.660000085830688
+    '50': 16.740000009536743
+    '60': 19.990000009536743
+  time_to_finish: 19.990000009536743
+rollout_3:
+  Success: false
+  number_crashes: 4
+  segment_times:
+    '10': 3.690000057220459
+    '20': 6.980000019073486
+    '30': 10.370000123977661
+    '40': 13.769999980926514
+    '50': 17.269999980926514
+    '60': 20.019999980926514
+  time_to_finish: 20.019999980926514
+
+
+=======hard_57 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 4
+  segment_times:
+    '10': 3.7199997901916504
+    '20': 6.96999979019165
+    '30': 10.419999837875366
+    '40': 13.839999914169312
+    '50': 17.519999980926514
+    '60': 20.93999981880188
+  time_to_finish: 20.93999981880188
+rollout_2:
+  Reason: out-of-bounds
+  Success: false
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_58 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 2
+  segment_times:
+    '10': 3.4600000381469727
+    '20': 6.75
+    '30': 12.140000104904175
+    '40': 18.59000015258789
+    '50': 24.950000047683716
+    '60': 28.680000066757202
+  time_to_finish: 28.680000066757202
+rollout_3:
+  Success: false
+  number_crashes: 1
+  segment_times:
+    '10': 3.6500000953674316
+    '20': 6.940000057220459
+    '30': 13.130000114440918
+    '40': 20.300000190734863
+    '50': 25.75
+    '60': 30.580000162124634
+  time_to_finish: 30.580000162124634
+
+
+=======hard_59 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 8
+  segment_times:
+    '10': 3.669999837875366
+    '20': 6.889999866485596
+    '30': 11.459999799728394
+    '40': 18.240000009536743
+    '50': 22.509999990463257
+    '60': 27.05999994277954
+  time_to_finish: 27.05999994277954
+rollout_2:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 3.369999885559082
+    '20': 6.639999866485596
+    '30': 11.369999885559082
+    '40': 18.62999987602234
+    '50': 25.149999856948853
+    '60': 29.539999961853027
+  time_to_finish: 29.539999961853027
+rollout_3:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 3.6599998474121094
+    '20': 6.949999809265137
+    '30': 12.27999997138977
+    '40': 18.389999866485596
+    '50': 26.019999980926514
+    '60': 30.679999828338623
+  time_to_finish: 30.679999828338623
+
+
+=======hard_60 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 9
+  segment_times:
+    '10': 3.8299999237060547
+    '20': 7.099999904632568
+    '30': 11.099999904632568
+    '40': 17.25
+    '50': 24.419999837875366
+    '60': 28.37999987602234
+  time_to_finish: 28.37999987602234
+rollout_2:
+  Success: false
+  number_crashes: 12
+  segment_times:
+    '10': 3.429999828338623
+    '20': 6.769999980926514
+    '30': 9.96999979019165
+    '40': 14.109999895095825
+    '50': 20.37999987602234
+    '60': 27.759999990463257
+  time_to_finish: 27.759999990463257
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_61 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Success: false
+  number_crashes: 6
+  segment_times:
+    '10': 3.9099998474121094
+    '20': 7.169999837875366
+    '30': 10.480000019073486
+    '40': 16.87999987602234
+    '50': 23.149999856948853
+    '60': 27.83999991416931
+  time_to_finish: 27.83999991416931
+rollout_2:
+  Success: false
+  number_crashes: 11
+  segment_times:
+    '10': 3.5199999809265137
+    '20': 6.769999980926514
+    '30': 10.180000066757202
+    '40': 13.740000009536743
+    '50': 16.960000038146973
+    '60': 21.069999933242798
+  time_to_finish: 21.069999933242798
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+
+=======hard_62 | obstacles_only/nmpc_short_controls_first_model_deep.pth=======
+rollout_1:
+  Reason: out-of-bounds
+  Success: false
+rollout_2:
+  Success: false
+  number_crashes: 4
+  segment_times:
+    '10': 3.369999885559082
+    '20': 6.6499998569488525
+    '30': 9.97000002861023
+    '40': 13.139999866485596
+    '50': 16.52999997138977
+    '60': 19.94000005722046
+  time_to_finish: 19.94000005722046
+rollout_3:
+  Reason: out-of-bounds
+  Success: false
+
+=====end=====

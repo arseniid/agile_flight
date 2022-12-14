@@ -4,11 +4,12 @@ import subprocess
 import time
 
 
-def evaluate_all(difficulty="hard", start_from=0, end_with=100, rollouts=5):
+def evaluate_all(difficulty="hard", start_from=0, end_with=100, env_list=None, rollouts=5):
     config_path = "flightmare/flightpy/configs/vision/config.yaml"
-    summary_path = "flightmare/flightpy/datasets/nmpc_short/summary.txt"
+    summary_path = "CHANGE_MY_NAME.txt"
 
-    for i in range(start_from, end_with + 1):
+    iterate_over = env_list or range(start_from, end_with + 1)
+    for i in iterate_over:
         with open(config_path, "r") as config_file:
             config_lines = config_file.read().splitlines()
             difficulty_line = config_lines[1]
@@ -28,7 +29,13 @@ def evaluate_all(difficulty="hard", start_from=0, end_with=100, rollouts=5):
         with open(config_path, "w") as config_file:
             config_file.write("\n".join(config_lines) + "\n")
 
-        proc = subprocess.Popen(f"./launch_evaluation.bash {rollouts} mpc {difficulty}_{i}", shell=True)
+        proc = None
+        if "learned" in summary_path and "mpc" in summary_path.lower():
+            proc = subprocess.Popen(f"./launch_evaluation.bash {rollouts} learned_mpc/nmpc_short_controls_first_model_deep_obstacles_only.pth", shell=True)
+        elif "ppo" in summary_path.lower():
+            proc = subprocess.Popen(f"./launch_evaluation.bash {rollouts} 39", shell=True)
+        else:  # classical MPC
+            proc = subprocess.Popen(f"./launch_evaluation.bash {rollouts} mpc {difficulty}_{i}", shell=True)
         try:
             proc.wait(timeout=100 * rollouts)  # timeout of 70 seconds for each episode + some overhead
         except subprocess.TimeoutExpired as e:
@@ -100,6 +107,12 @@ if __name__ == "__main__":
         default=100
     )
     parser.add_argument(
+        "--eval-list",
+        help="Comma-separated environment numbers to evaluate",
+        required=False,
+        default=None
+    )
+    parser.add_argument(
         "--rollouts",
         help="Number of rolouts for each environment",
         required=False,
@@ -114,5 +127,6 @@ if __name__ == "__main__":
             difficulty=args.difficulty,
             start_from=int(args.start),
             end_with=int(args.end),
+            env_list=args.eval_list.split(",") if args.eval_list else None,
             rollouts=int(args.rollouts),
         )

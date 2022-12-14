@@ -199,5 +199,5 @@ Broader `.py` script to evaluate *one* particular solution (by default: MPC) on 
 The script is self-explanatory, uses `./launch_evaluation.bash` internally and is mainly used for dataset creation with (N)MPC.
 
 > **_NOTE:_** The script has a lot of hard-coded parts, and it is advised *against* using this. If one would decided to use it,
-please change it accordingly (for example, [subprocess spawning](https://github.com/arseniid/agile_flight/blob/main/launch_evaluation_all.py#L31) -- 
+please change it accordingly (for example, [subprocess spawning](https://github.com/arseniid/agile_flight/blob/main/launch_evaluation_all.py#L32-L38) -- 
 no guarantees for a smooth run!).
