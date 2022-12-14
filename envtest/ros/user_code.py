@@ -307,7 +307,6 @@ def solve_nmpc(state, obstacles, dt=0.05, warm_start_predictions=None):
         opti.set_initial(x[1:warm_start_predictions.shape[0] + 1, :], warm_start_predictions)
 
     silent_options = {
-        "ipopt.max_iter": 40,
         "ipopt.print_level": 0,
         "print_time": 0,
         "ipopt.sb": "yes",

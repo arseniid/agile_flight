@@ -135,7 +135,7 @@ class AgilePilotNode:
     def publish_batch(self, commands_list, dt=0.01):
         """ Wrapper around `publish_command` function to publish a batch of commands """
         executed_until = 0
-        to_execute = 2
+        to_execute = 1  # TODO: might be 2 for some settings
         for command in commands_list:
             if command.t >= rospy.get_time():
                 if executed_until < to_execute:
