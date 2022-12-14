@@ -11,7 +11,7 @@ It is also worth to mention that the models got *much* better for the second eva
 
 PPO_1: This policy was already trained by the maintainers, but is rather sub-optimal.
 
-> **_NOTE:_** Other trained policies (which have poorer performance) will anyway stay on the lab computer and are available upon request.
+> **_NOTE:_** Other trained policies (which have poorer performance) will anyway stay on the lab computer and *might be* available upon request.
 
 ### After first evaluation
 

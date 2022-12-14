@@ -190,7 +190,7 @@ How to (for all currently available solutions):
 
    where N: int (number of rollouts); MPC_MODEL_PATH: str (relative path to the trained (N)MPC model -- similar to 'learned_mpc/\<model_name\>.pth').
 
-   > **_NOTE:_** Adapt MPC class for [loading](https://github.com/arseniid/agile_flight/blob/main/envtest/ros/mpc_example.py#L43) as well as [reading predictions](https://github.com/arseniid/agile_flight/blob/main/envtest/ros/mpc_example.py#L37) according to the currently loaded model (see [hyperdata.txt](/envtest/ros/learned_mpc/hyperdata.txt) for the correct class & hyperparameters)
+   > **_NOTE:_** The correct MPC class will be inferenced automatically from the given MPC_MODEL_PATH (according to [hyperdata.txt](/envtest/ros/learned_mpc/hyperdata.txt))
 
 
 ### launch_evaluation_all.py ###
@@ -198,5 +198,6 @@ Broader `.py` script to evaluate *one* particular solution (by default: MPC) on 
 
 The script is self-explanatory, uses `./launch_evaluation.bash` internally and is mainly used for dataset creation with (N)MPC.
 
-> **_NOTE:_** The script has a lot of hard-coded parts, and it is advised *against* using this with different solutions (other than MPC). If one would decided to use it, please change it accordingly (for example, [subprocess spawning](https://github.com/arseniid/agile_flight/blob/main/launch_evaluation_all.py#L31) -- 
+> **_NOTE:_** The script has a lot of hard-coded parts, and it is advised *against* using this. If one would decided to use it,
+please change it accordingly (for example, [subprocess spawning](https://github.com/arseniid/agile_flight/blob/main/launch_evaluation_all.py#L31) -- 
 no guarantees for a smooth run!).
