@@ -119,7 +119,7 @@ do
   cat "$SUMMARY_FILE" "./envtest/ros/summary.yaml" > "tmp.yaml"
   mv "tmp.yaml" "$SUMMARY_FILE"
 
-  kill -SIGTERM "$COMP_PID"
+  kill -SIGKILL "$COMP_PID"
 done
 
 if ! [[ -z ${PPO_TRIAL} ]] && ! [[ -z ${LOADED_ENV} ]]
