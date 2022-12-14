@@ -1,5 +1,5 @@
 # Trained Learning-based MPC models
-The best trained Learning-based MPC models for the DodgeDrone-Challenge 2022 will be kept here.
+The best trained Learning-based MPC models for the DodgeDrone Challenge 2022 will be kept here.
 
 Each model is a `.pth` file, which can be read and prepared for inference by the PyTorch.
 

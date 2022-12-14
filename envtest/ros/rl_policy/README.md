@@ -1,5 +1,5 @@
 # Trained Deep RL policies
-The best trained deep reinforcement learning policies for the DodgeDrone-Challenge 2022 will be kept here.
+The best trained deep reinforcement learning policies for the DodgeDrone Challenge 2022 will be kept here.
 
 Each policy contains 'Policy/' and 'RMS/' folders with the trained network, as well as used `config.yaml` and Tensorboard logs.
 Additionally, some policies also store the full model as `.zip` archives (for example, for further training).
